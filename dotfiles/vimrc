@@ -29,10 +29,10 @@ Bundle 'vim-scripts/Solarized'
 set guitablabel=\[%N\]\ %t\ %M 
 "set guifont=Crisp:h12
 
-set guifont=Monospace 10
 " remove toolbar and scroll
 if has('gui_running')
 
+    set guifont=Monospace 10
     set guioptions-=m  "remove menu bar
     set guioptions-=T  "remove toolbar
     set guioptions-=r  "remove right-hand scroll bar
@@ -56,7 +56,6 @@ endif
 " Show clang errors in the quickfix window
 "let g:clang_complete_copen = 1
 
-g:ycm_extra_conf_globlist = ['~/ycm/*']
 " encodings and shell and colors
 set t_Co=256
 scriptencoding utf-8
