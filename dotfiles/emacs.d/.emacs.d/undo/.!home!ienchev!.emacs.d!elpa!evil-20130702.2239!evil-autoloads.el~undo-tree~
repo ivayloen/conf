@@ -1,17 +1,0 @@
-"cace4c853b8c8f557dfcc72341368d2484b112ab"
-[cl-struct-undo-tree [nil (#1=[nil nil ((593 . 601) (575 . 583) (505 . 513) (432 . 440) (357 . 365) (274 . 561) (#("
-;;;### (autoloads nil nil (\"evil-commands.el\" \"evil-common.el\" \"evil-digraphs.el\"
-;;;;;;  \"evil-ex.el\" \"evil-integration.el\" \"evil-macros.el\" \"evil-maps.el\"
-;;;;;;  \"evil-pkg.el\" \"evil-repeat.el\" \"evil-search.el\" \"evil-states.el\"
-;;;;;;  \"evil-types.el\" \"evil-vars.el\" \"evil.el\") (20949 41982 436292
-;;;;;;  746000))
-
-;;;***
-" 0 327 (fontified nil)) . -274) (266 . 274) (163 . 205) (145 . 153) (75 . 155) (75 . 136) (#("
-;;;### (autoloads nil \"evil-core\" \"evil-core.el\" (20949 41982 411906
-;;;;;;  678000))
-;;; Generated autoloads from evil-core.el
- (autoload 'evil-mode \"evil\" \"Toggle evil in all buffers\" t)
-
-;;;***
-" 0 199 (fontified nil)) . -75) 1 (t 20949 41982 498573 340000)) nil (20949 43737 933213 7000) 0 nil]) nil nil (20949 43737 933236 228000) 0 nil] #1# 646 1 nil]
