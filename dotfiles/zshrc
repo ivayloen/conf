@@ -18,6 +18,7 @@ export ALTERNATE_EDITOR=gvim EDITOR=gvim VISUAL=gvim
 # export EDITOR="emacsclient -t -n"
 alias ec='emacsclient -n'
 alias et='emacsclient -t'
+
 alias vi='vim'
 ecs() { emacsclient -n "/sudo::$*" }
 ets() { emacsclient -t "/sudo::$*" }
