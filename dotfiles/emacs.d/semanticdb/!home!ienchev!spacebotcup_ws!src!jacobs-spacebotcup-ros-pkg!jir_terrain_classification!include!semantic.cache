@@ -1,0 +1,559 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "edge.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_EDGE_H" variable (:constant-flag t) nil [25 32])
+            ("Edge" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [47 54])
+                    ("Edge" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Edge" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [59 66])
+                    ("Edge" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [76 80])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [81 85]))                          
+                        :type ("Edge" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [71 86])
+                    ("<" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Edge" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [106 124]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [91 198])
+                    ("age" variable (:type "int") (reparse-symbol classsubparts) [204 212])
+                    ("totalage" variable (:type "int") (reparse-symbol classsubparts) [217 230])
+                    ("v" variable (:type "int") (reparse-symbol classsubparts) [235 241])
+                    ("u" variable (:type "int") (reparse-symbol classsubparts) [246 252]))                  
+                :type "class")
+                nil [33 255])
+            ("EdgeComparator" type
+               (:members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("e1" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Edge" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [301 316])
+                            ("e2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Edge" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [317 332]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [285 367]))                  
+                :type "struct")
+                nil [257 370]))          
+      :file "edge.h"
+      :pointmax 380
+      :fsize 379
+      :lastmodtime '(21160 33378 890494 705000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_EDGE_H")
+          )
+)
+    (semanticdb-table "node.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_NODE_H" variable (:constant-flag t) nil [25 32])
+            ("vector" include (:system-flag t) nil [33 50])
+            ("list" include (:system-flag t) nil [51 66])
+            ("map" include (:system-flag t) nil [67 81])
+            ("set" include (:system-flag t) nil [82 96])
+            ("edge.h" include (:system-flag t) nil [97 114])
+            ("Node" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [130 137])
+                    ("Node" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [142 149])
+                    ("Node" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [159 163])
+                            ("_w" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [164 194]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [154 195])
+                    ("graphId" variable (:type "int") (reparse-symbol classsubparts) [201 213])
+                    ("error" variable (:type "double") (reparse-symbol classsubparts) [218 231])
+                    ("label" variable (:type "int") (reparse-symbol classsubparts) [236 246])
+                    ("utility" variable (:type "double") (reparse-symbol classsubparts) [251 266])
+                    ("nbrNodes" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("Node" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [271 301])
+                    ("winCounter" variable (:type "int") (reparse-symbol classsubparts) [306 321])
+                    ("weight" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [326 353])
+                    ("nbrEdges" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("Edge" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [358 388]))                  
+                :type "class")
+                nil [116 391])
+            ("NodeErrorComparator" type
+               (:members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("n1" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [442 457])
+                            ("n2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [458 473]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [426 516]))                  
+                :type "struct")
+                nil [393 519]))          
+      :file "node.h"
+      :pointmax 528
+      :fsize 527
+      :lastmodtime '(21141 64715 610748 286000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_NODE_H")
+          )
+)
+    (semanticdb-table "graph.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_GRAPH_H_" variable (:constant-flag t) nil [27 36])
+            ("node.h" include (:system-flag t) nil [37 54])
+            ("edge.h" include (:system-flag t) nil [55 72])
+            ("map" include (:system-flag t) nil [73 87])
+            ("flann_wrapper.hh" include (:system-flag t) nil [88 115])
+            ("Graph" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [132 139])
+                    ("Graph" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Graph" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [144 152])
+                    ("Graph" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [157 166])
+                    ("addNode" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("weight" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [185 219]))                          
+                        :type ("Node" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [171 220])
+                    ("rmNode" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [237 244]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [225 245])
+                    ("addEdge" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("idU" variable (:type "int") (reparse-symbol arg-sub-list) [264 272])
+                            ("idV" variable (:type "int") (reparse-symbol arg-sub-list) [273 281]))                          
+                        :type ("Edge" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [250 282])
+                    ("addEdge" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("u" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [301 309])
+                            ("v" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [310 318]))                          
+                        :type ("Edge" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [287 319])
+                    ("rmEdge" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("idU" variable (:type "int") (reparse-symbol arg-sub-list) [336 344])
+                            ("idV" variable (:type "int") (reparse-symbol arg-sub-list) [345 353]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [324 354])
+                    ("distance" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [375 405])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [406 436]))                          
+                        :type "double")
+                        (reparse-symbol classsubparts) [359 437])
+                    ("dfs" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v" variable (:type "int") (reparse-symbol arg-sub-list) [451 457])
+                            ("used" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [458 481])
+                            ("adj" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [482 524])
+                            ("component" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [525 553])
+                            ("label" variable (:type "int") (reparse-symbol arg-sub-list) [554 564]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [442 565])
+                    ("dfs" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("v" variable (:type "int") (reparse-symbol arg-sub-list) [579 585])
+                            ("label" variable (:type "int") (reparse-symbol arg-sub-list) [586 596])
+                            ("minTotalAge" variable (:type "int") (reparse-symbol arg-sub-list) [597 613])
+                            ("cl" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Node" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [614 637]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [570 638])
+                    ("averageError" function
+                       (:prototype-flag t
+                        :type "double")
+                        (reparse-symbol classsubparts) [643 665])
+                    ("getWinners" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("k" variable (:type "int") (reparse-symbol arg-sub-list) [718 724])
+                            ("point" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [725 758]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::pair" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [670 759])
+                    ("nodes" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("Node" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [783 810])
+                    ("edges" variable (:type ("std::set" type
+                         (:template-specifier 
+                            ( ("Edge" type (:pointer 1) nil nil)
+                              ("EdgeComparator" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [815 853])
+                    ("kdNodes" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Node" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [899 926])
+                    ("clusters" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("std::vector" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [931 973])
+                    ("graphToKd" variable (:type ("std::map" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil)
+                              ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [978 1006])
+                    ("fl" variable (:type ("CFlannWrapper18" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1011 1030])
+                    ("private" label nil (reparse-symbol classsubparts) [1033 1041])
+                    ("lastId" variable (:type "int") (reparse-symbol classsubparts) [1046 1057]))                  
+                :type "class")
+                nil [117 1060]))          
+      :file "graph.h"
+      :pointmax 1068
+      :fsize 1067
+      :lastmodtime '(21167 4244 798318 725000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_GRAPH_H_")
+          )
+)
+    (semanticdb-table "gng.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_GNG_H_" variable (:constant-flag t) nil [25 32])
+            ("graph.h" include (:system-flag t) nil [33 51])
+            ("GNG" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [65 72])
+                    ("GNG" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("_maxNodeCount" variable (:type "double") (reparse-symbol arg-sub-list) [81 102])
+                            ("_maxEdgeCount" variable (:type "double") (reparse-symbol arg-sub-list) [103 124])
+                            ("_newNodeCount" variable (:type "double") (reparse-symbol arg-sub-list) [125 146])
+                            ("_minTotalAge" variable (:type "double") (reparse-symbol arg-sub-list) [147 167])
+                            ("_eps_w" variable (:type "double") (reparse-symbol arg-sub-list) [168 182])
+                            ("_eps_n" variable (:type "double") (reparse-symbol arg-sub-list) [183 197])
+                            ("_errorConstant" variable (:type "double") (reparse-symbol arg-sub-list) [198 220]))                          
+                        :type ("GNG" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [77 221])
+                    ("init" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("d1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [236 266])
+                            ("d2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [267 297]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [226 298])
+                    ("run" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [312 359])
+                            ("epochs" variable (:type "int") (reparse-symbol arg-sub-list) [360 371]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [303 372])
+                    ("learn" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("step" variable (:type "int") (reparse-symbol arg-sub-list) [388 397])
+                            ("point" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [398 431]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [377 432])
+                    ("removeNodes" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [437 456])
+                    ("removeOldEdges" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [461 483])
+                    ("updateWinner" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("winner" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [506 519])
+                            ("point" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [520 553]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [488 554])
+                    ("updateNeighbour" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("neighbour" variable
+                               (:pointer 1
+                                :type ("Node" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [580 596])
+                            ("point" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [597 630]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [559 631])
+                    ("buildClassifier" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [636 659])
+                    ("setUpLabels" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("minTotalAge" variable (:type "int") (reparse-symbol arg-sub-list) [681 697]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [664 698])
+                    ("classify" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("point" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [734 767]))                          
+                        :type ("std::pair" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil)
+                                  ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [703 768])
+                    ("mid" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("t1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [797 827])
+                            ("t2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [828 858]))                          
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [773 859])
+                    ("g" variable (:type ("Graph" type (:type "class") nil nil)) (reparse-symbol classsubparts) [866 874])
+                    ("eps_w" variable (:type "double") (reparse-symbol classsubparts) [879 892])
+                    ("eps_n" variable (:type "double") (reparse-symbol classsubparts) [897 910])
+                    ("errorConstant" variable (:type "double") (reparse-symbol classsubparts) [915 936])
+                    ("maxEdgeAge" variable (:type "double") (reparse-symbol classsubparts) [941 959])
+                    ("maxNodeCount" variable (:type "double") (reparse-symbol classsubparts) [964 984])
+                    ("newNodeCount" variable (:type "double") (reparse-symbol classsubparts) [989 1009])
+                    ("minTotalAge" variable (:type "double") (reparse-symbol classsubparts) [1014 1033])
+                    ("labels" variable (:type "int") (reparse-symbol classsubparts) [1038 1049]))                  
+                :type "class")
+                nil [52 1052]))          
+      :file "gng.h"
+      :pointmax 1060
+      :fsize 1059
+      :lastmodtime '(21167 4124 578318 873000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_GNG_H_")
+          )
+))
+  :file "!home!ienchev!spacebotcup_ws!src!jacobs-spacebotcup-ros-pkg!jir_terrain_classification!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

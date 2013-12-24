@@ -1,0 +1,195 @@
+;; Object spi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spi/"
+  :tables (list 
+   (semanticdb-table "loggerrepository.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_SPI_LOG_REPOSITORY_H" variable (:constant-flag t) nil [851 880])
+            ("log4cxx/appender.h" include (:system-flag t) nil [987 1016])
+            ("log4cxx/spi/loggerfactory.h" include (:system-flag t) nil [1017 1055])
+            ("log4cxx/level.h" include (:system-flag t) nil [1056 1082])
+            ("log4cxx/spi/hierarchyeventlistener.h" include (:system-flag t) nil [1083 1130])
+            ("log4cxx" type
+               (:members 
+                  ( ("spi" type
+                       (:members 
+                          ( ("helpers::Object" variable
+                               (:typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1754 4283]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1156 4320]))                  
+                :type "namespace")
+                nil [1132 4340]))          
+    :file "loggerrepository.h"
+    :pointmax 4457
+    :fsize 4456
+    :lastmodtime '(20305 23005 0 0)
+    :unmatched-syntax '((PUBLIC 1747 . 1753) (punctuation 1745 . 1746) (symbol 1728 . 1744) (symbol 1713 . 1727) (CLASS 1707 . 1712))
+    :lexical-table 
+        '(("_LOG4CXX_SPI_LOG_REPOSITORY_H")
+          )
+
+    )
+   (semanticdb-table "appenderattachable.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_SPI_APPENDER_ATTACHABLE_H_" variable (:constant-flag t) nil [857 892])
+            ("log4cxx/logstring.h" include (:system-flag t) nil [998 1028])
+            ("vector" include (:system-flag t) nil [1029 1046])
+            ("log4cxx/helpers/objectptr.h" include (:system-flag t) nil [1047 1085])
+            ("log4cxx/helpers/object.h" include (:system-flag t) nil [1086 1121])
+            ("log4cxx/appender.h" include (:system-flag t) nil [1122 1151])
+            ("log4cxx" type
+               (:members 
+                  ( ("spi" type
+                       (:members 
+                          ( ("helpers::Object" variable
+                               (:typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1345 2780])
+                            ("LOG4CXX_PTR_DEF" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("AppenderAttachable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2807 2826]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2791 2827]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1178 2842]))                  
+                :type "namespace")
+                nil [1153 2844]))          
+    :file "appenderattachable.h"
+    :pointmax 2946
+    :fsize 2945
+    :lastmodtime '(20305 23005 0 0)
+    :unmatched-syntax '((PUBLIC 1338 . 1344) (punctuation 1336 . 1337) (symbol 1317 . 1335) (symbol 1302 . 1316) (CLASS 1296 . 1301))
+    :lexical-table 
+        '(("_LOG4CXX_SPI_APPENDER_ATTACHABLE_H_")
+          )
+
+    )
+   (semanticdb-table "loggerfactory.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_SPI_LOGGERFACTORY_H" variable (:constant-flag t) nil [850 878])
+            ("log4cxx/logger.h" include (:system-flag t) nil [880 907])
+            ("log4cxx" type
+               (:members 
+                  ( ("spi" type
+                       (:members 
+                          ( ("helpers::Object" variable
+                               (:typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1178 1571]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [938 1583]))                  
+                :type "namespace")
+                nil [909 1603]))          
+    :file "loggerfactory.h"
+    :pointmax 1664
+    :fsize 1663
+    :lastmodtime '(20305 23005 0 0)
+    :unmatched-syntax '((PUBLIC 1171 . 1177) (punctuation 1169 . 1170) (symbol 1155 . 1168) (symbol 1140 . 1154) (CLASS 1134 . 1139))
+    :lexical-table 
+        '(("_LOG4CXX_SPI_LOGGERFACTORY_H")
+          )
+
+    )
+   (semanticdb-table "hierarchyeventlistener.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_SPI_HIERARCHY_EVENT_LISTENER_H" variable (:constant-flag t) nil [861 900])
+            ("log4cxx/helpers/object.h" include (:system-flag t) nil [1007 1042])
+            ("log4cxx/helpers/objectptr.h" include (:system-flag t) nil [1043 1081])
+            ("vector" include (:system-flag t) nil [1082 1099])
+            ("log4cxx" type
+               (:members 
+                  ( ("Logger" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1128 1141])
+                    ("Appender" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1148 1163])
+                    ("spi" type
+                       (:members 
+                          ( ("log4cxx::helpers::Object" variable
+                               (:typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1360 1941])
+                            ("LOG4CXX_PTR_DEF" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("HierarchyEventListener" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1974 1997]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1958 1998])
+                            ("LOG4CXX_LIST_DEF" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("HierarchyEventListenerList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2032 2059])
+                                    ("" variable (:type ("HierarchyEventListenerPtr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2060 2086]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2015 2087]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1174 2098]))                  
+                :type "namespace")
+                nil [1101 2118]))          
+    :file "hierarchyeventlistener.h"
+    :pointmax 2244
+    :fsize 2243
+    :lastmodtime '(20305 23005 0 0)
+    :unmatched-syntax '((PUBLIC 1353 . 1359) (punctuation 1327 . 1328) (symbol 1304 . 1326) (symbol 1289 . 1303) (CLASS 1283 . 1288))
+    :lexical-table 
+        '(("_LOG4CXX_SPI_HIERARCHY_EVENT_LISTENER_H")
+          )
+
+    )
+   (semanticdb-table "optionhandler.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_SPI_OPTION_HANDLER_H" variable (:constant-flag t) nil [851 880])
+            ("log4cxx/logstring.h" include (:system-flag t) nil [882 912])
+            ("log4cxx/helpers/object.h" include (:system-flag t) nil [913 948])
+            ("log4cxx/helpers/objectptr.h" include (:system-flag t) nil [949 987])
+            ("log4cxx" type
+               (:members 
+                  ( ("spi" type
+                       (:members 
+                          ( ("OptionHandler" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1057 1077])
+                            ("OptionHandlerPtr" type
+                               (:typedef ("helpers::ObjectPtrT" type
+                                     (:template-specifier 
+                                        ( ("OptionHandler" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "helpers::ObjectPtrT"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1094 1154])
+                            ("helpers::Object" variable
+                               (:typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1329 2849]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1017 2884]))                  
+                :type "namespace")
+                nil [989 2904]))          
+    :file "optionhandler.h"
+    :pointmax 2967
+    :fsize 2966
+    :lastmodtime '(20305 23005 0 0)
+    :unmatched-syntax '((PUBLIC 1322 . 1328) (punctuation 1320 . 1321) (symbol 1306 . 1319) (symbol 1291 . 1305) (CLASS 1285 . 1290))
+    :lexical-table 
+        '(("_LOG4CXX_SPI_OPTION_HANDLER_H")
+          )
+
+    )
+   )
+  :file "!usr!include!log4cxx!spi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

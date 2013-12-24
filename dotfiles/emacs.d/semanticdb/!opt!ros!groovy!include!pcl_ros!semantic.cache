@@ -1,0 +1,595 @@
+;; Object pcl_ros/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pcl_ros/"
+  :tables (list 
+   (semanticdb-table "transforms.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("pcl_ROS_TRANSFORMS_H_" variable (:constant-flag t) nil [1714 1735])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [1737 1773])
+            ("pcl/common/transforms.h" include (:system-flag t) nil [1774 1808])
+            ("tf/transform_datatypes.h" include (:system-flag t) nil [1809 1844])
+            ("tf/transform_listener.h" include (:system-flag t) nil [1845 1879])
+            ("pcl_ros" type
+               (:members 
+                  ( ("transformPointCloudWithNormals" function
+                       (:template 
+                          ( ("PointT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("cloud_in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2242 2283])
+                            ("cloud_out" variable
+                               (:reference 1
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2319 2355])
+                            ("transform" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2391 2422]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2175 2423])
+                    ("transformPointCloudWithNormals" function
+                       (:template 
+                          ( ("PointT" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("target_frame" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2814 2846])
+                            ("cloud_in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2882 2923])
+                            ("cloud_out" variable
+                               (:reference 1
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2959 2995])
+                            ("tf_listener" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::TransformListener" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3031 3072]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2747 3073])
+                    ("transformPointCloudWithNormals" function
+                       (:template 
+                          ( ("PointT" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("target_frame" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3552 3584])
+                            ("target_time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ros::Time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3621 3651])
+                            ("cloud_in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3688 3729])
+                            ("fixed_frame" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3766 3797])
+                            ("cloud_out" variable
+                               (:reference 1
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3834 3870])
+                            ("tf_listener" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::TransformListener" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3907 3948]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3484 3949])
+                    ("transformPointCloud" function
+                       (:template 
+                          ( ("PointT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("cloud_in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4272 4313])
+                            ("cloud_out" variable
+                               (:reference 1
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4338 4374])
+                            ("transform" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4399 4430]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [4216 4431])
+                    ("transformPointCloud" function
+                       (:template 
+                          ( ("PointT" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("target_frame" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4811 4843])
+                            ("cloud_in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4868 4909])
+                            ("cloud_out" variable
+                               (:reference 1
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4934 4970])
+                            ("tf_listener" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::TransformListener" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4995 5036]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [4755 5037])
+                    ("transformPointCloud" function
+                       (:template 
+                          ( ("PointT" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("target_frame" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5503 5535])
+                            ("target_time" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ros::Time" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5536 5566])
+                            ("cloud_in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5591 5632])
+                            ("fixed_frame" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5657 5688])
+                            ("cloud_out" variable
+                               (:reference 1
+                                :type ("pcl::PointCloud" type
+                                     (:template-specifier 
+                                        ( ("PointT" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5713 5749])
+                            ("tf_listener" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::TransformListener" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5774 5815]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [5447 5816])
+                    ("transformPointCloud" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("target_frame" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6158 6190])
+                            ("in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6215 6250])
+                            ("out" variable
+                               (:reference 1
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6275 6305])
+                            ("tf_listener" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::TransformListener" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6330 6371]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [6129 6372])
+                    ("transformPointCloud" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("target_frame" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6721 6753])
+                            ("net_transform" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6778 6813])
+                            ("in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6838 6873])
+                            ("out" variable
+                               (:reference 1
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6898 6928]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6692 6929])
+                    ("transformPointCloud" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("transform" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Eigen::Matrix4f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7226 7259])
+                            ("in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7284 7319])
+                            ("out" variable
+                               (:reference 1
+                                :type ("sensor_msgs::PointCloud2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7344 7374]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7197 7375])
+                    ("transformAsMatrix" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf::Transform" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7570 7594])
+                            ("out_mat" variable
+                               (:reference 1
+                                :type ("Eigen::Matrix4f" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7595 7620]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7543 7621]))                  
+                :type "namespace")
+                nil [1881 7623]))          
+    :file "transforms.h"
+    :pointmax 7658
+    :fsize 7657
+    :lastmodtime '(21052 36254 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("pcl_ROS_TRANSFORMS_H_")
+          )
+
+    )
+   (semanticdb-table "point_cloud.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("pcl_ROS_POINT_CLOUD_H_" variable (:constant-flag t) nil [40 62])
+            ("ros/ros.h" include (:system-flag t) nil [64 84])
+            ("pcl/point_cloud.h" include (:system-flag t) nil [85 113])
+            ("pcl/point_traits.h" include (:system-flag t) nil [114 143])
+            ("pcl/for_each_type.h" include (:system-flag t) nil [144 174])
+            ("pcl/ros/conversions.h" include (:system-flag t) nil [175 207])
+            ("sensor_msgs/PointCloud2.h" include (:system-flag t) nil [208 244])
+            ("boost/mpl/size.hpp" include (:system-flag t) nil [245 274])
+            ("boost/ref.hpp" include (:system-flag t) nil [275 299])
+            ("pcl" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("FieldStreamer" type
+                               (:template 
+                                  ( ("Stream" type (:type "class") nil nil)
+                                    ("PointT" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("FieldStreamer" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("Stream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [440 455]))                                          
+                                        :type ("FieldStreamer" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [426 476])
+                                    ("()" function
+                                       (:template 
+                                          ( ("U" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [484 1051])
+                                    ("stream_" variable (:type ("Stream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1059 1075]))                                  )
+                                (reparse-symbol namespacesubparts) [346 1082])
+                            ("FieldsLength" type
+                               (:template 
+                                  ( ("PointT" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("FieldsLength" function
+                                       (:constructor-flag t
+                                        :type ("FieldsLength" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1150 1179])
+                                    ("()" function
+                                       (:template 
+                                          ( ("U" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [1187 1349])
+                                    ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1357 1373]))                                  )
+                                (reparse-symbol namespacesubparts) [1088 1380]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [320 1384]))                  
+                :type "namespace")
+                nil [301 1411])
+            ("ros" type
+               (:members 
+                  ( ("message_traits" type
+                       (:members 
+                          ( ("MD5Sum" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [2267 2347])
+                                    ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pcl::PointCloud" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2379 2405]))                                          
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [2354 2425])
+                                    ("static_value1" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2433 2519])
+                                    ("static_value2" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :type ("uint64_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2526 2612])
+                                    ("ROS_STATIC_ASSERT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("static_value1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2739 2754])
+                                            ("" variable (:type ("0x1158d486dd51d683ULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2756 2778]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2721 2779])
+                                    ("ROS_STATIC_ASSERT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("static_value2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2804 2819])
+                                            ("" variable (:type ("0xce2f1be655c3c181ULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2821 2843]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2786 2844]))                                  
+                                :template-specifier 
+                                  ( ("pcl::PointCloud" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2199 2851])
+                            ("DataType" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [2927 3009])
+                                    ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pcl::PointCloud" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3041 3067]))                                          
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [3016 3087]))                                  
+                                :template-specifier 
+                                  ( ("pcl::PointCloud" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2857 3094])
+                            ("Definition" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [3172 3256])
+                                    ("value" function
+                                       (:pointer 1
+                                        :typemodifiers ("static")
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pcl::PointCloud" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3288 3314]))                                          
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [3263 3334]))                                  
+                                :template-specifier 
+                                  ( ("pcl::PointCloud" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3100 3341])
+                            ("HasHeader" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("TrueType" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("pcl::PointCloud" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3347 3420]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2165 3424])
+                    ("serialization" type
+                       (:members 
+                          ( ("Serializer" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("write" function
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("Stream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3627 3642])
+                                            ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pcl::PointCloud" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3643 3671]))                                          
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [3570 4859])
+                                    ("read" function
+                                       (:template 
+                                          ( ("Stream" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("stream" variable
+                                               (:reference 1
+                                                :type ("Stream" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4923 4938])
+                                            ("m" variable
+                                               (:reference 1
+                                                :type ("pcl::PointCloud" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4939 4961]))                                          
+                                        :typemodifiers ("inline" "static"))
+                                        (reparse-symbol classsubparts) [4867 7494])
+                                    ("serializedLength" function
+                                       (:typemodifiers ("inline" "static")
+                                        :arguments 
+                                          ( ("m" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("pcl::PointCloud" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [7542 7570]))                                          
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7502 8194]))                                  
+                                :template-specifier 
+                                  ( ("pcl::PointCloud" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3494 8201]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3461 8205]))                  
+                :type "namespace")
+                nil [1430 8298]))          
+    :file "point_cloud.h"
+    :pointmax 8324
+    :fsize 8323
+    :lastmodtime '(21052 36254 0 0)
+    :unmatched-syntax '((punctuation 2819 . 2820) (punctuation 2818 . 2819) (punctuation 2754 . 2755) (punctuation 2753 . 2754))
+    :lexical-table 
+        '(("pcl_ROS_POINT_CLOUD_H_")
+          )
+
+    )
+   )
+  :file "!opt!ros!groovy!include!pcl_ros!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

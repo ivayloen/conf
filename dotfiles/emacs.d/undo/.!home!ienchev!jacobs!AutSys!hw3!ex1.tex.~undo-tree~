@@ -1,0 +1,193 @@
+"58f8700e4a623873fc28579fc52a81d77a5fdc4c"
+[cl-struct-undo-tree [nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil (#1=[nil nil ((61 . 63) (t 21068 4637 928590 908000)) nil (21068 4652 181075 6000) 0 nil]) ((54 . 62) (t 21068 4602 488590 606000)) nil (21068 4637 877102 734000) 0 nil] [nil nil ((#("r" 0 1 (latex-env-pair t fontified t face font-lock-keyword-face)) . 391) (t 21068 4602 488590 606000)) ((391 . 392)) (21068 4623 444662 356000) 0 nil]) ((nil rear-nonsticky nil 389 . 390) (nil fontified nil 389 . 390) (nil fontified nil 388 . 389) (nil fontified nil 383 . 388) (nil fontified nil 382 . 383) (nil fontified nil 378 . 382) (#("
+" 0 1 (latex-env-pair t fontified nil)) . -397) (389 . 398) 378) nil (21068 4623 445236 374000) 0 nil]) ((#("\\right)
+" 0 6 (latex-env-pair t fontified t face font-lock-keyword-face) 6 8 (latex-env-pair t fontified t)) . 378) (t 21068 4598 780590 574000) (undo-tree-id128 . -8) (undo-tree-id129 . -8)) nil (21068 4602 413634 946000) 0 nil]) ((nil rear-nonsticky nil 470 . 471) (nil fontified nil 470 . 471) (nil fontified nil 469 . 470) (nil fontified nil 464 . 469) (nil fontified nil 463 . 464) (nil fontified nil 459 . 463) (#("
+" 0 1 (fontified nil)) . -478) (470 . 479) 459) nil (21068 4598 685576 435000) 0 nil]) ((#("\\right)
+" 0 6 (fontified t face font-lock-keyword-face) 6 8 (fontified t)) . 459) (t 21068 4590 952590 508000) (undo-tree-id126 . -8) (undo-tree-id127 . -8)) nil (21068 4598 685640 257000) 0 nil]) ((nil rear-nonsticky nil 404 . 405) (nil fontified nil 404 . 405) (nil fontified nil 402 . 404) (#("
+" 0 1 (fontified nil)) . -415) (404 . 416) 402) nil (21068 4590 884387 832000) 0 nil]) ((#("b = \\left(
+" 0 4 (fontified t) 4 9 (fontified t face font-lock-keyword-face) 9 11 (fontified t)) . 422) 423 (t 21068 4586 476590 470000) (undo-tree-id124 . -11) (undo-tree-id125 . -11)) nil (21068 4590 884409 743000) 0 nil]) ((399 . 400) (t 21068 4584 100590 449000)) nil (21068 4586 421576 35000) 0 nil]) ((314 . 315) (t 21068 4580 556590 419000)) nil (21068 4584 29696 219000) 0 nil]) ((478 . 479)) nil (21068 4580 485778 144000) 0 nil]) ((401 . 402)) nil (21068 4580 485814 677000) 0 nil]) ((nil rear-nonsticky nil 314 . 315) (nil fontified nil 314 . 315) (nil fontified nil 313 . 314) (#("
+" 0 1 (latex-env-pair t fontified nil)) . -325) (314 . 326) 313) nil (21068 4580 485832 460000) 0 nil]) ((#("A = \\left(
+" 0 4 (fontified t latex-env-pair t) 4 9 (latex-env-pair t fontified t face font-lock-keyword-face) 9 11 (latex-env-pair t fontified t)) . 333) (t 21068 4463 248589 421000) (undo-tree-id120 . 7) (undo-tree-id121 . -11) (undo-tree-id122 . -11) (undo-tree-id123 . -3)) nil (21068 4580 485894 245000) 0 nil]) ((333 . 337) (t 21068 4457 964589 376000)) nil (21068 4463 198650 192000) 0 nil]) ((415 . 419) (t 21068 4449 876589 307000)) nil (21068 4457 918609 932000) 0 nil]) ((744 . 749)) nil (21068 4449 830620 568000) 0 nil]) ((#("t" 0 1 (fontified t)) . -744)) nil (21068 4449 830637 182000) 0 nil]) ((735 . 745)) nil (21068 4449 830646 151000) 0 nil]) ((#("y" 0 1 (fontified t)) . -735)) nil (21068 4449 830652 401000) 0 nil]) ((#("u" 0 1 (fontified t)) . -736)) nil (21068 4449 830658 737000) 0 nil]) ((734 . 737)) nil (21068 4449 830665 654000) 0 nil]) ((#("getMotions" 0 10 (fontified t)) . 734)) nil (21068 4449 830671 824000) 0 nil]) ((#("\\" 0 1 (fontified t)) . 749)) nil (21068 4449 830678 235000) 0 nil]) ((#("\\" 0 1 (fontified t rear-nonsticky t)) . 748)) nil (21068 4449 830684 781000) 0 nil]) ((nil rear-nonsticky nil 748 . 749) (nil fontified nil 592 . 749) (592 . 749) (t 21068 4400 560588 888000)) nil (21068 4449 830695 260000) 0 nil]) ((594 . 595) 593) nil (21068 4400 494746 638000) 0 nil]) ((#("\\" 0 1 (fontified t face font-lock-warning-face)) . -594) (593 . 595) (592 . 593) (t 21068 4390 556588 803000)) nil (21068 4400 494771 669000) 0 nil]) ((#("
+" 0 1 (rear-nonsticky t fontified t face tex-math)) . -470) (undo-tree-id115 . -1) (undo-tree-id116 . -1)) nil (21068 4390 423072 874000) 0 nil]) ((#("k
+" 0 1 (fontified t face tex-math) 1 2 (fontified t face tex-math)) . 472) (t 21068 4383 192588 740000) (undo-tree-id117 . 2) (undo-tree-id118 . -2) (undo-tree-id119 . -2)) nil (21068 4390 423122 424000) 0 nil]) ((440 . 443)) nil (21068 4383 159205 842000) 0 nil]) ((#("4" 0 1 (fontified t)) . 440)) nil (21068 4383 159231 768000) 0 nil]) ((#("-" 0 1 (fontified t)) . 440)) nil (21068 4383 159235 481000) 0 nil]) ((431 . 434)) nil (21068 4383 159238 127000) 0 nil]) ((#("6" 0 1 (fontified t)) . 431)) nil (21068 4383 159240 668000) 0 nil]) ((422 . 426)) nil (21068 4383 159243 449000) 0 nil]) ((#("2" 0 1 (fontified t)) . 422)) nil (21068 4383 159245 500000) 0 nil]) ((#("5" 0 1 (fontified t)) . 422)) nil (21068 4383 159249 368000) 0 nil]) ((#("8" 0 1 (fontified t)) . 439)) nil (21068 4383 159252 203000) 0 nil]) ((#("1" 0 1 (fontified t)) . 439)) nil (21068 4383 159255 161000) 0 nil]) ((#(" " 0 1 (fontified t)) . 439)) nil (21068 4383 159258 29000) 0 nil]) ((#("&" 0 1 (fontified t)) . 439)) nil (21068 4383 159260 996000) 0 nil]) ((#("8" 0 1 (fontified t)) . 432)) nil (21068 4383 159263 518000) 0 nil]) ((#("2" 0 1 (fontified t)) . 432)) nil (21068 4383 159266 129000) 0 nil]) ((#(" " 0 1 (fontified t)) . 432)) nil (21068 4383 159269 481000) 0 nil]) ((#("&" 0 1 (fontified t)) . 432)) nil (21068 4383 159272 176000) 0 nil]) ((#("2" 0 1 (fontified t)) . 425)) nil (21068 4383 159274 719000) 0 nil]) ((#("6" 0 1 (fontified t)) . 425)) nil (21068 4383 159277 82000) 0 nil]) ((#(" " 0 1 (fontified t)) . 425)) nil (21068 4383 159279 536000) 0 nil]) ((#("&" 0 1 (fontified t)) . 425)) nil (21068 4383 159282 61000) 0 nil]) ((#("c" 0 1 (fontified t face tex-math)) . 413) (t 21068 4356 136588 510000)) nil (21068 4383 159285 331000) 0 nil]) ((394 . 395) 393) nil (21068 4356 103396 972000) 0 nil]) ((nil rear-nonsticky nil 477 . 478) (nil fontified nil 395 . 478) (395 . 478)) nil (21068 4356 103418 883000) 0 nil]) ((396 . 397) (395 . 396) (394 . 395) 393 (t 21068 4341 276588 383000)) nil (21068 4356 103430 846000) 0 nil]) ((393 . 394)) nil (21068 4341 231443 356000) 0 nil]) ((392 . 393) 381) nil (21068 4341 231467 765000) 0 nil]) ((313 . 314) (#("i" 0 1 (fontified t)) . -313) (313 . 314) (312 . 313) 311) nil (21068 4341 231484 123000) 0 nil]) ((379 . 390) (378 . 379) (377 . 378) (#("}" 0 1 (fontified t latex-env-pair t)) . -377) (undo-tree-id113 . 1) (undo-tree-id114 . -1) (373 . 378) (#("g" 0 1 (fontified t latex-env-pair t face font-lock-keyword-face)) . -373) (371 . 374) (370 . 371) (360 . 370) (359 . 360) (350 . 359) (#(" " 0 1 (fontified t latex-env-pair t)) . -350) (349 . 351) (348 . 349) (338 . 348) (t 21068 4301 440588 44000)) nil (21068 4341 231553 322000) 0 nil]) ((326 . 330)) nil (21068 4301 359774 204000) 0 nil]) ((333 . 334) (327 . 333) (326 . 327) (325 . 326) (#("]" 0 1 (fontified t face font-lock-function-name-face)) . -325) (undo-tree-id111 . 1) (undo-tree-id112 . -1) (324 . 326) (#("t" 0 1 (fontified t face font-lock-function-name-face)) . -324) (313 . 325) (312 . 313) 311) nil (21068 4301 359831 951000) 0 nil]) ((#(" " 0 1 (fontified t)) . 313) (312 . 313) (#("$" 0 1 (fontified t face tex-math)) . -312) (#("A" 0 1 (fontified t face tex-math)) . -313) (#(" " 0 1 (fontified t face tex-math)) . -314) (#("=" 0 1 (fontified t face tex-math)) . -315) (#(" " 0 1 (fontified t face tex-math)) . -316) (312 . 317) (#("f" 0 1 (fontified t)) . -312) (#("o" 0 1 (fontified t)) . -313) (#("r" 0 1 (fontified t)) . -314) (#(" " 0 1 (fontified t)) . -315) (#("m" 0 1 (fontified t)) . -316) (#("a" 0 1 (fontified t)) . -317) (#("t" 0 1 (fontified t)) . -318) (#("r" 0 1 (fontified t)) . -319) (#("i" 0 1 (fontified t)) . -320) (#("x" 0 1 (fontified t)) . -321) (#(" " 0 1 (fontified t)) . -322) (#("$" 0 1 (fontified t face tex-math)) . -323) (313 . 324) (#("i" 0 1 (fontified t)) . -313) (#("r" 0 1 (fontified t)) . -314) (305 . 315) (304 . 305) (299 . 304) (t 21068 4248 32587 590000)) nil (21068 4301 359875 156000) 0 nil]) ((414 . 420)) nil (21068 4247 992177 502000) 0 nil]) ((#("4" 0 1 (fontified t)) . -414)) nil (21068 4247 992200 627000) 0 nil]) ((414 . 415)) nil (21068 4247 992211 698000) 0 nil]) ((#("4" 0 1 (fontified t)) . -414)) nil (21068 4247 992219 919000) 0 nil]) ((#("6" 0 1 (fontified t)) . -415)) nil (21068 4247 992229 340000) 0 nil]) ((404 . 416)) nil (21068 4247 992238 449000) 0 nil]) ((#("," 0 1 (fontified t)) . -404)) nil (21068 4247 992246 751000) 0 nil]) ((401 . 405)) nil (21068 4247 992256 302000) 0 nil]) ((#("2" 0 1 (fontified t)) . -401)) nil (21068 4247 992264 323000) 0 nil]) ((#("3" 0 1 (fontified t)) . -402)) nil (21068 4247 992273 583000) 0 nil]) ((#("." 0 1 (fontified t)) . -403)) nil (21068 4247 992281 940000) 0 nil]) ((#("0" 0 1 (fontified t)) . -404)) nil (21068 4247 992291 927000) 0 nil]) ((#("8" 0 1 (fontified t)) . -405)) nil (21068 4247 992301 513000) 0 nil]) ((#("-" 0 1 (fontified t)) . -406)) nil (21068 4247 992310 683000) 0 nil]) ((#("-" 0 1 (fontified t)) . -407)) nil (21068 4247 992319 647000) 0 nil]) ((393 . 408)) nil (21068 4247 992328 260000) 0 nil]) ((#("i" 0 1 (fontified t)) . -393)) nil (21068 4247 992336 476000) 0 nil]) ((393 . 394)) nil (21068 4247 992346 278000) 0 nil]) ((391 . 393)) nil (21068 4247 992356 251000) 0 nil]) ((#("s" 0 1 (fontified t)) . -391)) nil (21068 4247 992364 482000) 0 nil]) ((378 . 392)) nil (21068 4247 992374 118000) 0 nil]) ((358 . 378)) nil (21068 4247 992382 641000) 0 nil]) ((338 . 358)) nil (21068 4247 992389 237000) 0 nil]) ((318 . 338)) nil (21068 4247 992394 876000) 0 nil]) ((298 . 318) (t 21068 4174 292586 962000)) nil (21068 4247 992402 631000) 0 nil]) ((282 . 283) (#("N" 0 1 (fontified t display (raise -0.2) face (tex-math subscript))) . 282)) nil (21068 4174 248585 191000) 0 nil]) ((292 . 293) (#("i" 0 1 (fontified t display (raise -0.2) face (tex-math subscript))) . 292) (t 21068 4169 272586 920000)) nil (21068 4174 248613 327000) 0 nil]) ((#("$" 0 1 (fontified t face tex-math)) . -298)) nil (21068 4169 207987 56000) 0 nil]) ((297 . 299)) nil (21068 4169 207995 675000) 0 nil]) ((nil rear-nonsticky nil 296 . 297) (nil fontified nil 238 . 297) (238 . 297) 237) nil (21068 4169 207999 195000) 0 nil] [nil nil ((nil rear-nonsticky nil 257 . 258) (nil fontified nil 238 . 258) (238 . 258) 237) ((#(" the term should be " 0 19 (fontified nil) 19 20 (fontified nil rear-nonsticky nil)) . 238) (undo-tree-id110 . -19) (nil rear-nonsticky t 257 . 258)) (21068 4157 871758 620000) 0 nil]) ((226 . 227) (t 21068 4130 586 585000)) nil (21068 4157 871857 755000) 0 nil]) ((225 . 237) (t 21068 4126 88586 552000)) nil (21068 4129 960978 459000) 0 nil]) ((219 . 220) (#("N" 0 1 (fontified t display (raise -0.2) face (tex-math subscript))) . 219)) nil (21068 4126 17007 203000) 0 nil]) ((217 . 218) (#("D" 0 1 (fontified t face tex-math)) . 217)) nil (21068 4126 17029 69000) 0 nil]) ((217 . 218) (#("y" 0 1 (fontified t face tex-math)) . 217)) nil (21068 4126 17038 981000) 0 nil]) ((209 . 210) (#("i" 0 1 (fontified t display (raise -0.2) face (tex-math subscript))) . 209)) nil (21068 4126 17047 960000) 0 nil]) ((207 . 208) (#("y" 0 1 (fontified t face tex-math)) . 207) (t 21068 4115 80586 459000)) nil (21068 4126 17057 95000) 0 nil]) ((224 . 225)) nil (21068 4115 9028 890000) 0 nil]) ((#("$" 0 1 (fontified t face tex-math)) . 206) (undo-tree-id107 . -1) (undo-tree-id108 . 1) (undo-tree-id109 . -1)) nil (21068 4115 9090 259000) 0 nil]) ((204 . 206)) nil (21068 4115 9105 824000) 0 nil]) ((nil rear-nonsticky nil 222 . 223) (nil fontified nil 205 . 223) (205 . 223) 204 (t 21068 4092 636586 268000)) nil (21068 4115 9121 771000) 0 nil] [nil nil ((nil rear-nonsticky nil 204 . 205) (nil fontified nil 204 . 205) (204 . 205) 203 (t 21068 4092 636586 268000)) ((#("$" 0 1 (fontified nil rear-nonsticky nil face tex-math)) . 204) (nil rear-nonsticky t 204 . 205)) (21068 4098 696323 388000) 0 nil]) ((197 . 198) (#("x" 0 1 (fontified t face tex-math)) . 197)) nil (21068 4098 696977 275000) 0 nil]) ((187 . 188) (#("x" 0 1 (fontified t face tex-math)) . 187) (t 21068 4086 240586 213000)) nil (21068 4092 601173 62000) 0 nil]) ((204 . 205)) nil (21068 4086 201152 998000) 0 nil]) ((#("$" 0 1 (fontified t face tex-math)) . 186) (undo-tree-id104 . -1) (undo-tree-id105 . 1) (undo-tree-id106 . -1)) nil (21068 4086 201213 554000) 0 nil]) ((nil rear-nonsticky nil 204 . 205) (nil fontified nil 187 . 205) (187 . 205) 186) nil (21068 4086 201233 809000) 0 nil]) ((184 . 186)) nil (21068 4086 201245 111000) 0 nil]) ((179 . 180) (#("i" 0 1 (fontified t face (tex-math subscript) display (raise -0.2))) . 179)) nil (21068 4086 201255 369000) 0 nil]) ((nil rear-nonsticky nil 183 . 184) (nil fontified nil 176 . 184) (176 . 184) 175) nil (21068 4086 201268 853000) 0 nil]) ((#("y" 0 1 (fontified t face tex-math)) . -166) (166 . 167) (#("x" 0 1 (fontified t face tex-math)) . -176) (173 . 177) (171 . 174) (#("$" 0 1 (fontified t display nil face tex-math)) . -171) (t 21068 4038 244585 805000)) nil (21068 4086 201287 433000) 0 nil]) ((166 . 167)) nil (21068 4038 177459 939000) 0 nil]) ((169 . 170) (#("^" 0 1 (fontified t face tex-math)) . -169) (#("{" 0 1 (fontified t display nil)) . -170) (#("2" 0 1 (fontified t display nil)) . -171) (#("}" 0 1 (fontified t face (tex-math superscript) display (raise 0.2))) . -172) (undo-tree-id102 . 1) (undo-tree-id103 . -1) (169 . 173) (#("^" 0 1 (fontified t face tex-math)) . -169) (168 . 170) (#("i" 0 1 (fontified t display (raise -0.2) face (tex-math subscript))) . -168) (#(" " 0 1 (fontified t face tex-math)) . -169) (166 . 170) (159 . 167) (#("d" 0 1 (fontified t)) . -159) (146 . 160) (#("w" 0 1 (fontified t)) . -146) (#("e" 0 1 (fontified t)) . -147) (#(" " 0 1 (fontified t)) . -148) (146 . 149) (t 21068 3910 540584 718000)) nil (21068 4038 177524 674000) 0 nil]) ((146 . 147) 135) nil (21068 3910 497868 342000) 0 nil]) ((120 . 135)) nil (21068 3910 497877 201000) 0 nil]) ((127 . 131)) nil (21068 3910 497880 707000) 0 nil]) ((107 . 127)) nil (21068 3910 497882 992000) 0 nil]) ((106 . 107)) nil (21068 3910 497885 429000) 0 nil]) ((86 . 106)) nil (21068 3910 497888 328000) 0 nil]) ((#("l" 0 1 (fontified t)) . -86)) nil (21068 3910 497891 61000) 0 nil]) ((#("a" 0 1 (fontified t)) . -87)) nil (21068 3910 497894 221000) 0 nil]) ((81 . 88)) nil (21068 3910 497897 66000) 0 nil]) ((#(" " 0 1 (fontified t)) . -81)) nil (21068 3910 497899 474000) 0 nil]) ((#("p" 0 1 (fontified t)) . -82)) nil (21068 3910 497902 384000) 0 nil]) ((#("r" 0 1 (fontified t)) . -83)) nil (21068 3910 497905 826000) 0 nil]) ((79 . 84)) nil (21068 3910 497908 623000) 0 nil]) ((#("H" 0 1 (fontified t)) . -79)) nil (21068 3910 497911 44000) 0 nil]) ((#("e" 0 1 (fontified t)) . -80)) nil (21068 3910 497913 763000) 0 nil]) ((#(" " 0 1 (fontified t)) . -81)) nil (21068 3910 497916 15000) 0 nil]) ((#("p" 0 1 (fontified t)) . -82)) nil (21068 3910 497918 67000) 0 nil]) ((#("r" 0 1 (fontified t)) . -83)) nil (21068 3910 497920 480000) 0 nil]) ((68 . 84)) nil (21068 3910 497922 456000) 0 nil]) ((48 . 68)) nil (21068 3910 497924 248000) 0 nil]) ((#("l" 0 1 (fontified t)) . -48)) nil (21068 3910 497926 230000) 0 nil]) ((40 . 49)) nil (21068 3910 497928 267000) 0 nil]) ((#("o" 0 1 (fontified t)) . -40)) nil (21068 3910 497930 137000) 0 nil]) ((40 . 41)) nil (21068 3910 497932 303000) 0 nil]) ((20 . 40)) nil (21068 3910 497934 286000) 0 nil]) ((#("W" 0 1 (fontified t)) . -20)) nil (21068 3910 497935 991000) 0 nil]) ((#("e" 0 1 (fontified t)) . -21)) nil (21068 3910 497937 842000) 0 nil]) ((#(" " 0 1 (fontified t)) . -22)) nil (21068 3910 497939 726000) 0 nil]) ((#("u" 0 1 (fontified t)) . -23)) nil (21068 3910 497942 72000) 0 nil]) ((#("s" 0 1 (fontified t)) . -24)) nil (21068 3910 497943 951000) 0 nil]) ((#("e" 0 1 (fontified t)) . -25)) nil (21068 3910 497945 935000) 0 nil]) ((#(" " 0 1 (fontified t)) . -26)) nil (21068 3910 497947 773000) 0 nil]) ((20 . 27) (t 21067 61769 948519 397000)) nil (21068 3910 497950 306000) 0 nil]) ((#("First we convert the speed of the
+motor axis into rounds per second and then multiply by the gear box reduction ratio
+to get the rounds per second of the wheel itself.
+Afterwards we compute the distance travelled by each wheel in each period of size $\\frac{1}{f_Q}$.
+Thus we get the following formula for the distances:
+$$d_L = \\frac{sL * reductionRatio} {60} * \\frac{1}{f_q} * 2 * \\pi * wheelRadius $$
+The first part computes the number of full rotations of the wheel per second. Then this is multiplied
+by the amount of allocated time, which gives the amount of full rotations achieved over this period. 
+To get the actual distance traveled we change a full revolution with the circumference of the wheel. 
+The formula for the right wheel looks and is derived similarly. From the problem statement we know that
+$reductionRatio = \\frac{1}{100}$, $wheelRadius = 10cm$ and $wheelDistance = 30cm$. Then using the 
+update equations for pose and motion vectors \\cite{LN}\\cite{siegwart2004introduction} we get the following when using $f_q = 1$.
+Motion vectors after each update: 
+
+\\begin{tabular}{|l|l|l|}
+  \\hline
+  update & $\\beta$ & d \\\\ \\hline
+  1 &   10.0000  & 28.7979 \\\\
+  2 &   10.0000  &  28.7979 \\\\
+  3 &  -10.0000  & -28.7979 \\\\
+  4 & -5.0000  &  0.2618 \\\\
+  5 & -5.0000  &  0.2618 \\\\
+  6 & -5.0000  &  0.2618 \\\\
+  \\hline
+\\end{tabular}
+
+Computed poses are:
+
+\\begin{tabular}{|l|l|l|l|}
+  \\hline
+  update & $x$ & $y$ & $\\alpha$ \\\\ \\hline
+  1 &  28.3604 &    5.0007 &  10.0000 \\\\
+  2 &  56.7209 &  10.0014  & 20.0000 \\\\
+  3 &  28.3604 &  15.0021  & 10.0000 \\\\
+  4 &  28.6212 &  14.9793  &  5.0000 \\\\
+  5 &  28.8820 &  14.9565  & -0.0000 \\\\
+  6 &  29.1428 &  14.9337  & -5.0000 \\\\
+  \\hline
+\\end{tabular}
+
+And now for $f_q = 10$. Motion vectors are:
+
+\\begin{longtable}{|l|l|l|}
+  \\hline
+  update & $\\beta$ & d \\\\ \\hline
+
+  1 &    1.0000  & 2.8798 \\\\
+  2 &    1.0000  & 2.8798 \\\\
+  3 &    1.0000  & 2.8798 \\\\
+  4 &    1.0000  & 2.8798 \\\\
+  5 &    1.0000  & 2.8798 \\\\
+  6 &    1.0000  & 2.8798 \\\\
+  7 &    1.0000  & 2.8798 \\\\
+  8 &    1.0000  & 2.8798 \\\\
+  9 &    1.0000  & 2.8798 \\\\
+  10 &    1.0000 &  2.8798 \\\\
+  11 &    1.0000 &  2.8798 \\\\
+  12 &    1.0000 &  2.8798 \\\\
+  13 &    1.0000 &  2.8798 \\\\
+  14 &    1.0000 &  2.8798 \\\\
+  15 &    1.0000 &  2.8798 \\\\
+  16 &    1.0000 &  2.8798 \\\\
+  17 &    1.0000 &  2.8798 \\\\
+  18 &    1.0000 &  2.8798 \\\\
+  19 &    1.0000 &  2.8798 \\\\
+  20 &    1.0000 &  2.8798 \\\\
+  21 &   -1.0000 & -2.8798 \\\\
+  22 &   -1.0000 & -2.8798 \\\\
+  23 &   -1.0000 & -2.8798 \\\\
+  24 &   -1.0000 & -2.8798 \\\\
+  25 &   -1.0000 & -2.8798 \\\\
+  26 &   -1.0000 & -2.8798 \\\\
+  27 &   -1.0000 & -2.8798 \\\\
+  28 &   -1.0000 & -2.8798 \\\\
+  29 &   -1.0000 & -2.8798 \\\\
+  30 &   -1.0000 & -2.8798 \\\\
+  31 &   -0.5000 &  0.0262 \\\\
+  32 &   -0.5000 &  0.0262 \\\\
+  33 &   -0.5000 &  0.0262 \\\\
+  34 &   -0.5000 &  0.0262 \\\\
+  35 &   -0.5000 &  0.0262 \\\\
+  36 &   -0.5000 &  0.0262 \\\\
+  37 &   -0.5000 &  0.0262 \\\\
+  38 &   -0.5000 &  0.0262 \\\\
+  39 &   -0.5000 &  0.0262 \\\\
+  40 &   -0.5000 &  0.0262 \\\\
+  41 &   -0.5000 &  0.0262 \\\\
+  42 &   -0.5000 &  0.0262 \\\\
+  43 &   -0.5000 &  0.0262 \\\\
+  44 &   -0.5000 &  0.0262 \\\\
+  45 &   -0.5000 &  0.0262 \\\\
+  46 &   -0.5000 &  0.0262 \\\\
+  47 &   -0.5000 &  0.0262 \\\\
+  48 &   -0.5000 &  0.0262 \\\\
+  49 &   -0.5000 &  0.0262 \\\\
+  50 &   -0.5000 &  0.0262 \\\\
+  51 &   -0.5000 &  0.0262 \\\\
+  52 &   -0.5000 &  0.0262 \\\\
+  53 &   -0.5000 &  0.0262 \\\\
+  54 &   -0.5000 &  0.0262 \\\\
+  55 &   -0.5000 &  0.0262 \\\\
+  56 &   -0.5000 &  0.0262 \\\\
+  57 &   -0.5000 &  0.0262 \\\\
+  58 &   -0.5000 &  0.0262 \\\\
+  59 &   -0.5000 &  0.0262 \\\\
+  60 &   -0.5000 &  0.0262 \\\\
+  \\hline
+\\end{longtable} 
+And the poses:
+\\begin{longtable}{|l|l|l|l|}
+  \\hline
+  updates & $x$ & $y$ & $\\alpha$  \\\\ \\hline
+  1 &    2.8794    & 0.0503    & 1.0000 \\\\
+  2 &       5.7587    & 0.1005    & 2.0000 \\\\
+  3 &      8.6381    & 0.1508    & 3.0000 \\\\
+  4 &    11.5174    & 0.2010    & 4.0000 \\\\
+  5 &   14.3968    & 0.2513    & 5.0000 \\\\
+  6 &      17.2761    & 0.3016    & 6.0000 \\\\
+  7 &     20.1555    & 0.3518    & 7.0000 \\\\
+  8 &    23.0348    & 0.4021    & 8.0000 \\\\
+  9 &    25.9142    & 0.4523    & 9.0000 \\\\
+  10 &       28.7935    & 0.5026   & 10.0000 \\\\
+  11 &      31.6729    & 0.5529   & 11.0000 \\\\
+  12 &     34.5523    & 0.6031   & 12.0000 \\\\
+  13 &    37.4316    & 0.6534   & 13.0000 \\\\
+  14 &    40.3110    & 0.7036   & 14.0000 \\\\
+  15 &    43.1903    & 0.7539   & 15.0000 \\\\
+  16 &    46.0697    & 0.8041   & 16.0000 \\\\
+  17 &       48.9490    & 0.8544   & 17.0000 \\\\
+  18 &      51.8284    & 0.9047   & 18.0000 \\\\
+  19 &     54.7077    & 0.9549   & 19.0000 \\\\
+  20 &    57.5871    & 1.0052   & 20.0000 \\\\
+  21 &   54.7077    & 1.0554   & 19.0000 \\\\
+  22 &    51.8284    & 1.1057   & 18.0000 \\\\
+  23 &    48.9490    & 1.1560   & 17.0000 \\\\
+  24 &    46.0697    & 1.2062   & 16.0000 \\\\
+  25 &    43.1903    & 1.2565   & 15.0000 \\\\
+  26 &    40.3110    & 1.3067   & 14.0000 \\\\
+  27 &    37.4316    & 1.3570   & 13.0000 \\\\
+  28 &    34.5523    & 1.4073   & 12.0000 \\\\
+  29 &    31.6729    & 1.4575   & 11.0000 \\\\
+  30 &    28.7935    & 1.5078   & 10.0000 \\\\
+  31 &    28.8197    & 1.5076    & 9.5000 \\\\
+  32 &    28.8459    & 1.5073    & 9.0000 \\\\
+  33 &   28.8721    & 1.5071    & 8.5000 \\\\
+  34 &      28.8983    & 1.5069    & 8.0000 \\\\
+  35 &    28.9244    & 1.5066    & 7.5000 \\\\
+  36 &   28.9506    & 1.5064    & 7.0000 \\\\
+  37 &    28.9768    & 1.5062    & 6.5000 \\\\
+  38 &   29.0030    & 1.5060    & 6.0000 \\\\
+  39 &     29.0292    & 1.5057    & 5.5000 \\\\
+  40 &     29.0553    & 1.5055    & 5.0000 \\\\
+  41 &    29.0815    & 1.5053    & 4.5000 \\\\
+  42 &   29.1077    & 1.5050    & 4.0000 \\\\
+  43 &      29.1339    & 1.5048    & 3.5000 \\\\
+  44 &     29.1601    & 1.5046    & 3.0000 \\\\
+  45 &    29.1862    & 1.5044    & 2.5000 \\\\
+  46 &   29.2124    & 1.5041    & 2.0000 \\\\
+  47 &     29.2386    & 1.5039    & 1.5000 \\\\
+  48 &    29.2648    & 1.5037    & 1.0000 \\\\
+  49 &   29.2909    & 1.5034    & 0.5000 \\\\
+  50 &      29.3171    & 1.5032   & -0.0000 \\\\
+  51 &     29.3433    & 1.5030   & -0.5000 \\\\
+  52 &    29.3695    & 1.5028   & -1.0000 \\\\
+  53 &   29.3957    & 1.5025   & -1.5000 \\\\
+  54 &      29.4218    & 1.5023   & -2.0000 \\\\
+  55 &     29.4480    & 1.5021   & -2.5000 \\\\
+  56 &    29.4742    & 1.5018   & -3.0000 \\\\
+  57 &   29.5004    & 1.5016   & -3.5000 \\\\
+  58 &     29.5266    & 1.5014   & -4.0000 \\\\
+  59 &    29.5527    & 1.5012   & -4.5000 \\\\
+  60 &   29.5789    & 1.5009   & -5.0000 \\\\
+  \\hline 
+\\end{longtable}
+
+Code for the simulations is also attached.
+\\lstset{language=Matlab,
+           basicstyle=\\ttfamily\\footnotesize
+          }
+\\lstinputlisting{getMotions.m}
+\\lstinputlisting{allMotions.m}
+" 0 250 (fontified t) 250 262 (fontified t face tex-math) 262 263 (fontified t face (tex-math subscript) display (raise -0.2)) 263 265 (fontified t face tex-math) 265 320 (fontified t) 320 324 (fontified t face tex-math) 324 325 (fontified t face (tex-math subscript) display (raise -0.2)) 325 373 (fontified t face tex-math) 373 374 (fontified t face (tex-math subscript) display (raise -0.2)) 374 402 (fontified t face tex-math) 402 505 (fontified t) 505 813 (fontified t) 813 845 (fontified t face tex-math) 845 847 (fontified t) 847 867 (fontified t face tex-math) 867 872 (fontified t) 872 894 (fontified t face tex-math) 894 957 (fontified t) 957 962 (fontified t face font-lock-keyword-face) 962 963 (fontified t) 963 965 (fontified t face font-lock-constant-face) 965 966 (fontified t) 966 971 (fontified t face font-lock-keyword-face) 971 972 (fontified t) 972 996 (fontified t face font-lock-constant-face) 996 1030 (fontified t) 1030 1033 (fontified t face tex-math) 1033 1034 (fontified t face (tex-math subscript) display (raise -0.2)) 1034 1039 (fontified t face tex-math) 1039 1041 (fontified t) 1041 1077 (fontified t) 1077 1083 (fontified t face font-lock-keyword-face) 1083 1084 (fontified t latex-env-pair t) 1084 1091 (fontified t latex-env-pair t face font-lock-function-name-face) 1091 1092 (fontified t latex-env-pair t) 1092 1104 (fontified t) 1104 1110 (fontified t face font-lock-keyword-face) 1110 1122 (fontified t) 1122 1129 (fontified t face tex-math) 1129 1134 (fontified t) 1134 1136 (fontified t face font-lock-warning-face) 1136 1137 (fontified t) 1137 1143 (fontified t face font-lock-keyword-face) 1143 1171 (fontified t) 1171 1173 (fontified t face font-lock-warning-face) 1173 1202 (fontified t) 1202 1204 (fontified t face font-lock-warning-face) 1204 1233 (fontified t) 1233 1235 (fontified t face font-lock-warning-face) 1235 1261 (fontified t) 1261 1263 (fontified t face font-lock-warning-face) 1263 1289 (fontified t) 1289 1291 (fontified t face font-lock-warning-face) 1291 1317 (fontified t) 1317 1319 (fontified t face font-lock-warning-face) 1319 1322 (fontified t) 1322 1328 (fontified t face font-lock-keyword-face) 1328 1329 (fontified t) 1329 1333 (fontified t face font-lock-keyword-face) 1333 1334 (fontified t latex-env-pair t) 1334 1341 (fontified t latex-env-pair t face font-lock-function-name-face) 1341 1342 (fontified t latex-env-pair t) 1342 1365 (fontified t) 1365 1371 (fontified t face font-lock-keyword-face) 1371 1372 (fontified t latex-env-pair t) 1372 1379 (fontified t latex-env-pair t face font-lock-function-name-face) 1379 1380 (fontified t latex-env-pair t) 1380 1394 (fontified t) 1394 1400 (fontified t face font-lock-keyword-face) 1400 1412 (fontified t) 1412 1415 (fontified t face tex-math) 1415 1418 (fontified t) 1418 1421 (fontified t face tex-math) 1421 1424 (fontified t) 1424 1432 (fontified t face tex-math) 1432 1433 (fontified t) 1433 1435 (fontified t face font-lock-warning-face) 1435 1436 (fontified t) 1436 1442 (fontified t face font-lock-keyword-face) 1442 1481 (fontified t) 1481 1483 (fontified t face font-lock-warning-face) 1483 1521 (fontified t) 1521 1523 (fontified t face font-lock-warning-face) 1523 1561 (fontified t) 1561 1563 (fontified t face font-lock-warning-face) 1563 1564 (fontified t) 1564 1601 (fontified t) 1601 1603 (fontified t face font-lock-warning-face) 1603 1641 (fontified t) 1641 1643 (fontified t face font-lock-warning-face) 1643 1681 (fontified t) 1681 1683 (fontified t face font-lock-warning-face) 1683 1686 (fontified t) 1686 1692 (fontified t face font-lock-keyword-face) 1692 1693 (fontified t) 1693 1697 (fontified t face font-lock-keyword-face) 1697 1698 (fontified t latex-env-pair t) 1698 1705 (fontified t latex-env-pair t face font-lock-function-name-face) 1705 1706 (fontified t latex-env-pair t) 1706 1720 (fontified t) 1720 1723 (fontified t face tex-math) 1723 1724 (fontified t face (tex-math subscript) display (raise -0.2)) 1724 1730 (fontified t face tex-math) 1730 1753 (fontified t) 1753 1759 (fontified t face font-lock-keyword-face) 1759 1760 (fontified t latex-env-pair t) 1760 1769 (fontified t latex-env-pair t face font-lock-function-name-face) 1769 1770 (fontified t latex-env-pair t) 1770 1782 (fontified t) 1782 1788 (fontified t face font-lock-keyword-face) 1788 1800 (fontified t) 1800 1807 (fontified t face tex-math) 1807 1812 (fontified t) 1812 1814 (fontified t face font-lock-warning-face) 1814 1815 (fontified t) 1815 1821 (fontified t face font-lock-keyword-face) 1821 1849 (fontified t) 1849 1851 (fontified t face font-lock-warning-face) 1851 1878 (fontified t) 1878 1880 (fontified t face font-lock-warning-face) 1880 1907 (fontified t) 1907 1909 (fontified t face font-lock-warning-face) 1909 1936 (fontified t) 1936 1938 (fontified t face font-lock-warning-face) 1938 1965 (fontified t) 1965 1967 (fontified t face font-lock-warning-face) 1967 1994 (fontified t) 1994 1996 (fontified t face font-lock-warning-face) 1996 2023 (fontified t) 2023 2025 (fontified t face font-lock-warning-face) 2025 2052 (fontified t) 2052 2054 (fontified t face font-lock-warning-face) 2054 2081 (fontified t) 2081 2083 (fontified t face font-lock-warning-face) 2083 2084 (fontified t) 2084 2111 (fontified t) 2111 2113 (fontified t face font-lock-warning-face) 2113 2141 (fontified t) 2141 2143 (fontified t face font-lock-warning-face) 2143 2171 (fontified t) 2171 2173 (fontified t face font-lock-warning-face) 2173 2201 (fontified t) 2201 2203 (fontified t face font-lock-warning-face) 2203 2231 (fontified t) 2231 2233 (fontified t face font-lock-warning-face) 2233 2261 (fontified t) 2261 2263 (fontified t face font-lock-warning-face) 2263 2291 (fontified t) 2291 2293 (fontified t face font-lock-warning-face) 2293 2321 (fontified t) 2321 2323 (fontified t face font-lock-warning-face) 2323 2351 (fontified t) 2351 2353 (fontified t face font-lock-warning-face) 2353 2381 (fontified t) 2381 2383 (fontified t face font-lock-warning-face) 2383 2411 (fontified t) 2411 2413 (fontified t face font-lock-warning-face) 2413 2441 (fontified t) 2441 2443 (fontified t face font-lock-warning-face) 2443 2471 (fontified t) 2471 2473 (fontified t face font-lock-warning-face) 2473 2501 (fontified t) 2501 2503 (fontified t face font-lock-warning-face) 2503 2531 (fontified t) 2531 2533 (fontified t face font-lock-warning-face) 2533 2561 (fontified t) 2561 2563 (fontified t face font-lock-warning-face) 2563 2591 (fontified t) 2591 2593 (fontified t face font-lock-warning-face) 2593 2594 (fontified t) 2594 2621 (fontified t) 2621 2623 (fontified t face font-lock-warning-face) 2623 2651 (fontified t) 2651 2653 (fontified t face font-lock-warning-face) 2653 2681 (fontified t) 2681 2683 (fontified t face font-lock-warning-face) 2683 2711 (fontified t) 2711 2713 (fontified t face font-lock-warning-face) 2713 2741 (fontified t) 2741 2743 (fontified t face font-lock-warning-face) 2743 2771 (fontified t) 2771 2773 (fontified t face font-lock-warning-face) 2773 2801 (fontified t) 2801 2803 (fontified t face font-lock-warning-face) 2803 2831 (fontified t) 2831 2833 (fontified t face font-lock-warning-face) 2833 2861 (fontified t) 2861 2863 (fontified t face font-lock-warning-face) 2863 2891 (fontified t) 2891 2893 (fontified t face font-lock-warning-face) 2893 2921 (fontified t) 2921 2923 (fontified t face font-lock-warning-face) 2923 2951 (fontified t) 2951 2953 (fontified t face font-lock-warning-face) 2953 2981 (fontified t) 2981 2983 (fontified t face font-lock-warning-face) 2983 3011 (fontified t) 3011 3013 (fontified t face font-lock-warning-face) 3013 3041 (fontified t) 3041 3043 (fontified t face font-lock-warning-face) 3043 3071 (fontified t) 3071 3073 (fontified t face font-lock-warning-face) 3073 3101 (fontified t) 3101 3103 (fontified t face font-lock-warning-face) 3103 3104 (fontified t) 3104 3131 (fontified t) 3131 3133 (fontified t face font-lock-warning-face) 3133 3161 (fontified t) 3161 3163 (fontified t face font-lock-warning-face) 3163 3191 (fontified t) 3191 3193 (fontified t face font-lock-warning-face) 3193 3221 (fontified t) 3221 3223 (fontified t face font-lock-warning-face) 3223 3251 (fontified t) 3251 3253 (fontified t face font-lock-warning-face) 3253 3281 (fontified t) 3281 3283 (fontified t face font-lock-warning-face) 3283 3311 (fontified t) 3311 3313 (fontified t face font-lock-warning-face) 3313 3341 (fontified t) 3341 3343 (fontified t face font-lock-warning-face) 3343 3371 (fontified t) 3371 3373 (fontified t face font-lock-warning-face) 3373 3401 (fontified t) 3401 3403 (fontified t face font-lock-warning-face) 3403 3431 (fontified t) 3431 3433 (fontified t face font-lock-warning-face) 3433 3461 (fontified t) 3461 3463 (fontified t face font-lock-warning-face) 3463 3491 (fontified t) 3491 3493 (fontified t face font-lock-warning-face) 3493 3521 (fontified t) 3521 3523 (fontified t face font-lock-warning-face) 3523 3551 (fontified t) 3551 3553 (fontified t face font-lock-warning-face) 3553 3581 (fontified t) 3581 3583 (fontified t face font-lock-warning-face) 3583 3611 (fontified t) 3611 3613 (fontified t face font-lock-warning-face) 3613 3614 (fontified t) 3614 3616 (fontified t) 3616 3622 (fontified t face font-lock-keyword-face) 3622 3623 (fontified t) 3623 3627 (fontified t face font-lock-keyword-face) 3627 3628 (fontified t latex-env-pair t) 3628 3637 (fontified t latex-env-pair t face font-lock-function-name-face) 3637 3638 (fontified t latex-env-pair t) 3638 3655 (fontified t) 3655 3661 (fontified t face font-lock-keyword-face) 3661 3662 (fontified t latex-env-pair t) 3662 3671 (fontified t latex-env-pair t face font-lock-function-name-face) 3671 3672 (fontified t latex-env-pair t) 3672 3686 (fontified t) 3686 3692 (fontified t face font-lock-keyword-face) 3692 3705 (fontified t) 3705 3708 (fontified t face tex-math) 3708 3711 (fontified t) 3711 3714 (fontified t face tex-math) 3714 3717 (fontified t) 3717 3725 (fontified t face tex-math) 3725 3727 (fontified t) 3727 3729 (fontified t face font-lock-warning-face) 3729 3730 (fontified t) 3730 3736 (fontified t face font-lock-keyword-face) 3736 3777 (fontified t) 3777 3779 (fontified t face font-lock-warning-face) 3779 3823 (fontified t) 3823 3825 (fontified t face font-lock-warning-face) 3825 3868 (fontified t) 3868 3870 (fontified t face font-lock-warning-face) 3870 3912 (fontified t) 3912 3914 (fontified t face font-lock-warning-face) 3914 3955 (fontified t) 3955 3957 (fontified t face font-lock-warning-face) 3957 4001 (fontified t) 4001 4003 (fontified t face font-lock-warning-face) 4003 4046 (fontified t) 4046 4048 (fontified t face font-lock-warning-face) 4048 4090 (fontified t) 4090 4092 (fontified t face font-lock-warning-face) 4092 4134 (fontified t) 4134 4136 (fontified t face font-lock-warning-face) 4136 4137 (fontified t) 4137 4182 (fontified t) 4182 4184 (fontified t face font-lock-warning-face) 4184 4229 (fontified t) 4229 4231 (fontified t face font-lock-warning-face) 4231 4275 (fontified t) 4275 4277 (fontified t face font-lock-warning-face) 4277 4320 (fontified t) 4320 4322 (fontified t face font-lock-warning-face) 4322 4365 (fontified t) 4365 4367 (fontified t face font-lock-warning-face) 4367 4410 (fontified t) 4410 4412 (fontified t face font-lock-warning-face) 4412 4455 (fontified t) 4455 4457 (fontified t face font-lock-warning-face) 4457 4503 (fontified t) 4503 4505 (fontified t face font-lock-warning-face) 4505 4550 (fontified t) 4550 4552 (fontified t face font-lock-warning-face) 4552 4596 (fontified t) 4596 4598 (fontified t face font-lock-warning-face) 4598 4641 (fontified t) 4641 4643 (fontified t face font-lock-warning-face) 4643 4644 (fontified t) 4644 6663 (fontified nil)) . 20) (t 21067 61702 512518 823000) (undo-tree-id0 . -3640) (undo-tree-id1 . 3022) (undo-tree-id2 . -3640) (undo-tree-id3 . -3640) (undo-tree-id4 . -34) (undo-tree-id5 . -34) (undo-tree-id6 . -118) (undo-tree-id7 . -118) (undo-tree-id8 . -168) (undo-tree-id9 . -168) (undo-tree-id10 . -267) (undo-tree-id11 . -267) (undo-tree-id12 . -320) (undo-tree-id13 . -320) (undo-tree-id14 . -403) (undo-tree-id15 . -403) (undo-tree-id16 . -505) (undo-tree-id17 . -505) (undo-tree-id18 . -607) (undo-tree-id19 . -607) (undo-tree-id20 . -709) (undo-tree-id21 . -709) (undo-tree-id22 . -813) (undo-tree-id23 . -813) (undo-tree-id24 . -912) (undo-tree-id25 . -912) (undo-tree-id26 . -1041) (undo-tree-id27 . -1041) (undo-tree-id28 . -1076) (undo-tree-id29 . -1076) (undo-tree-id30 . -1077) (undo-tree-id31 . -1077) (undo-tree-id32 . -1102) (undo-tree-id33 . -1102) (undo-tree-id34 . -1111) (undo-tree-id35 . -1111) (undo-tree-id36 . -1144) (undo-tree-id37 . -1144) (undo-tree-id38 . -1174) (undo-tree-id39 . -1174) (undo-tree-id40 . -1205) (undo-tree-id41 . -1205) (undo-tree-id42 . -1236) (undo-tree-id43 . -1236) (undo-tree-id44 . -1264) (undo-tree-id45 . -1264) (undo-tree-id46 . -1292) (undo-tree-id47 . -1292) (undo-tree-id48 . -1320) (undo-tree-id49 . -1320) (undo-tree-id50 . -1329) (undo-tree-id51 . -1329) (undo-tree-id52 . -1343) (undo-tree-id53 . -1343) (undo-tree-id54 . -1344) (undo-tree-id55 . -1344) (undo-tree-id56 . -1364) (undo-tree-id57 . -1364) (undo-tree-id58 . -1365) (undo-tree-id59 . -1365) (undo-tree-id60 . -1392) (undo-tree-id61 . -1392) (undo-tree-id62 . -1401) (undo-tree-id63 . -1401) (undo-tree-id64 . -1443) (undo-tree-id65 . -1443) (undo-tree-id66 . -1484) (undo-tree-id67 . -1484) (undo-tree-id68 . -1524) (undo-tree-id69 . -1524) (undo-tree-id70 . -1564) (undo-tree-id71 . -1564) (undo-tree-id72 . -1604) (undo-tree-id73 . -1604) (undo-tree-id74 . -1644) (undo-tree-id75 . -1644) (undo-tree-id76 . -1684) (undo-tree-id77 . -1684) (undo-tree-id78 . -1693) (undo-tree-id79 . -1693) (undo-tree-id80 . -1707) (undo-tree-id81 . -1707) (undo-tree-id82 . -1708) (undo-tree-id83 . -1708) (undo-tree-id84 . -1752) (undo-tree-id85 . -1752) (undo-tree-id86 . -1753) (undo-tree-id87 . -1753) (undo-tree-id88 . -1780) (undo-tree-id89 . -1780) (undo-tree-id90 . -1789) (undo-tree-id91 . -1789) (undo-tree-id92 . -1822) (undo-tree-id93 . -1822) (undo-tree-id94 . -1823) (undo-tree-id95 . -1823) (undo-tree-id96 . -1852) (undo-tree-id97 . -1852) (undo-tree-id98 . -1881) (undo-tree-id99 . -1881) (undo-tree-id100 . -1910) (undo-tree-id101 . -1910)) nil (21067 61769 905856 606000) 0 nil]) nil nil (21067 61769 905907 265000) 0 nil] #1# 10505 150 nil]

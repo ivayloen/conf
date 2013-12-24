@@ -1,0 +1,109 @@
+;; Object ienchev/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ienchev/"
+  :tables
+  (list
+    (semanticdb-table "segmentation.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [2 21])
+            ("queue" include (:system-flag t) nil [22 38])
+            ("fstream" include (:system-flag t) nil [39 57])
+            ("sstream" include (:system-flag t) nil [58 76])
+            ("cmath" include (:system-flag t) nil [77 93])
+            ("cstdlib" include (:system-flag t) nil [94 112])
+            ("cstring" include (:system-flag t) nil [113 131])
+            ("vector" include (:system-flag t) nil [132 149])
+            ("time.h" include (:system-flag t) nil [150 167])
+            ("stdint.h" include (:system-flag t) nil [168 187])
+            ("algorithm" include (:system-flag t) nil [188 208])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [211 231])
+            ("row" variable
+               (:default-value "172"
+                :type "int")
+                nil [233 247])
+            ("col" variable
+               (:default-value "172"
+                :type "int")
+                nil [248 262])
+            ("img" variable
+               (:dereference 2
+                :type "int")
+                nil [264 282])
+            ("used" variable
+               (:dereference 2
+                :type "int")
+                nil [283 302])
+            ("dx" variable
+               (:dereference 1
+                :default-value "{-1, 0, 1, 0}"
+                :type "int")
+                nil [305 331])
+            ("dy" variable
+               (:dereference 1
+                :default-value "{0, -1, 0, 1}"
+                :type "int")
+                nil [332 358])
+            ("bfs" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [472 478])
+                    ("j" variable (:type "int") (reparse-symbol arg-sub-list) [479 485])
+                    ("blobX" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [486 505])
+                    ("blobY" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [506 525]))                  
+                :type "int")
+                nil [464 1194])
+            ("readImage" function
+               (:arguments 
+                  ( ("imgFile" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1211 1226]))                  
+                :type "void")
+                nil [1196 1530])
+            ("printFile" function
+               (:arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1547 1554])
+                    ("" variable (:type ("f" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1554 1556])
+                    ("outFile" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1557 1572]))                  
+                :type "void")
+                nil [1532 1840])
+            ("otsuThreshold" function (:type "double") nil [1855 2744])
+            ("segmentBlobs" function
+               (:arguments 
+                  ( ("filename" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2764 2780]))                  
+                :type "void")
+                nil [2746 4344])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4355 4364])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4365 4377]))                  
+                :type "int")
+                nil [4346 4423]))          
+      :file "segmentation.cpp"
+      :pointmax 4424
+      :fsize 4423
+      :lastmodtime '(21160 40971 274465 512000)
+      :unmatched-syntax nil))
+  :file "!home!ienchev!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

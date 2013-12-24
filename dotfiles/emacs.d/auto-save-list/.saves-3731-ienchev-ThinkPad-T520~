@@ -1,0 +1,16 @@
+/home/ienchev/multimaster_experimental/app_manager/src/app_manager/app_manager.py
+/home/ienchev/multimaster_experimental/app_manager/src/app_manager/#app_manager.py#
+/home/ienchev/multimaster_experimental_backup/app_manager/src/app_manager/app_manager.py
+/home/ienchev/multimaster_experimental_backup/app_manager/src/app_manager/#app_manager.py#
+/home/ienchev/multimaster_experimental/app_manager/msg/ClientApp.msg
+/home/ienchev/multimaster_experimental/app_manager/msg/#ClientApp.msg#
+/home/ienchev/multimaster_experimental/app_manager/CMakeLists.txt
+/home/ienchev/multimaster_experimental/app_manager/#CMakeLists.txt#
+/home/ienchev/multimaster_experimental/app_manager/srv/StartApp.srv
+/home/ienchev/multimaster_experimental/app_manager/srv/#StartApp.srv#
+/home/ienchev/multimaster_experimental/app_manager/msg/AppList.msg
+/home/ienchev/multimaster_experimental/app_manager/msg/#AppList.msg#
+/home/ienchev/multimaster_experimental/app_manager/msg/App.msg
+/home/ienchev/multimaster_experimental/app_manager/msg/#App.msg#
+/home/ienchev/multimaster_experimental/app_manager/src/app_manager/__init__.py
+/home/ienchev/multimaster_experimental/app_manager/src/app_manager/#__init__.py#

@@ -1,0 +1,283 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "flann_wrapper.hh"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("CFlannWrapper_H_" variable (:constant-flag t) nil [34 50])
+            ("iostream" include (:system-flag t) nil [52 71])
+            ("vector" include (:system-flag t) nil [72 89])
+            ("limits.h" include (:system-flag t) nil [90 109])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [110 141])
+            ("CFlannWrapper" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [166 173])
+                    ("CFlannWrapper" function
+                       (:constructor-flag t
+                        :type ("CFlannWrapper" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [177 200])
+                    ("setEpsilon" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("eps" variable (:type "double") (reparse-symbol arg-sub-list) [232 243]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [208 248])
+                    ("setPoints" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [275 322]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [252 327])
+                    ("nearestKSearch" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("point" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [358 391])
+                            ("k" variable (:type "int") (reparse-symbol arg-sub-list) [392 398])
+                            ("k_indices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [399 427])
+                            ("k_sqr_distances" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [428 465]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [331 476])
+                    ("removePoint" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [505 518]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [480 523])
+                    ("size" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "int")
+                        (reparse-symbol classsubparts) [527 550])
+                    ("CFlannWrapper" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [554 586]))                  
+                :type "class")
+                nil [143 594])
+            ("CFlannWrapper18" type
+               (:superclasses 
+                  ( ("CFlannWrapper" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [643 650])
+                    ("protected" label nil (reparse-symbol classsubparts) [653 663])
+                    ("flann_instance" type
+                       (:prototype t
+                        :type "struct")
+                        (reparse-symbol classsubparts) [667 689])
+                    ("fi" variable
+                       (:pointer 1
+                        :type ("flann_instance" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [692 711])
+                    ("index_mapping_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [715 747])
+                    ("cloud_" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol classsubparts) [751 766])
+                    ("dim_" variable (:type "int") (reparse-symbol classsubparts) [769 778])
+                    ("total_nr_points_" variable (:type "int") (reparse-symbol classsubparts) [782 803])
+                    ("epsilon_" variable (:type "double") (reparse-symbol classsubparts) [807 823])
+                    ("sorted_" variable (:type "bool") (reparse-symbol classsubparts) [827 840])
+                    ("identity_mapping_" variable (:type "bool") (reparse-symbol classsubparts) [844 867])
+                    ("public" label nil (reparse-symbol classsubparts) [870 877])
+                    ("CFlannWrapper18" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("CFlannWrapper18" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [881 899])
+                    ("CFlannWrapper18" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [902 921])
+                    ("setEpsilon" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("eps" variable (:type "double") (reparse-symbol arg-sub-list) [941 952]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [925 953])
+                    ("setPoints" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("cloud" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [972 1019]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [957 1020])
+                    ("nearestKSearch" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("point" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1043 1076])
+                            ("k" variable (:type "int") (reparse-symbol arg-sub-list) [1077 1083])
+                            ("k_indices" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1084 1112])
+                            ("k_sqr_distances" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1113 1150]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1024 1157])
+                    ("removePoint" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1178 1191]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1161 1192])
+                    ("size" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1196 1207])
+                    ("convertCloudToArray" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("points" variable
+                               (:constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1236 1283]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1211 1284])
+                    ("isValid" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("point" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1301 1334]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1288 1341])
+                    ("vectorize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1360 1382])
+                            ("" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1383 1392])
+                            ("" variable (:type ("out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1392 1396]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1345 1403])
+                    ("copyToDoubleArray" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1430 1459])
+                            ("out" variable
+                               (:pointer 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1460 1473]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1407 1480])
+                    ("cleanup" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1484 1499])
+                    ("test" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1503 1515]))                  
+                :type "class")
+                nil [596 1518]))          
+      :file "flann_wrapper.hh"
+      :pointmax 1528
+      :fsize 1527
+      :lastmodtime '(21159 14056 127080 517000)
+      :unmatched-syntax '((punctuation 1391 . 1392) (punctuation 589 . 590) (punctuation 203 . 204))
+      :lexical-table 
+        '(("CFlannWrapper_H_")
+          )
+))
+  :file "!home!ienchev!spacebotcup_ws!src!jacobs-common-ros-pkg!stacks!jir_machine_learning!jir_flann_wrapper!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

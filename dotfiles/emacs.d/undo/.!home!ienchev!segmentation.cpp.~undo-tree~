@@ -1,0 +1,5 @@
+"73ecab1617033a242ae5b39b2b423dd951e962c1"
+[cl-struct-undo-tree [nil ([nil ([nil ([nil ([nil ([nil (#1=[nil nil ((4344 . 4345) 4343 (t 21160 40227 50459 179000)) nil (21160 40971 249487 624000) 0 nil]) ((#("    
+" 0 4 (fontified t) 4 5 (fontified t)) . 1266) 1269 (undo-tree-id2 . -5) (undo-tree-id3 . -5) (undo-tree-id4 . -3) (undo-tree-id5 . 1)) nil (21160 40227 22385 208000) 0 nil]) ((#("
+" 0 1 (fontified t)) . 1266)) nil (21160 40227 22404 530000) 0 nil]) ((1266 . 1271) (#("    " 0 4 (fontified t)) . 1266) 1270 (undo-tree-id6 . -4) (1266 . 1270) (#("    " 0 4 (fontified t)) . 1266) (t 21160 40214 862459 76000)) nil (21160 40227 22422 714000) 0 nil]) ((#("
+" 0 1 (fontified t c-is-sws t c-in-sws t)) . -94) (undo-tree-id0 . -1) (undo-tree-id1 . -1)) nil (21160 40214 833967 980000) 0 nil]) ((94 . 95) (t 21160 37524 574436 183000)) nil (21160 40214 833975 627000) 0 nil]) nil nil (21160 40214 833978 129000) 0 nil] #1# 191 6 nil]

@@ -1,0 +1,2 @@
+"8906a407cbcace6e5aa3f6b1b7bd0ffe8427cde1"
+[cl-struct-undo-tree [nil ([nil ([nil ([nil (#1=[nil nil ((2 . 12)) nil (21070 34589 708813 360000) 0 nil]) ((1 . 2)) nil (21070 34589 708829 10000) 0 nil]) ((1 . 2) (t 21070 34499 149229 894000)) nil (21070 34589 708838 787000) 0 nil]) ((nil rear-nonsticky nil 126 . 127) (nil fontified nil 1 . 127) (1 . 127) (t 0 0 0 -1000)) nil (21070 34499 120955 893000) 0 nil]) nil nil (21070 34499 120967 641000) 0 nil] #1# 64 4 nil]

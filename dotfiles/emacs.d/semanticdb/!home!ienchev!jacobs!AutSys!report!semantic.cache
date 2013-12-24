@@ -1,0 +1,27 @@
+;; Object report/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "report/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("TARGET" variable (:default-value ("as-report")) nil [82 99])
+            ("DEPS" variable (:default-value ("abstract.tex" "intro.tex")) nil [99 153])
+            ("SRC" variable (:default-value ("$(TARGET).tex")) nil [235 254])
+            ("OUT" variable (:default-value ("$(TARGET).pdf")) nil [254 273])
+            ("AUX" variable (:default-value ("$(TARGET).aux")) nil [273 292])
+            ("TMP" variable (:default-value ("$(TARGET).bbl" "$(TARGET).blg" "$(TARGET).log" "$(TARGET).out" "$(TARGET).lof" "$(TARGET).toc")) nil [292 385])
+            ("all" function (:arguments ("$(TARGET).pdf")) nil [386 405])
+            ("force" function nil nil [406 483])
+            ("$(TARGET)" function (:arguments ("$(SRC)" "$(DEPS)")) nil [565 717])
+            ("distclean" function nil nil [718 750])
+            ("clean" function (:arguments ("distclean")) nil [751 782]))          
+      :file "Makefile"
+      :pointmax 798
+      :fsize 797
+      :lastmodtime '(21174 16544 134390 487000)
+      :unmatched-syntax nil))
+  :file "!home!ienchev!jacobs!AutSys!report!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,169 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "flann_wrapper.cc"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("flann_wrapper.hh" include (:system-flag t) nil [1 27])
+            ("flann.h" include (:system-flag t) nil [28 45])
+            ("flann_instance" type
+               (:parent "CFlannWrapper18"
+                :members 
+                  ( ("flann_index_" variable
+                       (:pointer 1
+                        :type ("flann::Index" type
+                             (:template-specifier 
+                                ( ("flann::L2" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [90 137])
+                    ("param_idx" variable (:type ("flann::IndexParams" type (:type "class") nil nil)) (reparse-symbol classsubparts) [140 169])
+                    ("param_k_" variable (:type ("flann::SearchParams" type (:type "class") nil nil)) (reparse-symbol classsubparts) [173 202])
+                    ("param_radius" variable (:type ("flann::SearchParams" type (:type "class") nil nil)) (reparse-symbol classsubparts) [205 238]))                  
+                :type "struct")
+                nil [47 241])
+            ("CFlannWrapper18" function
+               (:constructor-flag t
+                :parent "CFlannWrapper18"
+                :type ("CFlannWrapper18" type (:type "class") nil nil))
+                nil [243 878])
+            ("setEpsilon" function
+               (:parent "CFlannWrapper18"
+                :arguments 
+                  ( ("eps" variable (:type "double") (reparse-symbol arg-sub-list) [913 924]))                  
+                :type "void")
+                nil [880 1078])
+            ("setPoints" function
+               (:parent "CFlannWrapper18"
+                :arguments 
+                  ( ("cloud" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1112 1159]))                  
+                :type "void")
+                nil [1080 1991])
+            ("nearestKSearch" function
+               (:parent "CFlannWrapper18"
+                :arguments 
+                  ( ("point" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2029 2062])
+                    ("k" variable (:type "int") (reparse-symbol arg-sub-list) [2063 2069])
+                    ("k_indices" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2070 2098])
+                    ("k_sqr_distances" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2099 2136]))                  
+                :type "int")
+                nil [1993 3999])
+            ("removePoint" function
+               (:parent "CFlannWrapper18"
+                :arguments 
+                  ( ("index" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4035 4048]))                  
+                :type "void")
+                nil [4001 4091])
+            ("size" function
+               (:parent "CFlannWrapper18"
+                :type "int")
+                nil [4093 4158])
+            ("cleanup" function
+               (:parent "CFlannWrapper18"
+                :type "void")
+                nil [4160 4423])
+            ("convertCloudToArray" function
+               (:parent "CFlannWrapper18"
+                :arguments 
+                  ( ("points" variable
+                       (:constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4467 4514]))                  
+                :type "void")
+                nil [4425 5363])
+            ("isValid" function
+               (:parent "CFlannWrapper18"
+                :arguments 
+                  ( ("point" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5395 5428]))                  
+                :type "bool")
+                nil [5365 5721])
+            ("vectorize" function
+               (:parent "CFlannWrapper18"
+                :arguments 
+                  ( ("p" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("double" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [5755 5777])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [5778 5787])
+                    ("" variable (:type ("out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5787 5791]))                  
+                :type "void")
+                nil [5723 6141])
+            ("copyToDoubleArray" function
+               (:parent "CFlannWrapper18"
+                :arguments 
+                  ( ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("double" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6183 6212])
+                    ("out" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [6213 6226]))                  
+                :type "void")
+                nil [6143 6385])
+            ("CFlannWrapper18" function
+               (:destructor-flag t
+                :parent "CFlannWrapper18"
+                :type "void")
+                nil [6387 6438]))          
+      :file "flann_wrapper.cc"
+      :pointmax 6439
+      :fsize 6438
+      :lastmodtime '(21159 14069 479080 631000)
+      :unmatched-syntax '((punctuation 5786 . 5787))))
+  :file "!home!ienchev!spacebotcup_ws!src!jacobs-common-ros-pkg!stacks!jir_machine_learning!jir_flann_wrapper!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

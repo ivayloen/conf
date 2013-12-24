@@ -1,0 +1,588 @@
+;; Object message_filters/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "message_filters/"
+  :tables (list 
+   (semanticdb-table "subscriber.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MESSAGE_FILTERS_SUBSCRIBER_H" variable (:constant-flag t) nil [1817 1845])
+            ("ros/ros.h" include (:system-flag t) nil [1847 1867])
+            ("boost/signals.hpp" include (:system-flag t) nil [1869 1897])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [1898 1931])
+            ("connection.h" include nil nil [1933 1956])
+            ("simple_filter.h" include nil nil [1957 1983])
+            ("message_filters" type
+               (:members 
+                  ( ("SubscriberBase" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2037 2044])
+                            ("SubscriberBase" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2047 2075])
+                            ("subscribe" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2527 2547])
+                                    ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2548 2573])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2574 2594])
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2595 2639])
+                                    ("" variable (:type ("ros::TransportHints" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2640 2661])
+                                    ("callback_queue" variable
+                                       (:pointer 1
+                                        :type ("ros::CallbackQueueInterface" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2663 2708]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2504 2716])
+                            ("subscribe" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2842 2871])
+                            ("unsubscribe" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2963 2994]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2014 2997])
+                    ("SubscriberBasePtr" type
+                       (:typedef ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("SubscriberBase" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "boost::shared_ptr"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2998 3058])
+                    ("Subscriber" type
+                       (:template 
+                          ( ("M" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3779 3786])
+                            ("MConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("M" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "boost::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3789 3834])
+                            ("EventType" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "ros::MessageEvent"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3837 3882])
+                            ("Subscriber" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4307 4327])
+                                    ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4328 4353])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4354 4374])
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4375 4419])
+                                    ("" variable (:type ("ros::TransportHints" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4420 4441])
+                                    ("callback_queue" variable
+                                       (:pointer 1
+                                        :type ("ros::CallbackQueueInterface" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4443 4488]))                                  
+                                :type ("Subscriber" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4296 4570])
+                            ("Subscriber" function
+                               (:constructor-flag t
+                                :type ("Subscriber" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4657 4677])
+                            ("Subscriber" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4681 4721])
+                            ("subscribe" function
+                               (:arguments 
+                                  ( ("nh" variable
+                                       (:reference 1
+                                        :type ("ros::NodeHandle" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5166 5186])
+                                    ("topic" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5187 5212])
+                                    ("queue_size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5213 5233])
+                                    ("transport_hints" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::TransportHints" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5234 5278])
+                                    ("" variable (:type ("ros::TransportHints" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5279 5300])
+                                    ("callback_queue" variable
+                                       (:pointer 1
+                                        :type ("ros::CallbackQueueInterface" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5302 5347]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5151 5677])
+                            ("subscribe" function (:type "void") (reparse-symbol classsubparts) [5804 5923])
+                            ("unsubscribe" function (:type "void") (reparse-symbol classsubparts) [6016 6063])
+                            ("getTopic" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6067 6126])
+                            ("getSubscriber" function
+                               (:constant-flag t
+                                :type ("ros::Subscriber" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6198 6259])
+                            ("connectInput" function
+                               (:template 
+                                  ( ("F" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("F" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6411 6416]))                                  )
+                                (reparse-symbol classsubparts) [6370 6424])
+                            ("add" function
+                               (:arguments 
+                                  ( ("e" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("EventType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6544 6563]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6535 6571])
+                            ("private" label nil (reparse-symbol classsubparts) [6573 6581])
+                            ("cb" function
+                               (:arguments 
+                                  ( ("e" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("EventType" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6593 6612]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6585 6648])
+                            ("sub_" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6652 6673])
+                            ("ops_" variable (:type ("ros::SubscribeOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6676 6703])
+                            ("nh_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6706 6726]))                          
+                        :superclasses 
+                          ( ("SubscriberBase" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("SimpleFilter" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3694 6729]))                  
+                :type "namespace")
+                nil [1985 6732]))          
+    :file "subscriber.h"
+    :pointmax 6741
+    :fsize 6740
+    :lastmodtime '(21070 30717 0 0)
+    :unmatched-syntax '((number 5348 . 5349) (punctuation 5346 . 5347) (semantic-list 5298 . 5300) (punctuation 5277 . 5278) (number 4489 . 4490) (punctuation 4487 . 4488) (semantic-list 4439 . 4441) (punctuation 4418 . 4419) (number 2709 . 2710) (punctuation 2707 . 2708) (semantic-list 2659 . 2661) (punctuation 2638 . 2639))
+    :lexical-table 
+        '(("MESSAGE_FILTERS_SUBSCRIBER_H")
+          )
+
+    )
+   (semanticdb-table "connection.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MESSAGE_FILTERS_CONNECTION_H" variable (:constant-flag t) nil [1817 1845])
+            ("boost/function.hpp" include (:system-flag t) nil [1847 1876])
+            ("boost/signals/connection.hpp" include (:system-flag t) nil [1877 1916])
+            ("macros.h" include nil nil [1917 1936])
+            ("message_filters" type
+               (:members 
+                  ( ("Connection" variable (:type ("MESSAGE_FILTERS_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [2072 2739]))                  
+                :type "namespace")
+                nil [1938 2742]))          
+    :file "connection.h"
+    :pointmax 2783
+    :fsize 2782
+    :lastmodtime '(21070 30717 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MESSAGE_FILTERS_CONNECTION_H")
+          )
+
+    )
+   (semanticdb-table "simple_filter.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MESSAGE_FILTERS_SIMPLE_FILTER_H" variable (:constant-flag t) nil [1820 1851])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [1853 1885])
+            ("connection.h" include nil nil [1887 1910])
+            ("signal1.h" include nil nil [1911 1931])
+            ("ros/message_event.h" include (:system-flag t) nil [1932 1962])
+            ("ros/subscription_callback_helper.h" include (:system-flag t) nil [1963 2008])
+            ("boost/bind.hpp" include (:system-flag t) nil [2010 2035])
+            ("string" include (:system-flag t) nil [2037 2054])
+            ("message_filters" type
+               (:members 
+                  ( ("SimpleFilter" type
+                       (:template 
+                          ( ("M" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2445 2452])
+                            ("MConstPtr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("M" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "boost::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2455 2500])
+                            ("Callback" variable (:type "int") (reparse-symbol classsubparts) [2551 2560])
+                            ("EventType" type
+                               (:typedef ("ros::MessageEvent" type
+                                     (:template-specifier 
+                                        ( ("M" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "ros::MessageEvent"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2563 2608])
+                            ("EventCallback" variable (:type "int") (reparse-symbol classsubparts) [2659 2673])
+                            ("registerCallback" function
+                               (:template 
+                                  ( ("C" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("callback" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("C" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2855 2873]))                                  )
+                                (reparse-symbol classsubparts) [2804 3047])
+                            ("registerCallback" function
+                               (:template 
+                                  ( ("P" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type ("boost::function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3229 3251])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [3251 3258])
+                                    ("" variable (:type ("callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3261 3270]))                                  )
+                                (reparse-symbol classsubparts) [3178 3380])
+                            ("registerCallback" function
+                               (:template 
+                                  ( ("P" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3562 3577]))                                  )
+                                (reparse-symbol classsubparts) [3511 3691])
+                            ("registerCallback" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("P" type (:type "class") nil nil))                                  
+                                :type ("Connection" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3885 3903])
+                                    ("t" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3908 3913]))                                  )
+                                (reparse-symbol classsubparts) [3822 4109])
+                            ("setName" function
+                               (:arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4199 4223]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4186 4241])
+                            ("getName" function
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4317 4363])
+                            ("protected" label nil (reparse-symbol classsubparts) [4365 4375])
+                            ("signalMessage" function
+                               (:arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("MConstPtr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4487 4508]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4468 4585])
+                            ("signalMessage" function
+                               (:arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::MessageEvent" type
+                                             (:template-specifier 
+                                                ( ("M" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4698 4738]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4679 4771])
+                            ("private" label nil (reparse-symbol classsubparts) [4773 4781])
+                            ("Signal" type
+                               (:typedef ("Signal1" type
+                                     (:template-specifier 
+                                        ( ("M" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "Signal1"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [4784 4810])
+                            ("signal_" variable (:type ("Signal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4814 4829])
+                            ("name_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4833 4851]))                          
+                        :superclasses 
+                          ( ("boost::noncopyable" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2378 4854]))                  
+                :type "namespace")
+                nil [2056 4857]))          
+    :file "simple_filter.h"
+    :pointmax 4867
+    :fsize 4866
+    :lastmodtime '(21070 30717 0 0)
+    :unmatched-syntax '((semantic-list 3903 . 3906) (semantic-list 3889 . 3903) (semantic-list 3577 . 3580) (semantic-list 3566 . 3577) (punctuation 3259 . 3260) (punctuation 3258 . 3259) (semantic-list 3255 . 3258) (punctuation 3250 . 3251) (punctuation 2657 . 2658) (semantic-list 2639 . 2657) (VOID 2635 . 2639) (punctuation 2634 . 2635) (symbol 2626 . 2634) (punctuation 2625 . 2626) (punctuation 2624 . 2625) (symbol 2619 . 2624) (TYPEDEF 2611 . 2618) (punctuation 2549 . 2550) (semantic-list 2531 . 2549) (VOID 2527 . 2531) (punctuation 2526 . 2527) (symbol 2518 . 2526) (punctuation 2517 . 2518) (punctuation 2516 . 2517) (symbol 2511 . 2516) (TYPEDEF 2503 . 2510))
+    :lexical-table 
+        '(("MESSAGE_FILTERS_SIMPLE_FILTER_H")
+          )
+
+    )
+   (semanticdb-table "macros.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MESSAGE_FILTERS_MACROS_H_" variable (:constant-flag t) nil [1632 1657])
+            ("ros/macros.h" include (:system-flag t) nil [1659 1682])
+            ("MESSAGE_FILTERS_DECL" variable (:constant-flag t) nil [2135 2155]))          
+    :file "macros.h"
+    :pointmax 2203
+    :fsize 2202
+    :lastmodtime '(21070 30717 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MESSAGE_FILTERS_DECL")
+          ("MESSAGE_FILTERS_MACROS_H_")
+          )
+
+    )
+   (semanticdb-table "signal1.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MESSAGE_FILTERS_SIGNAL1_H" variable (:constant-flag t) nil [1814 1839])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [1841 1873])
+            ("connection.h" include nil nil [1875 1898])
+            ("ros/message_event.h" include (:system-flag t) nil [1899 1929])
+            ("ros/parameter_adapter.h" include (:system-flag t) nil [1930 1964])
+            ("boost/bind.hpp" include (:system-flag t) nil [1966 1991])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [1992 2025])
+            ("message_filters" type
+               (:members 
+                  ( ("CallbackHelper1" type
+                       (:template 
+                          ( ("M" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2097 2104])
+                            ("CallbackHelper1" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2107 2136])
+                            ("call" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::MessageEvent" type
+                                             (:template-specifier 
+                                                ( ("M" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2158 2198])
+                                    ("nonconst_need_copy" variable (:type "bool") (reparse-symbol arg-sub-list) [2199 2223]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2140 2228])
+                            ("Ptr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("CallbackHelper1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "boost::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2232 2283]))                          )
+                        (reparse-symbol namespacesubparts) [2055 2286])
+                    ("CallbackHelper1T" type
+                       (:template 
+                          ( ("P" type (:type "class") nil nil)
+                            ("M" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2374 2381])
+                            ("Adapter" type
+                               (:typedef ("ros::ParameterAdapter" type
+                                     (:template-specifier 
+                                        ( ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "ros::ParameterAdapter"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2384 2425])
+                            ("Callback" variable (:type "int") (reparse-symbol classsubparts) [2487 2496])
+                            ("Event" type
+                               (:typedef ("Adapter::Event" type (:type "class") nil nil)
+                                :superclasses "Adapter::Event"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2499 2537])
+                            ("CallbackHelper1T" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Callback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2558 2577]))                                  
+                                :type ("CallbackHelper1T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2541 2603])
+                            ("call" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::MessageEvent" type
+                                             (:template-specifier 
+                                                ( ("M" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2625 2665])
+                                    ("nonconst_force_copy" variable (:type "bool") (reparse-symbol arg-sub-list) [2666 2691]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2607 2823])
+                            ("private" label nil (reparse-symbol classsubparts) [2825 2833])
+                            ("callback_" variable (:type ("Callback" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2836 2855]))                          
+                        :superclasses 
+                          ( ("CallbackHelper1" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2288 2858])
+                    ("Signal1" type
+                       (:template 
+                          ( ("M" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("CallbackHelper1Ptr" type
+                               (:typedef ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("CallbackHelper1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "boost::shared_ptr"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2896 2962])
+                            ("V_CallbackHelper1" type
+                               (:typedef ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("CallbackHelper1Ptr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "std::vector"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2965 3023])
+                            ("public" label nil (reparse-symbol classsubparts) [3025 3032])
+                            ("addCallback" function
+                               (:template 
+                                  ( ("P" type (:type "class") nil nil))                                  
+                                :type ("CallbackHelper1Ptr" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type ("boost::function" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3089 3111])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [3111 3118])
+                                    ("" variable (:type ("callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3121 3130]))                                  )
+                                (reparse-symbol classsubparts) [3035 3342])
+                            ("removeCallback" function
+                               (:arguments 
+                                  ( ("helper" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("CallbackHelper1Ptr" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3366 3399]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3346 3626])
+                            ("call" function
+                               (:arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::MessageEvent" type
+                                             (:template-specifier 
+                                                ( ("M" type (:constant-flag t) nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3640 3680]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3630 4051])
+                            ("private" label nil (reparse-symbol classsubparts) [4053 4061])
+                            ("mutex_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4064 4084])
+                            ("callbacks_" variable (:type ("V_CallbackHelper1" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4087 4116]))                          )
+                        (reparse-symbol namespacesubparts) [2860 4119]))                  
+                :type "namespace")
+                nil [2027 4122]))          
+    :file "signal1.h"
+    :pointmax 4181
+    :fsize 4180
+    :lastmodtime '(21070 30717 0 0)
+    :unmatched-syntax '((punctuation 3119 . 3120) (punctuation 3118 . 3119) (semantic-list 3115 . 3118) (punctuation 3110 . 3111) (punctuation 2485 . 2486) (semantic-list 2456 . 2485) (VOID 2452 . 2456) (punctuation 2451 . 2452) (symbol 2443 . 2451) (punctuation 2442 . 2443) (punctuation 2441 . 2442) (symbol 2436 . 2441) (TYPEDEF 2428 . 2435))
+    :lexical-table 
+        '(("MESSAGE_FILTERS_SIGNAL1_H")
+          )
+
+    )
+   )
+  :file "!opt!ros!groovy!include!message_filters!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

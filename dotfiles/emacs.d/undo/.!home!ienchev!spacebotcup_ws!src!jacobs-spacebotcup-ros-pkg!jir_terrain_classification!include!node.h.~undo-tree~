@@ -1,0 +1,3 @@
+"dc402a0543b76de2bd952acecf1344f1d8b665c4"
+[cl-struct-undo-tree [nil ([nil ([nil ([nil (#1=[nil nil ((245 . 246)) nil (21097 32575 627961 884000) 0 nil]) ((236 . 245)) nil (21097 32575 627987 928000) 0 nil]) ((231 . 236) 218 (t 21097 29021 222346 661000)) nil (21097 32575 628001 893000) 0 nil]) ((#("    bool inKd;
+" 0 4 (fontified t) 4 7 (fontified t face font-lock-type-face) 7 8 (fontified t c-type c-decl-id-start face font-lock-type-face) 8 9 (fontified t) 9 13 (fontified t face font-lock-variable-name-face) 13 15 (fontified t)) . 214) 222 (t 21097 5307 201430 323000) (undo-tree-id0 . -8) (undo-tree-id1 . -15) (undo-tree-id2 . -15)) nil (21097 29021 184369 444000) 0 nil]) nil nil (21097 29021 184389 143000) 0 nil] #1# 103 4 nil]

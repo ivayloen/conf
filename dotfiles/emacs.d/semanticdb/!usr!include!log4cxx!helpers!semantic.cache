@@ -1,0 +1,674 @@
+;; Object helpers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "helpers/"
+  :tables (list 
+   (semanticdb-table "appenderattachableimpl.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_HELPERS_APPENDER_ATTACHABLE_IMPL_H" variable (:constant-flag t) nil [865 908])
+            ("log4cxx/spi/appenderattachable.h" include (:system-flag t) nil [1015 1058])
+            ("log4cxx/helpers/objectimpl.h" include (:system-flag t) nil [1059 1098])
+            ("log4cxx/helpers/mutex.h" include (:system-flag t) nil [1099 1133])
+            ("log4cxx/helpers/pool.h" include (:system-flag t) nil [1134 1167])
+            ("log4cxx" type
+               (:members 
+                  ( ("spi" type
+                       (:members 
+                          ( ("LoggingEvent" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1221 1240])
+                            ("LoggingEventPtr" type
+                               (:typedef ("helpers::ObjectPtrT" type
+                                     (:template-specifier 
+                                        ( ("LoggingEvent" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "helpers::ObjectPtrT"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1249 1307]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1193 1313])
+                    ("helpers" type
+                       (:members 
+                          ( ("helpers::ObjectImpl" variable
+                               (:typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1469 3934])
+                            ("LOG4CXX_PTR_DEF" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("AppenderAttachableImpl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3960 3983]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3944 3984]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1319 3991]))                  
+                :type "namespace")
+                nil [1169 3993]))          
+    :file "appenderattachableimpl.h"
+    :pointmax 4102
+    :fsize 4101
+    :lastmodtime '(20305 23004 0 0)
+    :unmatched-syntax '((PUBLIC 1462 . 1468) (punctuation 1448 . 1449) (symbol 1430 . 1448) (punctuation 1429 . 1430) (punctuation 1428 . 1429) (symbol 1425 . 1428) (VIRTUAL 1417 . 1424) (PUBLIC 1410 . 1416) (punctuation 1396 . 1397) (symbol 1373 . 1395) (symbol 1358 . 1372) (CLASS 1352 . 1357))
+    :lexical-table 
+        '(("_LOG4CXX_HELPERS_APPENDER_ATTACHABLE_IMPL_H")
+          )
+
+    )
+   (semanticdb-table "pool.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_HELPERS_POOL_H" variable (:constant-flag t) nil [845 868])
+            ("log4cxx/log4cxx.h" include (:system-flag t) nil [870 898])
+            ("string" include (:system-flag t) nil [899 916])
+            ("apr_pool_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [934 952])
+            ("log4cxx" type
+               (:members 
+                  ( ("helpers" type
+                       (:members 
+                          ( ("Pool" variable (:type ("LOG4CXX_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1028 1924]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [984 1934]))                  
+                :type "namespace")
+                nil [956 1957]))          
+    :file "pool.h"
+    :pointmax 2013
+    :fsize 2012
+    :lastmodtime '(20305 23004 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_LOG4CXX_HELPERS_POOL_H")
+          )
+
+    )
+   (semanticdb-table "mutex.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_HELPERS_MUTEX_H" variable (:constant-flag t) nil [846 870])
+            ("log4cxx/log4cxx.h" include (:system-flag t) nil [872 900])
+            ("apr_thread_mutex_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [918 944])
+            ("apr_pool_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [948 966])
+            ("log4cxx" type
+               (:members 
+                  ( ("helpers" type
+                       (:members 
+                          ( ("Pool" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1043 1054])
+                            ("Mutex" variable (:type ("LOG4CXX_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1072 1540]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [999 1550]))                  
+                :type "namespace")
+                nil [971 1573]))          
+    :file "mutex.h"
+    :pointmax 1630
+    :fsize 1629
+    :lastmodtime '(20305 23004 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_LOG4CXX_HELPERS_MUTEX_H")
+          )
+
+    )
+   (semanticdb-table "resourcebundle.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_HELPERS_RESOURCE_BUNDLE_H" variable (:constant-flag t) nil [856 890])
+            ("log4cxx/helpers/objectimpl.h" include (:system-flag t) nil [892 931])
+            ("log4cxx/helpers/objectptr.h" include (:system-flag t) nil [932 970])
+            ("log4cxx" type
+               (:members 
+                  ( ("helpers" type
+                       (:members 
+                          ( ("Locale" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1044 1057])
+                            ("ResourceBundle" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1075 1096])
+                            ("LOG4CXX_PTR_DEF" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("ResourceBundle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1129 1144]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1113 1145])
+                            ("ObjectImpl" variable (:type "int") (reparse-symbol namespacesubparts) [1312 3560]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1000 3594]))                  
+                :type "namespace")
+                nil [972 3618]))          
+    :file "resourcebundle.h"
+    :pointmax 3649
+    :fsize 3648
+    :lastmodtime '(20305 23004 0 0)
+    :unmatched-syntax '((PUBLIC 1305 . 1311) (punctuation 1303 . 1304) (symbol 1288 . 1302) (symbol 1273 . 1287) (CLASS 1267 . 1272))
+    :lexical-table 
+        '(("_LOG4CXX_HELPERS_RESOURCE_BUNDLE_H")
+          )
+
+    )
+   (semanticdb-table "messagebuffer.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_MESSAGE_BUFFER_H" variable (:constant-flag t) nil [847 872])
+            ("log4cxx/log4cxx.h" include (:system-flag t) nil [874 902])
+            ("log4cxx/logstring.h" include (:system-flag t) nil [903 933])
+            ("sstream" include (:system-flag t) nil [934 952])
+            ("log4cxx" type
+               (:members 
+                  ( ("helpers" type
+                       (:members 
+                          ( ("ios_base_manip" variable
+                               (:functionpointer-flag t
+                                :type ("std::ios_base" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1014 1063])
+                            ("CharMessageBuffer" variable (:type ("LOG4CXX_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1280 5826])
+                            ("<<" function
+                               (:template 
+                                  ( ("V" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("CharMessageBuffer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5883 5905])
+                                    ("val" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("V" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5906 5919]))                                  
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [5828 5974])
+                            ("MessageBuffer" type
+                               (:typedef ("CharMessageBuffer" type (:type "class") nil nil)
+                                :superclasses "CharMessageBuffer"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [25896 25936])
+                            ("LogCharMessageBuffer" type
+                               (:typedef ("CharMessageBuffer" type (:type "class") nil nil)
+                                :superclasses "CharMessageBuffer"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [25937 25984]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [979 25994]))                  
+                :type "namespace")
+                nil [954 25995]))          
+    :file "messagebuffer.h"
+    :pointmax 26004
+    :fsize 26003
+    :lastmodtime '(20305 23004 0 0)
+    :unmatched-syntax '((TYPEDEF 1006 . 1013))
+    :lexical-table 
+        '(("_LOG4CXX_MESSAGE_BUFFER_H")
+          )
+
+    )
+   (semanticdb-table "objectimpl.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_HELPERS_OBJECT_IMPL_H" variable (:constant-flag t) nil [852 882])
+            ("log4cxx/helpers/object.h" include (:system-flag t) nil [884 919])
+            ("log4cxx" type
+               (:members 
+                  ( ("helpers" type
+                       (:members 
+                          ( ("Object" variable
+                               (:typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1059 1494]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [944 1499]))                  
+                :type "namespace")
+                nil [921 1501]))          
+    :file "objectimpl.h"
+    :pointmax 1543
+    :fsize 1542
+    :lastmodtime '(20305 23004 0 0)
+    :unmatched-syntax '((PUBLIC 1052 . 1058) (punctuation 1050 . 1051) (symbol 1039 . 1049) (symbol 1024 . 1038) (CLASS 1018 . 1023))
+    :lexical-table 
+        '(("_LOG4CXX_HELPERS_OBJECT_IMPL_H")
+          )
+
+    )
+   (semanticdb-table "objectptr.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_HELPERS_OBJECT_PTR_H" variable (:constant-flag t) nil [851 880])
+            ("log4cxx/log4cxx.h" include (:system-flag t) nil [882 910])
+            ("_LOG4CXX_OBJECTPTR_INIT" variable (:constant-flag t) nil [1347 1370])
+            ("log4cxx" type
+               (:members 
+                  ( ("helpers" type
+                       (:members 
+                          ( ("Class" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1445 1457])
+                            ("ObjectPtrBase" variable (:type ("LOG4CXX_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1467 1771])
+                            ("ObjectPtrT" type
+                               (:superclasses 
+                                  ( ("ObjectPtrBase" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1911 1918])
+                                    ("ObjectPtrT" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("null" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type "int")
+                                                (reparse-symbol arg-sub-list) [1939 1955]))                                          
+                                        :type ("ObjectPtrT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1928 1999])
+                                    ("checkNull" function
+                                       (:prototype-flag t
+                                        :parent "ObjectPtrBase"
+                                        :arguments 
+                                          ( ("" variable (:type ("null" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2041 2046]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2016 2047]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1832 2124])
+                            ("ObjectPtrT" function
+                               (:constructor-flag t
+                                :type ("ObjectPtrT" type
+                                     (:prototype t
+                                      :type "class")
+                                      nil nil)
+                                :template 
+                                  ( ("T" type (:type "class") nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1832 2124]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1415 2135])
+                    ("p" function
+                       (:arguments 
+                          ( ("" variable (:type ("p1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2181 2208]))                  
+                :type "namespace")
+                nil [1391 2331])
+            ("p" function
+               (:arguments 
+                  ( ("" variable (:type ("p1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [2392 2421])
+            ("p" function
+               (:arguments 
+                  ( ("" variable (:type ("reinterpret_cast" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [2600 2675])
+            ("addRef" function
+               (:prototype-flag t
+                :type "int")
+                nil [2738 2747])
+            ("p" function
+               (:arguments 
+                  ( ("" variable (:type ("reinterpret_cast" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [2821 2896])
+            ("newPtr" variable
+               (:pointer 1
+                :type ("T" type (:type "class") nil nil))
+                nil [3197 3214])
+            ("this" variable
+               (:pointer 1
+                :type "int")
+                nil [3445 3451])
+            ("this" variable
+               (:pointer 1
+                :type "int")
+                nil [3867 3873])
+            ("this" variable
+               (:pointer 1
+                :type "int")
+                nil [4150 4156])
+            ("p" variable (:type "int") nil [5028 5030])
+            ("p" variable
+               (:pointer 1
+                :type "int")
+                nil [5074 5077])
+            ("p" variable (:type "int") nil [5120 5122])
+            ("p" variable
+               (:pointer 1
+                :type ("T" type (:type "class") nil nil))
+                nil [5157 5163]))          
+    :file "objectptr.h"
+    :pointmax 5611
+    :fsize 5610
+    :lastmodtime '(20305 23004 0 0)
+    :unmatched-syntax '((close-paren 5569 . 5570) (close-paren 5567 . 5568) (punctuation 5559 . 5560) (close-paren 5558 . 5559) (close-paren 5547 . 5548) (punctuation 5538 . 5539) (close-paren 5537 . 5538) (close-paren 5536 . 5537) (semantic-list 5526 . 5536) (punctuation 5525 . 5526) (punctuation 5524 . 5525) (symbol 5523 . 5524) (punctuation 5522 . 5523) (symbol 5512 . 5522) (punctuation 5492 . 5493) (semantic-list 5488 . 5492) (punctuation 5487 . 5488) (punctuation 5486 . 5487) (punctuation 5485 . 5486) (VOID 5481 . 5485) (punctuation 5480 . 5481) (symbol 5464 . 5480) (punctuation 5489 . 5490) (open-paren 5445 . 5446) (symbol 5437 . 5445) (punctuation 5436 . 5437) (punctuation 5435 . 5436) (symbol 5422 . 5435) (open-paren 5421 . 5422) (punctuation 5420 . 5421) (punctuation 5419 . 5420) (symbol 5418 . 5419) (punctuation 5417 . 5418) (symbol 5406 . 5417) (RETURN 5399 . 5405) (open-paren 5384 . 5385) (close-paren 5382 . 5383) (symbol 5374 . 5382) (punctuation 5372 . 5373) (symbol 5371 . 5372) (CONST 5365 . 5370) (open-paren 5364 . 5365) (symbol 5356 . 5364) (punctuation 5354 . 5355) (symbol 5353 . 5354) (close-paren 5344 . 5345) (punctuation 5333 . 5334) (number 5332 . 5333) (RETURN 5325 . 5331) (close-paren 5311 . 5312) (punctuation 5297 . 5298) (close-paren 5296 . 5297) (semantic-list 5291 . 5296) (symbol 5287 . 5291) (punctuation 5286 . 5287) (punctuation 5285 . 5286) (symbol 5284 . 5285) (open-paren 5283 . 5284) (punctuation 5282 . 5283) (punctuation 5281 . 5282) (VOID 5277 . 5281) (punctuation 5276 . 5277) (symbol 5266 . 5276) (RETURN 5259 . 5265) (open-paren 5242 . 5243) (close-paren 5240 . 5241) (number 5239 . 5240) (punctuation 5237 . 5238) (punctuation 5236 . 5237) (symbol 5234 . 5235) (open-paren 5233 . 5234) (IF 5230 . 5232) (open-paren 5216 . 5217) (CONST 5210 . 5215) (close-paren 5208 . 5209) (symbol 5205 . 5208) (punctuation 5203 . 5204) (symbol 5198 . 5203) (CONST 5192 . 5197) (open-paren 5191 . 5192) (symbol 5187 . 5191) (punctuation 5185 . 5186) (VOID 5181 . 5185) (VIRTUAL 5173 . 5180) (punctuation 5143 . 5144) (PRIVATE 5136 . 5143) (close-paren 5123 . 5124) (RETURN 5113 . 5119) (open-paren 5112 . 5113) (CONST 5106 . 5111) (close-paren 5104 . 5105) (open-paren 5103 . 5104) (punctuation 5102 . 5103) (symbol 5101 . 5102) (OPERATOR 5092 . 5100) (close-paren 5078 . 5079) (RETURN 5067 . 5073) (open-paren 5066 . 5067) (CONST 5060 . 5065) (close-paren 5058 . 5059) (open-paren 5057 . 5058) (punctuation 5056 . 5057) (OPERATOR 5048 . 5056) (punctuation 5046 . 5047) (symbol 5045 . 5046) (close-paren 5031 . 5032) (RETURN 5021 . 5027) (open-paren 5020 . 5021) (CONST 5014 . 5019) (close-paren 5012 . 5013) (open-paren 5011 . 5012) (punctuation 5010 . 5011) (punctuation 5009 . 5010) (OPERATOR 5001 . 5009) (punctuation 4999 . 5000) (symbol 4998 . 4999) (close-paren 4983 . 4984) (punctuation 4981 . 4982) (close-paren 4980 . 4981) (symbol 4978 . 4980) (punctuation 4976 . 4977) (symbol 4974 . 4975) (punctuation 4973 . 4974) (punctuation 4972 . 4973) (symbol 4968 . 4972) (open-paren 4967 . 4968) (RETURN 4960 . 4966) (open-paren 4958 . 4959) (CONST 4952 . 4957) (close-paren 4950 . 4951) (symbol 4948 . 4950) (punctuation 4946 . 4947) (symbol 4945 . 4946) (CONST 4939 . 4944) (open-paren 4938 . 4939) (punctuation 4937 . 4938) (OPERATOR 4929 . 4937) (BOOL 4924 . 4928) (close-paren 4913 . 4914) (punctuation 4911 . 4912) (close-paren 4910 . 4911) (symbol 4908 . 4910) (punctuation 4906 . 4907) (punctuation 4905 . 4906) (symbol 4903 . 4904) (punctuation 4902 . 4903) (punctuation 4901 . 4902) (symbol 4897 . 4901) (open-paren 4896 . 4897) (RETURN 4889 . 4895) (open-paren 4887 . 4888) (CONST 4881 . 4886) (close-paren 4879 . 4880) (symbol 4877 . 4879) (punctuation 4875 . 4876) (symbol 4874 . 4875) (CONST 4868 . 4873) (open-paren 4867 . 4868) (punctuation 4866 . 4867) (punctuation 4865 . 4866) (OPERATOR 4857 . 4865) (BOOL 4852 . 4856) (close-paren 4838 . 4839) (punctuation 4836 . 4837) (close-paren 4835 . 4836) (symbol 4833 . 4835) (punctuation 4831 . 4832) (punctuation 4830 . 4831) (symbol 4828 . 4829) (punctuation 4827 . 4828) (punctuation 4826 . 4827) (symbol 4822 . 4826) (open-paren 4821 . 4822) (RETURN 4814 . 4820) (open-paren 4812 . 4813) (CONST 4806 . 4811) (close-paren 4804 . 4805) (symbol 4802 . 4804) (punctuation 4800 . 4801) (symbol 4799 . 4800) (CONST 4793 . 4798) (open-paren 4792 . 4793) (punctuation 4791 . 4792) (punctuation 4790 . 4791) (OPERATOR 4782 . 4790) (BOOL 4777 . 4781) (close-paren 4762 . 4763) (punctuation 4760 . 4761) (close-paren 4759 . 4760) (symbol 4758 . 4759) (punctuation 4757 . 4758) (symbol 4755 . 4757) (punctuation 4753 . 4754) (symbol 4751 . 4752) (punctuation 4750 . 4751) (punctuation 4749 . 4750) (symbol 4745 . 4749) (open-paren 4744 . 4745) (RETURN 4737 . 4743) (open-paren 4735 . 4736) (CONST 4729 . 4734) (close-paren 4727 . 4728) (symbol 4725 . 4727) (punctuation 4723 . 4724) (symbol 4713 . 4723) (CONST 4707 . 4712) (open-paren 4706 . 4707) (punctuation 4705 . 4706) (OPERATOR 4697 . 4705) (BOOL 4692 . 4696) (close-paren 4681 . 4682) (punctuation 4679 . 4680) (close-paren 4678 . 4679) (symbol 4677 . 4678) (punctuation 4676 . 4677) (symbol 4674 . 4676) (punctuation 4672 . 4673) (punctuation 4671 . 4672) (symbol 4669 . 4670) (punctuation 4668 . 4669) (punctuation 4667 . 4668) (symbol 4663 . 4667) (open-paren 4662 . 4663) (RETURN 4655 . 4661) (open-paren 4653 . 4654) (CONST 4647 . 4652) (close-paren 4645 . 4646) (symbol 4643 . 4645) (punctuation 4641 . 4642) (symbol 4631 . 4641) (CONST 4625 . 4630) (open-paren 4624 . 4625) (punctuation 4623 . 4624) (punctuation 4622 . 4623) (OPERATOR 4614 . 4622) (BOOL 4609 . 4613) (close-paren 4595 . 4596) (punctuation 4593 . 4594) (close-paren 4592 . 4593) (symbol 4591 . 4592) (punctuation 4590 . 4591) (symbol 4588 . 4590) (punctuation 4586 . 4587) (punctuation 4585 . 4586) (symbol 4583 . 4584) (punctuation 4582 . 4583) (punctuation 4581 . 4582) (symbol 4577 . 4581) (open-paren 4576 . 4577) (RETURN 4569 . 4575) (open-paren 4567 . 4568) (CONST 4561 . 4566) (close-paren 4559 . 4560) (symbol 4557 . 4559) (punctuation 4555 . 4556) (symbol 4545 . 4555) (CONST 4539 . 4544) (open-paren 4538 . 4539) (punctuation 4537 . 4538) (punctuation 4536 . 4537) (OPERATOR 4528 . 4536) (BOOL 4523 . 4527) (close-paren 4508 . 4509) (punctuation 4500 . 4501) (close-paren 4499 . 4500) (symbol 4493 . 4499) (open-paren 4492 . 4493) (punctuation 4491 . 4492) (OPERATOR 4483 . 4491) (RETURN 4476 . 4482) (punctuation 4465 . 4466) (close-paren 4464 . 4465) (close-paren 4463 . 4464) (semantic-list 4461 . 4463) (symbol 4447 . 4461) (punctuation 4446 . 4447) (punctuation 4445 . 4446) (symbol 4444 . 4445) (open-paren 4443 . 4444) (symbol 4439 . 4443) (punctuation 4438 . 4439) (symbol 4436 . 4438) (open-paren 4435 . 4436) (punctuation 4434 . 4435) (punctuation 4433 . 4434) (symbol 4432 . 4433) (punctuation 4431 . 4432) (symbol 4415 . 4431) (punctuation 4413 . 4414) (symbol 4406 . 4412) (punctuation 4404 . 4405) (symbol 4403 . 4404) (open-paren 4392 . 4393) (close-paren 4390 . 4391) (symbol 4388 . 4390) (punctuation 4386 . 4387) (symbol 4373 . 4386) (CONST 4367 . 4372) (open-paren 4366 . 4367) (punctuation 4365 . 4366) (OPERATOR 4357 . 4365) (punctuation 4355 . 4356) (symbol 4345 . 4355) (close-paren 4336 . 4337) (punctuation 4328 . 4329) (close-paren 4327 . 4328) (symbol 4321 . 4327) (open-paren 4320 . 4321) (punctuation 4319 . 4320) (OPERATOR 4311 . 4319) (RETURN 4304 . 4310) (punctuation 4293 . 4294) (close-paren 4292 . 4293) (close-paren 4291 . 4292) (semantic-list 4289 . 4291) (symbol 4275 . 4289) (punctuation 4274 . 4275) (punctuation 4273 . 4274) (symbol 4272 . 4273) (open-paren 4271 . 4272) (symbol 4267 . 4271) (punctuation 4266 . 4267) (symbol 4264 . 4266) (open-paren 4263 . 4264) (punctuation 4262 . 4263) (punctuation 4261 . 4262) (symbol 4260 . 4261) (punctuation 4259 . 4260) (symbol 4243 . 4259) (punctuation 4241 . 4242) (symbol 4234 . 4240) (punctuation 4232 . 4233) (symbol 4231 . 4232) (open-paren 4220 . 4221) (close-paren 4218 . 4219) (symbol 4216 . 4218) (punctuation 4214 . 4215) (symbol 4201 . 4214) (open-paren 4200 . 4201) (punctuation 4199 . 4200) (OPERATOR 4191 . 4199) (punctuation 4189 . 4190) (symbol 4179 . 4189) (close-paren 4169 . 4170) (RETURN 4143 . 4149) (close-paren 4127 . 4128) (punctuation 4111 . 4112) (close-paren 4110 . 4111) (open-paren 4109 . 4110) (symbol 4099 . 4109) (punctuation 4098 . 4099) (punctuation 4097 . 4098) (symbol 4091 . 4097) (open-paren 4072 . 4073) (close-paren 4070 . 4071) (number 4069 . 4070) (punctuation 4067 . 4068) (punctuation 4066 . 4067) (symbol 4059 . 4065) (open-paren 4058 . 4059) (IF 4055 . 4057) (punctuation 4039 . 4040) (close-paren 4038 . 4039) (symbol 4036 . 4038) (open-paren 4035 . 4036) (symbol 4027 . 4035) (punctuation 4025 . 4026) (symbol 4018 . 4024) (punctuation 4016 . 4017) (symbol 4015 . 4016) (close-paren 3999 . 4000) (punctuation 3983 . 3984) (close-paren 3982 . 3983) (open-paren 3981 . 3982) (symbol 3975 . 3981) (punctuation 3974 . 3975) (punctuation 3973 . 3974) (symbol 3971 . 3973) (open-paren 3953 . 3954) (close-paren 3951 . 3952) (number 3950 . 3951) (punctuation 3948 . 3949) (punctuation 3947 . 3948) (symbol 3944 . 3946) (open-paren 3943 . 3944) (IF 3940 . 3942) (open-paren 3924 . 3925) (close-paren 3922 . 3923) (symbol 3920 . 3922) (punctuation 3918 . 3919) (symbol 3917 . 3918) (open-paren 3916 . 3917) (punctuation 3915 . 3916) (OPERATOR 3907 . 3915) (punctuation 3905 . 3906) (symbol 3895 . 3905) (close-paren 3883 . 3884) (RETURN 3860 . 3866) (close-paren 3842 . 3843) (punctuation 3824 . 3825) (close-paren 3823 . 3824) (open-paren 3822 . 3823) (symbol 3812 . 3822) (punctuation 3811 . 3812) (punctuation 3810 . 3811) (symbol 3804 . 3810) (open-paren 3783 . 3784) (close-paren 3781 . 3782) (number 3780 . 3781) (punctuation 3778 . 3779) (punctuation 3777 . 3778) (symbol 3770 . 3776) (open-paren 3769 . 3770) (IF 3766 . 3768) (punctuation 3748 . 3749) (close-paren 3747 . 3748) (number 3746 . 3747) (open-paren 3745 . 3746) (symbol 3737 . 3745) (punctuation 3735 . 3736) (symbol 3728 . 3734) (punctuation 3726 . 3727) (symbol 3725 . 3726) (punctuation 3707 . 3708) (close-paren 3706 . 3707) (symbol 3702 . 3706) (open-paren 3701 . 3702) (symbol 3692 . 3701) (punctuation 3691 . 3692) (punctuation 3690 . 3691) (symbol 3677 . 3690) (open-paren 3555 . 3556) (close-paren 3510 . 3511) (symbol 3506 . 3510) (punctuation 3504 . 3505) (INT 3501 . 3504) (CONST 3495 . 3500) (open-paren 3494 . 3495) (punctuation 3493 . 3494) (OPERATOR 3485 . 3493) (punctuation 3483 . 3484) (symbol 3473 . 3483) (close-paren 3461 . 3462) (RETURN 3438 . 3444) (close-paren 3424 . 3425) (punctuation 3409 . 3410) (close-paren 3408 . 3409) (open-paren 3407 . 3408) (symbol 3397 . 3407) (punctuation 3396 . 3397) (punctuation 3395 . 3396) (symbol 3389 . 3395) (open-paren 3370 . 3371) (close-paren 3368 . 3369) (number 3367 . 3368) (punctuation 3365 . 3366) (punctuation 3364 . 3365) (symbol 3357 . 3363) (open-paren 3356 . 3357) (IF 3353 . 3355) (punctuation 3338 . 3339) (close-paren 3337 . 3338) (symbol 3331 . 3337) (open-paren 3330 . 3331) (symbol 3322 . 3330) (punctuation 3320 . 3321) (symbol 3313 . 3319) (punctuation 3311 . 3312) (symbol 3310 . 3311) (close-paren 3295 . 3296) (punctuation 3280 . 3281) (close-paren 3279 . 3280) (open-paren 3278 . 3279) (symbol 3272 . 3278) (punctuation 3271 . 3272) (punctuation 3270 . 3271) (symbol 3264 . 3270) (open-paren 3245 . 3246) (close-paren 3243 . 3244) (number 3242 . 3243) (punctuation 3240 . 3241) (punctuation 3239 . 3240) (symbol 3232 . 3238) (open-paren 3231 . 3232) (IF 3228 . 3230) (open-paren 3182 . 3183) (close-paren 3180 . 3181) (symbol 3178 . 3180) (punctuation 3176 . 3177) (symbol 3166 . 3176) (CONST 3160 . 3165) (open-paren 3159 . 3160) (punctuation 3158 . 3159) (OPERATOR 3150 . 3158) (punctuation 3148 . 3149) (symbol 3138 . 3148) (close-paren 3126 . 3127) (close-paren 3112 . 3113) (punctuation 3096 . 3097) (close-paren 3095 . 3096) (open-paren 3094 . 3095) (symbol 3084 . 3094) (punctuation 3083 . 3084) (punctuation 3082 . 3083) (symbol 3081 . 3082) (open-paren 3061 . 3062) (close-paren 3059 . 3060) (number 3058 . 3059) (punctuation 3056 . 3057) (punctuation 3055 . 3056) (symbol 3053 . 3054) (open-paren 3052 . 3053) (IF 3049 . 3051) (open-paren 3033 . 3034) (close-paren 3019 . 3020) (open-paren 3018 . 3019) (symbol 3008 . 3018) (punctuation 3007 . 3008) (close-paren 2991 . 2992) (close-paren 2982 . 2983) (punctuation 2967 . 2968) (close-paren 2966 . 2967) (open-paren 2965 . 2966) (symbol 2959 . 2965) (punctuation 2958 . 2959) (punctuation 2957 . 2958) (symbol 2956 . 2957) (punctuation 2955 . 2956) (punctuation 2954 . 2955) (symbol 2950 . 2954) (open-paren 2928 . 2929) (close-paren 2926 . 2927) (number 2925 . 2926) (punctuation 2923 . 2924) (punctuation 2922 . 2923) (symbol 2920 . 2921) (punctuation 2919 . 2920) (punctuation 2918 . 2919) (symbol 2914 . 2918) (open-paren 2913 . 2914) (IF 2910 . 2912) (punctuation ":" 2821 . 2896) (close-paren 2808 . 2809) (symbol 2806 . 2808) (punctuation 2804 . 2805) (symbol 2791 . 2804) (open-paren 2790 . 2791) (symbol 2780 . 2790) (close-paren 2770 . 2771) (close-paren 2761 . 2762) (punctuation 2737 . 2738) (punctuation 2736 . 2737) (symbol 2735 . 2736) (punctuation 2734 . 2735) (punctuation 2733 . 2734) (symbol 2729 . 2733) (open-paren 2707 . 2708) (close-paren 2705 . 2706) (number 2704 . 2705) (punctuation 2702 . 2703) (punctuation 2701 . 2702) (symbol 2699 . 2700) (punctuation 2698 . 2699) (punctuation 2697 . 2698) (symbol 2693 . 2697) (open-paren 2692 . 2693) (IF 2689 . 2691) (punctuation ":" 2600 . 2675) (close-paren 2587 . 2588) (symbol 2585 . 2587) (punctuation 2583 . 2584) (symbol 2570 . 2583) (CONST 2564 . 2569) (open-paren 2563 . 2564) (symbol 2553 . 2563) (close-paren 2543 . 2544) (semantic-list 2472 . 2530) (semantic-list 2441 . 2455) (IF 2438 . 2440) (punctuation ":" 2392 . 2421) (semantic-list 2353 . 2375) (symbol 2343 . 2353) (semantic-list 2259 . 2317) (semantic-list 2228 . 2242) (IF 2225 . 2227) (punctuation ":" 2181 . 2208) (semantic-list 2156 . 2164) (symbol 2146 . 2156))
+    :lexical-table 
+        '(("_LOG4CXX_HELPERS_OBJECT_PTR_H")
+          ("_LOG4CXX_OBJECTPTR_INIT" (spp-arg-list ("x") 1370 . 1373) . 
+              ((punctuation ":" 1374 . 1375) (symbol "p" 1376 . 1377) (semantic-list "(x)" 1377 . 1380) (semantic-list "{" 1381 . 1382)))
+          )
+
+    )
+   (semanticdb-table "objectoutputstream.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_HELPERS_OBJECTOUTPUTSTREAM_H" variable (:constant-flag t) nil [859 896])
+            ("log4cxx/helpers/objectimpl.h" include (:system-flag t) nil [898 937])
+            ("log4cxx/mdc.h" include (:system-flag t) nil [938 962])
+            ("log4cxx/helpers/outputstream.h" include (:system-flag t) nil [963 1004])
+            ("log4cxx/helpers/charsetencoder.h" include (:system-flag t) nil [1005 1048])
+            ("log4cxx" type
+               (:members 
+                  ( ("helpers" type
+                       (:members 
+                          ( ("ObjectImpl" variable (:type "int") (reparse-symbol namespacesubparts) [1228 3480])
+                            ("LOG4CXX_PTR_DEF" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("ObjectOutputStream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3518 3537]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [3502 3538]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1079 3559]))                  
+                :type "namespace")
+                nil [1050 3583]))          
+    :file "objectoutputstream.h"
+    :pointmax 3648
+    :fsize 3647
+    :lastmodtime '(20305 23004 0 0)
+    :unmatched-syntax '((PUBLIC 1221 . 1227) (punctuation 1219 . 1220) (symbol 1200 . 1218) (symbol 1185 . 1199) (CLASS 1179 . 1184))
+    :lexical-table 
+        '(("_LOG4CXX_HELPERS_OBJECTOUTPUTSTREAM_H")
+          )
+
+    )
+   (semanticdb-table "object.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_HELPERS_OBJECT_H" variable (:constant-flag t) nil [847 872])
+            ("log4cxx/logstring.h" include (:system-flag t) nil [874 904])
+            ("log4cxx/helpers/class.h" include (:system-flag t) nil [905 939])
+            ("log4cxx/helpers/objectptr.h" include (:system-flag t) nil [940 978])
+            ("log4cxx/helpers/classregistration.h" include (:system-flag t) nil [979 1025])
+            ("DECLARE_ABSTRACT_LOG4CXX_OBJECT" variable (:constant-flag t) nil [1036 1067])
+            ("DECLARE_LOG4CXX_OBJECT" variable (:constant-flag t) nil [1491 1513])
+            ("DECLARE_LOG4CXX_OBJECT_WITH_CUSTOM_CLASS" variable (:constant-flag t) nil [2053 2093])
+            ("IMPLEMENT_LOG4CXX_OBJECT" variable (:constant-flag t) nil [2293 2317])
+            ("IMPLEMENT_LOG4CXX_OBJECT_WITH_CUSTOM_CLASS" variable (:constant-flag t) nil [2997 3039])
+            ("log4cxx" type
+               (:members 
+                  ( ("AppenderSkeleton" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3732 3755])
+                    ("Logger" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3764 3777])
+                    ("helpers" type
+                       (:members 
+                          ( ("Pool" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [3827 3838])
+                            ("Object" variable (:type ("LOG4CXX_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [3912 4387])
+                            ("LOG4CXX_PTR_DEF" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("Object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4416 4423]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [4400 4424]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3787 4434]))                  
+                :type "namespace")
+                nil [3704 4436])
+            ("BEGIN_LOG4CXX_CAST_MAP" variable (:constant-flag t) nil [4446 4468])
+            ("END_LOG4CXX_CAST_MAP" variable (:constant-flag t) nil [4668 4688])
+            ("LOG4CXX_CAST_ENTRY" variable (:constant-flag t) nil [4809 4827])
+            ("LOG4CXX_CAST_ENTRY2" variable (:constant-flag t) nil [4925 4944])
+            ("LOG4CXX_CAST_ENTRY_CHAIN" variable (:constant-flag t) nil [5062 5086]))          
+    :file "object.h"
+    :pointmax 5201
+    :fsize 5200
+    :lastmodtime '(20305 23004 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DECLARE_LOG4CXX_OBJECT_WITH_CUSTOM_CLASS" (spp-arg-list ("object" "class") 2093 . 2108) . 
+              ((PUBLIC "public" 2110 . 2116) (punctuation ":" 2116 . 2117) (VIRTUAL "virtual" 2119 . 2126) (CONST "const" 2127 . 2132) (symbol "helpers" 2133 . 2140) (punctuation ":" 2140 . 2141) (punctuation ":" 2141 . 2142) (symbol "Class" 2142 . 2147) (punctuation "&" 2147 . 2148) (symbol "getClass" 2149 . 2157) (semantic-list "()" 2157 . 2159) (CONST "const" 2160 . 2165) (punctuation ";" 2165 . 2166) (STATIC "static" 2168 . 2174) (CONST "const" 2175 . 2180) (symbol "helpers" 2181 . 2188) (punctuation ":" 2188 . 2189) (punctuation ":" 2189 . 2190) (symbol "Class" 2190 . 2195) (punctuation "&" 2195 . 2196) (symbol "getStaticClass" 2197 . 2211) (semantic-list "()" 2211 . 2213) (punctuation ";" 2213 . 2214) (STATIC "static" 2216 . 2222) (CONST "const" 2223 . 2228) (symbol "log4cxx" 2229 . 2236) (punctuation ":" 2236 . 2237) (punctuation ":" 2237 . 2238) (symbol "helpers" 2238 . 2245) (punctuation ":" 2245 . 2246) (punctuation ":" 2246 . 2247) (symbol "ClassRegistration" 2247 . 2264) (punctuation "&" 2264 . 2265) (symbol "registerClass" 2267 . 2280) (semantic-list "()" 2280 . 2282) (punctuation ";" 2282 . 2283)))
+          ("LOG4CXX_CAST_ENTRY2" (spp-arg-list ("Interface" "interface2") 4944 . 4967) . 
+              ((IF "if" 4969 . 4971) (semantic-list "(&clazz == &Interface::getStaticClass())" 4972 . 5012) (RETURN "return" 5013 . 5019) (semantic-list "(Interface *)" 5020 . 5033) (semantic-list "(interface2 *)" 5033 . 5047) (symbol "this" 5047 . 5051) (punctuation ";" 5051 . 5052)))
+          ("DECLARE_ABSTRACT_LOG4CXX_OBJECT" (spp-arg-list ("object") 1067 . 1075) . 
+              ((PUBLIC "public" 1077 . 1083) (punctuation ":" 1083 . 1084) (CLASS "class" 1086 . 1091) (spp-symbol-merge ((symbol "Clazz" 1092 . 1097) (symbol "object" 1099 . 1105)) 1092 . 1105) (punctuation ":" 1106 . 1107) (PUBLIC "public" 1108 . 1114) (symbol "helpers" 1115 . 1122) (punctuation ":" 1122 . 1123) (punctuation ":" 1123 . 1124) (symbol "Class" 1124 . 1129) (semantic-list "{\\
+public:\\
+        Clazz##object() : helpers::Class() {}\\
+        virtual ~Clazz##object() {}\\
+        virtual log4cxx::LogString getName() const { return LOG4CXX_STR(#object); } \\
+}" 1131 . 1314) (punctuation ";" 1314 . 1315) (VIRTUAL "virtual" 1317 . 1324) (CONST "const" 1325 . 1330) (symbol "helpers" 1331 . 1338) (punctuation ":" 1338 . 1339) (punctuation ":" 1339 . 1340) (symbol "Class" 1340 . 1345) (punctuation "&" 1345 . 1346) (symbol "getClass" 1347 . 1355) (semantic-list "()" 1355 . 1357) (CONST "const" 1358 . 1363) (punctuation ";" 1363 . 1364) (STATIC "static" 1366 . 1372) (CONST "const" 1373 . 1378) (symbol "helpers" 1379 . 1386) (punctuation ":" 1386 . 1387) (punctuation ":" 1387 . 1388) (symbol "Class" 1388 . 1393) (punctuation "&" 1393 . 1394) (symbol "getStaticClass" 1395 . 1409) (semantic-list "()" 1409 . 1411) (punctuation ";" 1411 . 1412) (STATIC "static" 1415 . 1421) (CONST "const" 1422 . 1427) (symbol "log4cxx" 1428 . 1435) (punctuation ":" 1435 . 1436) (punctuation ":" 1436 . 1437) (symbol "helpers" 1437 . 1444) (punctuation ":" 1444 . 1445) (punctuation ":" 1445 . 1446) (symbol "ClassRegistration" 1446 . 1463) (punctuation "&" 1463 . 1464) (symbol "registerClass" 1465 . 1478) (semantic-list "()" 1478 . 1480) (punctuation ";" 1480 . 1481)))
+          ("DECLARE_LOG4CXX_OBJECT" (spp-arg-list ("object") 1513 . 1521) . 
+              ((PUBLIC "public" 1523 . 1529) (punctuation ":" 1529 . 1530) (CLASS "class" 1532 . 1537) (spp-symbol-merge ((symbol "Clazz" 1538 . 1543) (symbol "object" 1545 . 1551)) 1538 . 1551) (punctuation ":" 1552 . 1553) (PUBLIC "public" 1554 . 1560) (symbol "helpers" 1561 . 1568) (punctuation ":" 1568 . 1569) (punctuation ":" 1569 . 1570) (symbol "Class" 1570 . 1575) (semantic-list "{\\
+public:\\
+        Clazz##object() : helpers::Class() {}\\
+        virtual ~Clazz##object() {}\\
+        virtual log4cxx::LogString getName() const { return LOG4CXX_STR(#object); } \\
+        virtual helpers::ObjectPtr newInstance() const\\
+        {\\
+                return new object();\\
+        }\\
+}" 1577 . 1876) (punctuation ";" 1876 . 1877) (VIRTUAL "virtual" 1879 . 1886) (CONST "const" 1887 . 1892) (symbol "helpers" 1893 . 1900) (punctuation ":" 1900 . 1901) (punctuation ":" 1901 . 1902) (symbol "Class" 1902 . 1907) (punctuation "&" 1907 . 1908) (symbol "getClass" 1909 . 1917) (semantic-list "()" 1917 . 1919) (CONST "const" 1920 . 1925) (punctuation ";" 1925 . 1926) (STATIC "static" 1928 . 1934) (CONST "const" 1935 . 1940) (symbol "helpers" 1941 . 1948) (punctuation ":" 1948 . 1949) (punctuation ":" 1949 . 1950) (symbol "Class" 1950 . 1955) (punctuation "&" 1955 . 1956) (symbol "getStaticClass" 1957 . 1971) (semantic-list "()" 1971 . 1973) (punctuation ";" 1973 . 1974) (STATIC "static" 1977 . 1983) (CONST "const" 1984 . 1989) (symbol "log4cxx" 1990 . 1997) (punctuation ":" 1997 . 1998) (punctuation ":" 1998 . 1999) (symbol "helpers" 1999 . 2006) (punctuation ":" 2006 . 2007) (punctuation ":" 2007 . 2008) (symbol "ClassRegistration" 2008 . 2025) (punctuation "&" 2025 . 2026) (symbol "registerClass" 2027 . 2040) (semantic-list "()" 2040 . 2042) (punctuation ";" 2042 . 2043)))
+          ("BEGIN_LOG4CXX_CAST_MAP" (spp-arg-list nil 4468 . 4470) . 
+              ((CONST "const" 4472 . 4477) (VOID "void" 4478 . 4482) (punctuation "*" 4483 . 4484) (symbol "cast" 4485 . 4489) (semantic-list "(const helpers::Class& clazz)" 4489 . 4518) (CONST "const" 4519 . 4524) (semantic-list "{\\
+        const void * object = 0;\\
+        if (&clazz == &helpers::Object::getStaticClass()) return (const helpers::Object *)this;" 4526 . 4658)))
+          ("IMPLEMENT_LOG4CXX_OBJECT" (spp-arg-list ("object") 2317 . 2325) . 
+              ((CONST "const" 2327 . 2332) (symbol "log4cxx" 2333 . 2340) (punctuation ":" 2340 . 2341) (punctuation ":" 2341 . 2342) (symbol "helpers" 2342 . 2349) (punctuation ":" 2349 . 2350) (punctuation ":" 2350 . 2351) (symbol "Class" 2351 . 2356) (punctuation "&" 2356 . 2357) (symbol "object" 2358 . 2364) (punctuation ":" 2364 . 2365) (punctuation ":" 2365 . 2366) (symbol "getClass" 2366 . 2374) (semantic-list "()" 2374 . 2376) (CONST "const" 2377 . 2382) (semantic-list "{ return getStaticClass(); }" 2383 . 2411) (CONST "const" 2413 . 2418) (symbol "log4cxx" 2419 . 2426) (punctuation ":" 2426 . 2427) (punctuation ":" 2427 . 2428) (symbol "helpers" 2428 . 2435) (punctuation ":" 2435 . 2436) (punctuation ":" 2436 . 2437) (symbol "Class" 2437 . 2442) (punctuation "&" 2442 . 2443) (symbol "object" 2444 . 2450) (punctuation ":" 2450 . 2451) (punctuation ":" 2451 . 2452) (symbol "getStaticClass" 2452 . 2466) (semantic-list "()" 2466 . 2468) (semantic-list "{ \\
+   static Clazz##object theClass;                         \\
+   return theClass;                                       \\
+}" 2469 . 2594) (CONST "const" 2666 . 2671) (symbol "log4cxx" 2672 . 2679) (punctuation ":" 2679 . 2680) (punctuation ":" 2680 . 2681) (symbol "helpers" 2681 . 2688) (punctuation ":" 2688 . 2689) (punctuation ":" 2689 . 2690) (symbol "ClassRegistration" 2690 . 2707) (punctuation "&" 2707 . 2708) (symbol "object" 2709 . 2715) (punctuation ":" 2715 . 2716) (punctuation ":" 2716 . 2717) (symbol "registerClass" 2717 . 2730) (semantic-list "()" 2730 . 2732) (semantic-list "{   \\
+    static log4cxx::helpers::ClassRegistration classReg(object::getStaticClass); \\
+    return classReg; \\
+}" 2733 . 2846) (NAMESPACE "namespace" 2848 . 2857) (symbol "log4cxx" 2858 . 2865) (semantic-list "{ namespace classes { \\
+const log4cxx::helpers::ClassRegistration& object##Registration = object::registerClass(); \\
+} }" 2866 . 2986)))
+          ("_LOG4CXX_HELPERS_OBJECT_H")
+          ("END_LOG4CXX_CAST_MAP" (spp-arg-list nil 4688 . 4690) . 
+              ((RETURN "return" 4700 . 4706) (symbol "object" 4707 . 4713) (punctuation ";" 4713 . 4714) (close-paren "}" 4716 . 4717) (BOOL "bool" 4719 . 4723) (symbol "instanceof" 4724 . 4734) (semantic-list "(const helpers::Class& clazz)" 4734 . 4763) (CONST "const" 4764 . 4769) (semantic-list "{ return cast(clazz) != 0; }" 4771 . 4799)))
+          ("LOG4CXX_CAST_ENTRY_CHAIN" (spp-arg-list ("Interface") 5086 . 5097) . 
+              ((symbol "object" 5099 . 5105) (punctuation "=" 5106 . 5107) (symbol "Interface" 5108 . 5117) (punctuation ":" 5117 . 5118) (punctuation ":" 5118 . 5119) (symbol "cast" 5119 . 5123) (semantic-list "(clazz)" 5123 . 5130) (punctuation ";" 5130 . 5131) (IF "if" 5133 . 5135) (semantic-list "(object != 0)" 5136 . 5149) (RETURN "return" 5150 . 5156) (symbol "object" 5157 . 5163) (punctuation ";" 5163 . 5164)))
+          ("IMPLEMENT_LOG4CXX_OBJECT_WITH_CUSTOM_CLASS" (spp-arg-list ("object" "class") 3039 . 3054) . 
+              ((CONST "const" 3056 . 3061) (symbol "log4cxx" 3062 . 3069) (punctuation ":" 3069 . 3070) (punctuation ":" 3070 . 3071) (symbol "helpers" 3071 . 3078) (punctuation ":" 3078 . 3079) (punctuation ":" 3079 . 3080) (symbol "Class" 3080 . 3085) (punctuation "&" 3085 . 3086) (symbol "object" 3087 . 3093) (punctuation ":" 3093 . 3094) (punctuation ":" 3094 . 3095) (symbol "getClass" 3095 . 3103) (semantic-list "()" 3103 . 3105) (CONST "const" 3106 . 3111) (semantic-list "{ return getStaticClass(); }" 3112 . 3140) (CONST "const" 3142 . 3147) (symbol "log4cxx" 3148 . 3155) (punctuation ":" 3155 . 3156) (punctuation ":" 3156 . 3157) (symbol "helpers" 3157 . 3164) (punctuation ":" 3164 . 3165) (punctuation ":" 3165 . 3166) (symbol "Class" 3166 . 3171) (punctuation "&" 3171 . 3172) (symbol "object" 3173 . 3179) (punctuation ":" 3179 . 3180) (punctuation ":" 3180 . 3181) (symbol "getStaticClass" 3181 . 3195) (semantic-list "()" 3195 . 3197) (semantic-list "{ \\
+   static class theClass;                                 \\
+   return theClass;                                       \\
+}" 3198 . 3323) (CONST "const" 3382 . 3387) (symbol "log4cxx" 3388 . 3395) (punctuation ":" 3395 . 3396) (punctuation ":" 3396 . 3397) (symbol "helpers" 3397 . 3404) (punctuation ":" 3404 . 3405) (punctuation ":" 3405 . 3406) (symbol "ClassRegistration" 3406 . 3423) (punctuation "&" 3423 . 3424) (symbol "object" 3425 . 3431) (punctuation ":" 3431 . 3432) (punctuation ":" 3432 . 3433) (symbol "registerClass" 3433 . 3446) (semantic-list "()" 3446 . 3448) (semantic-list "{   \\
+    static log4cxx::helpers::ClassRegistration classReg(object::getStaticClass); \\
+    return classReg; \\
+}" 3449 . 3562) (NAMESPACE "namespace" 3564 . 3573) (symbol "log4cxx" 3574 . 3581) (semantic-list "{ namespace classes { \\
+const log4cxx::helpers::ClassRegistration& object##Registration = object::registerClass(); \\
+} }" 3582 . 3702)))
+          ("LOG4CXX_CAST_ENTRY" (spp-arg-list ("Interface") 4827 . 4838) . 
+              ((IF "if" 4840 . 4842) (semantic-list "(&clazz == &Interface::getStaticClass())" 4843 . 4883) (RETURN "return" 4884 . 4890) (semantic-list "(const Interface *)" 4891 . 4910) (symbol "this" 4910 . 4914) (punctuation ";" 4914 . 4915)))
+          )
+
+    )
+   (semanticdb-table "outputstream.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_HELPERS_OUTPUTSTREAM_H" variable (:constant-flag t) nil [853 884])
+            ("log4cxx/helpers/objectimpl.h" include (:system-flag t) nil [886 925])
+            ("log4cxx" type
+               (:members 
+                  ( ("helpers" type
+                       (:members 
+                          ( ("ByteBuffer" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [986 1003])
+                            ("ObjectImpl" variable (:type "int") (reparse-symbol namespacesubparts) [1148 1833])
+                            ("LOG4CXX_PTR_DEF" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("OutputStream" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1861 1874]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1845 1875]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [956 1885]))                  
+                :type "namespace")
+                nil [927 1909]))          
+    :file "outputstream.h"
+    :pointmax 1973
+    :fsize 1972
+    :lastmodtime '(20305 23004 0 0)
+    :unmatched-syntax '((PUBLIC 1141 . 1147) (punctuation 1139 . 1140) (symbol 1126 . 1138) (symbol 1111 . 1125) (CLASS 1105 . 1110))
+    :lexical-table 
+        '(("_LOG4CXX_HELPERS_OUTPUTSTREAM_H")
+          )
+
+    )
+   (semanticdb-table "charsetencoder.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_HELPERS_CHARSETENCODER_H" variable (:constant-flag t) nil [855 888])
+            ("log4cxx/helpers/objectimpl.h" include (:system-flag t) nil [890 929])
+            ("log4cxx/helpers/pool.h" include (:system-flag t) nil [930 963])
+            ("log4cxx" type
+               (:members 
+                  ( ("helpers" type
+                       (:members 
+                          ( ("ByteBuffer" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1024 1041])
+                            ("CharsetEncoder" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1052 1073])
+                            ("LOG4CXX_PTR_DEF" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("CharsetEncoder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1100 1115]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1084 1116])
+                            ("ObjectImpl" variable (:type "int") (reparse-symbol namespacesubparts) [1307 4485]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [994 4496]))                  
+                :type "namespace")
+                nil [965 4520]))          
+    :file "charsetencoder.h"
+    :pointmax 4586
+    :fsize 4585
+    :lastmodtime '(20305 23004 0 0)
+    :unmatched-syntax '((PUBLIC 1300 . 1306) (punctuation 1298 . 1299) (symbol 1283 . 1297) (symbol 1268 . 1282) (CLASS 1262 . 1267))
+    :lexical-table 
+        '(("_LOG4CXX_HELPERS_CHARSETENCODER_H")
+          )
+
+    )
+   (semanticdb-table "class.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_HELPERS_CLASS_H" variable (:constant-flag t) nil [846 870])
+            ("log4cxx/logstring.h" include (:system-flag t) nil [975 1005])
+            ("log4cxx/helpers/objectptr.h" include (:system-flag t) nil [1006 1044])
+            ("map" include (:system-flag t) nil [1045 1059])
+            ("log4cxx" type
+               (:members 
+                  ( ("helpers" type
+                       (:members 
+                          ( ("Object" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1133 1146])
+                            ("ObjectPtr" type
+                               (:typedef ("ObjectPtrT" type
+                                     (:template-specifier 
+                                        ( ("Object" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "ObjectPtrT"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1163 1200])
+                            ("Class" variable (:type ("LOG4CXX_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1219 2057]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1089 2067]))                  
+                :type "namespace")
+                nil [1061 2091]))          
+    :file "class.h"
+    :pointmax 2200
+    :fsize 2199
+    :lastmodtime '(20305 23004 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_LOG4CXX_HELPERS_CLASS_H")
+          )
+
+    )
+   (semanticdb-table "classregistration.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_HELPERS_CLASSREGISTRATION_H" variable (:constant-flag t) nil [858 894])
+            ("log4cxx/log4cxx.h" include (:system-flag t) nil [896 924])
+            ("log4cxx" type
+               (:members 
+                  ( ("helpers" type
+                       (:members 
+                          ( ("Class" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [998 1010])
+                            ("ClassRegistration" variable (:type ("LOG4CXX_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1027 1438]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [954 1448]))                  
+                :type "namespace")
+                nil [926 1472]))          
+    :file "classregistration.h"
+    :pointmax 1540
+    :fsize 1539
+    :lastmodtime '(20305 23004 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_LOG4CXX_HELPERS_CLASSREGISTRATION_H")
+          )
+
+    )
+   )
+  :file "!usr!include!log4cxx!helpers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

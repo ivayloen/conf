@@ -1,0 +1,45 @@
+;; Object location/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "location/"
+  :tables (list 
+   (semanticdb-table "locationinfo.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LOG4CXX_SPI_LOCATION_LOCATIONINFO_H" variable (:constant-flag t) nil [858 894])
+            ("log4cxx/log4cxx.h" include (:system-flag t) nil [896 924])
+            ("string" include (:system-flag t) nil [925 942])
+            ("log4cxx/helpers/objectoutputstream.h" include (:system-flag t) nil [943 990])
+            ("log4cxx" type
+               (:members 
+                  ( ("spi" type
+                       (:members 
+                          ( ("LocationInfo" variable (:type ("LOG4CXX_EXPORT" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1135 3172]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1014 3176]))                  
+                :type "namespace")
+                nil [992 3178])
+            ("__LOG4CXX_FUNC__" variable (:constant-flag t) nil [3348 3364])
+            ("LOG4CXX_LOCATION" variable (:constant-flag t) nil [3479 3495]))          
+    :file "locationinfo.h"
+    :pointmax 3701
+    :fsize 3700
+    :lastmodtime '(20305 23005 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__LOG4CXX_FUNC__" . ((symbol "__PRETTY_FUNCTION__" 3365 . 3384)))
+          ("_LOG4CXX_SPI_LOCATION_LOCATIONINFO_H")
+          ("LOG4CXX_LOCATION" . 
+              ((punctuation ":" 3496 . 3497) (punctuation ":" 3497 . 3498) (symbol "log4cxx" 3498 . 3505) (punctuation ":" 3505 . 3506) (punctuation ":" 3506 . 3507) (symbol "spi" 3507 . 3510) (punctuation ":" 3510 . 3511) (punctuation ":" 3511 . 3512) (symbol "LocationInfo" 3512 . 3524) (semantic-list "(__FILE__, \\
+           __LOG4CXX_FUNC__,                                                         \\
+           __LINE__)" 3524 . 3644)))
+          )
+
+    )
+   )
+  :file "!usr!include!log4cxx!spi!location!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
