@@ -1,102 +1,6 @@
-;; load packages
+; load packages
 (add-to-list 'load-path "~/.emacs.d")
-
-;; steng
-
-
-;;(require 'cl)
-;;(require 'ffap)
-;;(require 'uniquify)
-;;(require 'ansi-color)
-;;(require 'recentf)
-;;(require 'linum)
-;;(require 'smooth-scrolling)
-;;(require 'whitespace)
-;;(require 'dired-x)
-;;(require 'compile)
-;;(menu-bar-mode -1)
-;;(normal-erase-is-backspace-mode 1)
-;;(put 'downcase-region 'disabled nil)
-;;(put 'upcase-region 'disabled nil)
-;;(setq column-number-mode t)
-;;(setq inhibit-startup-message t)
-;;(setq save-abbrevs nil)
-;;(setq show-trailing-whitespace t)
-;;(setq suggest-key-bindings t)
-;;(setq vc-follow-symlinks t)
-;;
-;; 
-;;(custom-set-faces
-;; ;; custom-set-faces was added by Custom.
-;; ;; If you edit it by hand, you could mess it up, so be careful.
-;; ;; Your init file should contain only one such instance.
-;; ;; If there is more than one, they won't work right.
-;; '(column-marker-1 ((t (:background "red"))))
-;; '(diff-added ((t (:foreground "cyan"))))
-;; '(flymake-errline ((((class color) (background light)) (:background "Red"))))
-;; '(font-lock-comment-face ((((class color) (min-colors 8) (background light)) (:foreground "red"))))
-;; '(fundamental-mode-default ((t (:inherit default))))
-;; '(highlight ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
-;; '(isearch ((((class color) (min-colors 8)) (:background "yellow" :foreground "black"))))
-;; '(linum ((t (:foreground "black" :weight bold))))
-;; '(region ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
-;; '(secondary-selection ((((class color) (min-colors 8)) (:background "gray" :foreground "cyan"))))
-;; '(vertical-border ((t nil))))
-;;
-;;;; ------------
-;;;; -- Macros --
-;;;; ------------
-;;(load "defuns-config.el")
-;;(fset 'align-equals "\C-[xalign-regex\C-m=\C-m")
-;;(global-set-key "\M-=" 'align-equals)
-;;(global-set-key "\C-x\C-m" 'execute-extended-command)
-;;(global-set-key "\C-c;" 'comment-or-uncomment-region)
-;;(global-set-key "\M-n" 'next5)
-;;(global-set-key "\M-p" 'prev5)
-;;(global-set-key "\M-o" 'other-window)
-;;(global-set-key "\M-i" 'back-window)
-;;(global-set-key "\C-z" 'zap-to-char)
-;;(global-set-key "\C-h" 'backward-delete-char)
-;;(global-set-key "\M-d" 'delete-word)
-;;(global-set-key "\M-h" 'backward-delete-word)
-;;(global-set-key "\M-u" 'zap-to-char)
-;;
-;;;; ---------------------------
-;;;; -- JS Mode configuration --
-;;;; ---------------------------
-;;(load "js-config.el")
-;;(add-to-list 'load-path "~/.emacs.d/jade-mode") ;; github.com/brianc/jade-mode
-;;(require 'sws-mode)
-;;(require 'jade-mode)    
-;;(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
-;;(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
-;;
-;; python
-(autoload 'python-mode "python-mode.el" "Python mode." t)
-(setq auto-mode-alist (append '(("/*.\.py$" . python-mode)) auto-mode-alist)) 
-;; cedet
-;;(load-file "/usr/share/emacs/site-lisp/cedet/common/cedet.el")
-(global-ede-mode t)
-(require 'semantic/sb)
-(semantic-mode 1)
-;;(semantic-load-enable-code-helpers)
-;;(global-srecode-minor-mode 1)
-
-;; matlab
-;;(add-to-list 'load-path "~/.emacs.d/matlab-emacs")
-;; (load-library "matlab-load")
-;; (matlab-cedet-setup)
-
-;; smart compile
-(load-file "~/.emacs.d/smart-compile.el")
-
-;; undo tree
-(load-file "/home/ienchev/.emacs.d/elpa/undo-tree-20130812.1224/undo-tree.el")
-
-(global-undo-tree-mode 1)
-(setq undo-tree-auto-save-history 1)
-(setq undo-tree-history-directory-alist (quote (("." . "~/.emacs.d/undo/"))))
-(require 'undo-tree)
+(load "/usr/share/emacs/site-lisp/python-mode/python-mode.el")
 
 ;; melpa
 (require 'package)
@@ -104,25 +8,51 @@
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
+;; python
+(autoload 'python-mode "python-mode.el" "Python mode." t)
+(setq auto-mode-alist (append '(("/*.\.py$" . python-mode)) auto-mode-alist)) 
+
+;; cedet
+(load-file "~/.emacs.d/minimal-cedet-config.el")
+
+;; (matlab-cedet-setup)
+(setq auto-mode-alist (append '(("/*.\.m$" . matlab-mode)) auto-mode-alist)) 
+;; smart compile
+(load-file "~/.emacs.d/smart-compile.el")
+
+;; undo tree
+(global-undo-tree-mode 1)
+(setq undo-tree-auto-save-history 1)
+(setq undo-tree-history-directory-alist (quote (("." . "~/.emacs.d/undo/"))))
+(require 'undo-tree)
+
+;;ecb
+(require 'ecb)
+ 
 ;; vim navigation
+(require 'evil-numbers)
 (require 'evil-leader)
 (require 'evil)
 (evil-mode 1)
 
+
+;; auto-complete mode
+(require 'auto-complete)
+(auto-complete-mode 1)
 ;; set leader to ,
-(setq evil-leader/leader "," evil-leader/in-all-states t)
-(global-evil-leader-mode)
+;; (setq evil-leader/leader "," evil-leader/in-all-states t)
+;; (global-evil-leader-mode)
 
 ;; setup leader combinations
-(evil-leader/set-key
-  "f" 'find-file
-  "b" 'switch-to-buffer
-  "e" 'split-window-right
-  "o" 'split-window-below
-  "w" 'delete-window
-  "q" 'kill-buffer
-  "x" 'delete-frame
-)
+;; (evil-leader/set-key
+  ;; "f" 'find-file
+  ;; "b" 'switch-to-buffer
+  ;; "e" 'split-window-right
+  ;; "o" 'split-window-below
+  ;; "w" 'delete-window
+  ;; "q" 'kill-buffer
+  ;; "x" 'delete-frame
+;; )
 
 ;; comment combinations
 (require 'evil-nerd-commenter)
@@ -130,22 +60,23 @@
 (global-set-key (kbd "C-:") 'evilnc-comment-or-uncomment-to-the-line)
 (global-set-key (kbd "C-c c") 'evilnc-copy-and-comment-lines)
 
+;; helm
+;; (require 'helm)
+;; (helm-mode 1)
 ;; ido
 (require 'ido)
 (ido-mode t)
-(setq ido-enable-flex-matching t
-      ido-everywhere t)
-      ;; ido-rotate-file-list-default t
-      ;; ido-use-filename-at-point (quote guess))
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
 
 ;; fullscreen startup
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ;; customize 
-(setq c-auto-newline nil)
+;; (setq c-auto-newline nil)
 (setq whitespace-line-column 80)
 (setq tab-width 8)
-(setq indent-tabs-mode nil)
+;; (setq indent-tabs-mode nil)
 (setq c-basic-offset 4)
 (setq whitespace-style '(lines-tail newline indentation empty space-after-tab space-before-tab trailing tab-mark))
 (setq default-directory "/home/ienchev/")
@@ -163,19 +94,25 @@
 (define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
 
 ;; ret space
-(defun my-move-key (keymap-from keymap-to key)
-     "Moves key binding from one keymap to another, deleting from the old location. "
-     (define-key keymap-to key (lookup-key keymap-from key))
-     (define-key keymap-from key nil)
-     )
-   (my-move-key evil-motion-state-map evil-normal-state-map (kbd "RET"))
-   (my-move-key evil-motion-state-map evil-normal-state-map " ")
+;; (defun my-move-key (keymap-from keymap-to key)
+     ;; "Moves key binding from one keymap to another, deleting from the old location. "
+     ;; (define-key keymap-to key (lookup-key keymap-from key))
+     ;; (define-key keymap-from key nil)
+     ;; )
+   ;; (my-move-key evil-motion-state-map evil-normal-state-map (kbd "RET"))
+   ;; (my-move-key evil-motion-state-map evil-normal-state-map " ")
 
 ;; other keys
 (defun save-buffer-and-switch-to-vi ()
   (interactive)
   (save-buffer)
   (evil-change-to-initial-state)
+)
+
+(defun lookup-method()
+  (interactive)
+  (ecb-goto-window-methods)
+  (evil-search-forward)
 )
 
 (global-set-key [f9] 'smart-compile)
@@ -212,13 +149,70 @@
 (define-key evil-insert-state-map "\C-e" 'split-window-right)
 (define-key evil-visual-state-map "\C-e" 'split-window-right)
 
+(define-key evil-normal-state-map "\C-z" 'split-window-below)
+(define-key evil-insert-state-map "\C-z" 'split-window-below)
+(define-key evil-visual-state-map "\C-z" 'split-window-below)
+
+(define-key evil-normal-state-map "\C-q" 'kill-buffer)
+(define-key evil-insert-state-map "\C-q" 'kill-buffer)
+(define-key evil-visual-state-map "\C-q" 'kill-buffer)
+
+(define-key evil-normal-state-map "\C-x" 'delete-frame)
+(define-key evil-insert-state-map "\C-x" 'delete-frame)
+(define-key evil-visual-state-map "\C-x" 'delete-frame)
+
+(define-key evil-normal-state-map "\C-w" 'delete-window)
+(define-key evil-insert-state-map "\C-w" 'delete-window)
+(define-key evil-visual-state-map "\C-w" 'delete-window)
+
+(define-key evil-normal-state-map "\C-h" 'ecb-goto-window-history)
+(define-key evil-insert-state-map "\C-h" 'ecb-goto-window-history)
+(define-key evil-visual-state-map "\C-h" 'ecb-goto-window-history)
+
+(define-key evil-normal-state-map "\C-c" 'ecb-goto-window-directories)
+(define-key evil-insert-state-map "\C-c" 'ecb-goto-window-directories)
+(define-key evil-visual-state-map "\C-c" 'ecb-goto-window-directories)
+
+;; (define-key evil-normal-state-map "\C-d" 'ecb-goto-window-methods)
+;; (define-key evil-insert-state-map "\C-d" 'ecb-goto-window-methods)
+;; (define-key evil-visual-state-map "\C-d" 'ecb-goto-window-methods)
+
+(define-key evil-normal-state-map "\C-d" 'lookup-method)
+(define-key evil-insert-state-map "\C-d" 'lookup-method)
+(define-key evil-visual-state-map "\C-d" 'lookup-method)
+
+(define-key evil-normal-state-map "\C-n" 'ecb-goto-window-sources)
+(define-key evil-insert-state-map "\C-n" 'ecb-goto-window-sources)
+(define-key evil-visual-state-map "\C-n" 'ecb-goto-window-sources)
+
+(define-key evil-normal-state-map "\C-l" 'ecb-goto-window-edit-last)
+(define-key evil-insert-state-map "\C-l" 'ecb-goto-window-edit-last)
+(define-key evil-visual-state-map "\C-l" 'ecb-goto-window-edit-last)
+
+
+;; (define-key evil-normal-state-map (kbd "RET") 'my-enter)
+(define-key evil-insert-state-map (kbd "RET") 'newline-and-indent)
+
+ ;;(define-key evil-normal-state-map "\C-" 'ecb-activate)
+;;(define-key evil-insert-state-map "\C-" 'ecb-activate)
+;;(define-key evil-visual-state-map "\C-" 'ecb-activate)
+;;
+;;(define-key evil-normal-state-map "\C-" 'ecb-deactivate)
+;;(define-key evil-insert-state-map "\C-" 'ecb-deactivate)
+;;(define-key evil-visual-state-map "\C-" 'ecb-deactivate)
+
+
+
+;; (define-key evil-insert-state-map "RET" nil)
+
 ;; save place in file
 (setq save-place-file "~/.emacs.d/saved-places")
 (require 'saveplace)
 (setq-default save-place t)
 
 ;; set font
-(set-default-font "Bitstream Vera Sans Mono-11")
+;; (set-default-font "Bitstream Vera Sans Mono-23")
+(set-face-attribute 'default nil :height 120)
 ;; remove scrollbar
 (scroll-bar-mode -1)
 ;; remove menu bar
@@ -249,4 +243,20 @@
 ;; disable scratch
 (kill-buffer "*scratch*")
 
+(load-theme 'zenburn t)
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ecb-layout-window-sizes (quote (("left8" (ecb-directories-buffer-name 0.17647058823529413 . 0.2545454545454545) (ecb-sources-buffer-name 0.17647058823529413 . 0.12727272727272726) (ecb-methods-buffer-name 0.17647058823529413 . 0.32727272727272727) (ecb-history-buffer-name 0.17647058823529413 . 0.2727272727272727)))))
+ '(ecb-mouse-click-destination (quote last-point))
+ '(ecb-options-version "2.40")
+ '(ecb-primary-secondary-mouse-buttons (quote mouse-1--mouse-2)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
