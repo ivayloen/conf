@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=/usr/share/oh-my-zsh/
+ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -12,7 +12,7 @@ ZSH_THEME="mod_ienchev"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export ALTERNATE_EDITOR=gvim EDITOR=gvim VISUAL=gvim
+export ALTERNATE_EDITOR="vim" EDITOR="emacsclient -n" VISUAL="emacsclient -n"
 
 # emacs
 # export EDITOR="emacsclient -t -n"
@@ -25,9 +25,9 @@ ets() { emacsclient -t "/sudo::$*" }
 # 
 alias -g '...'='../..'
 alias -g '....'='../../..'
-alias startx='startx > ~/.Xoutput'
-alias mount_storage='sudo mount -t ntfs /dev/sdb2 /media/storage'
-alias xvnc='x11vnc -display :0 -rfbauth ~/.x11vnc/passwd -clip 1920x1080+0+0 -scale 1600x900'
+alias matlab_clamv='sh ~/matlab.sh'
+#alias startx='startx > ~/.Xoutput'
+#alias mount_storage='sudo mount -t ntfs /dev/sdb2 /media/storage'
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
