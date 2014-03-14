@@ -1,4 +1,0 @@
-"fd99989211bad0bc905db5a653f515a3f350a54b"
-[cl-struct-undo-tree [nil (#1=[nil nil ((#("source '/opt/ros/groovy/setup.zsh'
-source '/home/ienchev/spacebotcup_ws/devel/setup.zsh'
-e" 0 6 (fontified t face font-lock-builtin-face) 6 7 (fontified t) 7 34 (fontified t face font-lock-string-face) 34 35 (fontified t) 35 41 (fontified t face font-lock-builtin-face) 41 42 (fontified t) 42 88 (fontified t face font-lock-string-face) 88 89 (fontified t) 89 90 (fontified t face font-lock-builtin-face)) . 357) 446 (t 21075 49377 220834 322000) (undo-tree-id0 . -89) (undo-tree-id1 . -89) (undo-tree-id2 . -35) (undo-tree-id3 . -35) (undo-tree-id4 . -89) (undo-tree-id5 . -89) (undo-tree-id6 . -90)) nil (21075 49514 372045 781000) 0 nil]) nil nil (21075 49514 372052 956000) 0 nil] #1# 170 1 nil]

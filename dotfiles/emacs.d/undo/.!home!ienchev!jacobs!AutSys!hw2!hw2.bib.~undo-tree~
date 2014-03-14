@@ -1,6 +1,0 @@
-"f3406d3e48236d677333dc31753d02038daae1f0"
-[cl-struct-undo-tree [nil ([nil ([nil ([nil ([nil (#1=[nil nil ((#("}
-" 0 2 (fontified t)) . 1) (undo-tree-id0 . -2) (undo-tree-id1 . -2) (undo-tree-id2 . -2) (undo-tree-id3 . -2) (undo-tree-id4 . -2) (undo-tree-id5 . -1) (undo-tree-id6 . 1) (undo-tree-id7 . 2) (undo-tree-id8 . -1)) nil (21058 50478 950204 726000) 0 nil]) ((#("howpublished = \"\\url{http://www.cg.info.hiroshima-cu.ac.jp/~miyazaki/knowledge/teche52.html}\"
-" 0 12 (fontified t face font-lock-variable-name-face) 12 94 (fontified t)) . 1) (undo-tree-id9 . -94) (undo-tree-id10 . -94)) nil (21058 50478 950244 630000) 0 nil]) ((#("title = {Converting rotation matrix to a quaternion},
-" 0 5 (fontified t face font-lock-variable-name-face) 5 54 (fontified t)) . 1) (undo-tree-id11 . -54) (undo-tree-id12 . -54)) nil (21058 50478 950277 417000) 0 nil]) ((#("@misc {Conv,
-" 0 5 (fontified t face font-lock-function-name-face) 5 7 (fontified t) 7 11 (fontified t face font-lock-constant-face) 11 13 (fontified t)) . 1) (undo-tree-id13 . -13) (undo-tree-id14 . -13)) nil (21058 50478 950295 891000) 0 nil]) ((164 . 350) (t 21058 42437 766249 631000)) nil (21058 50478 950304 875000) 0 nil]) nil nil (21058 50478 950309 651000) 0 nil] #1# 331 5 nil]

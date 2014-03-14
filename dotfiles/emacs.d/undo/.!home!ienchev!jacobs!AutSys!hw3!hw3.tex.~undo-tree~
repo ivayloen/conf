@@ -1,4 +1,0 @@
-"5f4604375963d1752f3c92b115297b150661e3c7"
-[cl-struct-undo-tree [nil ([nil ([nil ([nil (#1=[nil nil ((749 . 750) (#("5" 0 1 (fontified t face font-lock-builtin-face)) . 749)) nil (21070 46766 890261 683000) 0 nil]) ((nil rear-nonsticky nil 739 . 740) (nil fontified nil 739 . 740) (nil fontified nil 738 . 739) (#("
-" 0 1 (fontified nil)) . -755) (739 . 756) 738 (t 21070 34265 805225 635000)) nil (21070 46766 890296 311000) 0 nil]) ((733 . 734) (#("4" 0 1 (fontified t face font-lock-builtin-face)) . 733)) nil (21070 34265 758187 185000) 0 nil]) ((nil rear-nonsticky nil 723 . 724) (nil fontified nil 723 . 724) (nil fontified nil 722 . 723) (nil fontified nil 715 . 722) (nil fontified nil 714 . 715) (nil fontified nil 708 . 714) (#("
-" 0 1 (fontified nil)) . -739) (723 . 740) 708 (t 21068 11524 552649 507000)) nil (21070 34265 758197 337000) 0 nil]) nil nil (21070 34265 758200 540000) 0 nil] #1# 172 4 nil]

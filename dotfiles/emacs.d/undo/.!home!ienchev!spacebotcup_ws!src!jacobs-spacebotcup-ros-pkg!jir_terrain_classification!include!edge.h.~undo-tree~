@@ -1,9 +1,0 @@
-"f30d45516c9f4cb8fba6295e058c6954f12ffce9"
-[cl-struct-undo-tree [nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil ([nil (#1=[nil nil ((#("    
-" 0 4 (fontified t) 4 5 (fontified t)) . 231) 234 (undo-tree-id0 . -5) (undo-tree-id1 . -5) (undo-tree-id2 . 1) (undo-tree-id3 . -4)) nil (21160 33378 861365 235000) 0 nil]) ((#("
-" 0 1 (fontified t)) . 231) (undo-tree-id4 . -1) (undo-tree-id5 . -1)) nil (21160 33378 861414 811000) 0 nil]) ((#("
-" 0 1 (fontified t)) . 231) (undo-tree-id6 . -1) (undo-tree-id7 . -1)) nil (21160 33378 861445 816000) 0 nil]) ((#("    asdad;
-" 0 11 (fontified t)) . 233) 236 (undo-tree-id8 . -11) (undo-tree-id9 . -11)) nil (21160 33378 861467 572000) 0 nil]) ((243 . 248) (242 . 243) (237 . 242) (232 . 237) (#("    " 0 4 (fontified t)) . 232) 236 (undo-tree-id10 . -4) (231 . 236) (#("    " 0 4 (fontified t)) . 231) 235 (undo-tree-id11 . -4) (230 . 235) 217) nil (21160 33378 861532 868000) 0 nil]) ((#("    
-" 0 4 (fontified t) 4 5 (fontified t)) . 213) 216 (undo-tree-id12 . 1)) nil (21160 33378 861569 241000) 0 nil]) ((#("
-" 0 1 (fontified t)) . 213)) nil (21160 33378 861583 863000) 0 nil]) ((#("
-" 0 1 (fontified t)) . 213)) nil (21160 33378 861598 827000) 0 nil]) ((214 . 219) (#("    " 0 4 (fontified t)) . 214) 218 (213 . 218) (#("    " 0 4 (fontified t)) . 213) 217 (212 . 217) 211 (t 21116 57468 950348 548000)) nil (21160 33378 861613 479000) 0 nil]) nil nil (21160 33378 861622 488000) 0 nil] #1# 385 9 nil]
