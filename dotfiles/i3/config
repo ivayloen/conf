@@ -31,7 +31,7 @@ bar {
                 statusline #DCDCDC
         }
 }
-
+exec --no-startup-id feh --bg-scale /home/ienchev/wallpapers/vladstudio-x-dreamer-hd-p-1325417.jpg 
 exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id .dropbox-dist/dropboxd
