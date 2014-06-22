@@ -31,11 +31,16 @@ bar {
                 statusline #DCDCDC
         }
 }
-exec --no-startup-id feh --bg-scale /home/ienchev/wallpapers/vladstudio-x-dreamer-hd-p-1325417.jpg 
+exec --no-startup-id feh --bg-scale /home/ienchev/wallpapers/vladstudio_dreamer2_1920x1440_signed.jpg
 exec --no-startup-id /usr/bin/nm-applet
-exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id .dropbox-dist/dropboxd
-exec --no-startup-id gnome-settings-daemon
+#exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id /usr/lib/lxpolkit/lxpolkit
+exec --no-startup-id /usr/bin/dropboxd
+exec --no-startup-id /home/ienchev/.screenlayout/work.sh
+exec --no-startup-id /usr/bin/redshift -l 53.0751600:8.8077700
+exec --no-startup-id /usr/bin/pa-applet
+exec --no-startup-id /usr/bin/thunar --daemon
+#exec --no-startup-id gnome-settings-daemon
 
 font pango: Ubuntu Mono 10
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -55,7 +60,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+c kill
 
 # start dmenu (a program launcher)
-bindsym Mod1+F2 exec dmenu_run
+bindsym Mod1+F2 exec j4-dmenu-desktop
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -151,7 +156,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 #apps
 bindsym Mod1+w exec --no-startup-id firefox
 bindsym Mod1+F1 exec --no-startup-id terminator
-bindsym Mod1+t exec --no-startup-id nautilus --no-desktop
+bindsym Mod1+t exec --no-startup-id thunar 
 bindsym Mod1+e exec --no-startup-id gvim
 bindsym Mod1+s exec --no-startup-id skype
 
@@ -195,7 +200,7 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-bindsym $mod+Pause mode "$mode_system"
+bindsym $mod+Escape mode "$mode_system"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

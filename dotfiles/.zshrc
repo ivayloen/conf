@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+ZSH=/usr/share/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -12,7 +12,7 @@ ZSH_THEME="mod_ienchev"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export ALTERNATE_EDITOR="vim" EDITOR="emacsclient -n" VISUAL="emacsclient -n"
+export ALTERNATE_EDITOR="vim" EDITOR="vim" VISUAL="gvim"
 
 # emacs
 # export EDITOR="emacsclient -t -n"
@@ -26,9 +26,11 @@ ets() { emacsclient -t "/sudo::$*" }
 alias -g '...'='../..'
 alias -g '....'='../../..'
 alias matlab_clamv='sh ~/matlab.sh'
+alias catkin_make2='catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python2 -DPYTHON_INCLUDE_DIR=/usr/include/python2.7 -DPYTHON_LIBRARY=/usr/lib/libpython2.7.so'
+alias spotify='wine ~/.wine/drive_c/users/ienchev/Application\ Data/Spotify/spotify.exe'
 
-source '/opt/ros/indigo/setup.zsh'
-source '/home/ienchev/ws/devel/setup.zsh'
+source '/opt/ros/hydro/setup.zsh'
+#source '/home/ienchev/workspace/devel/setup.zsh'
 
 export ROS_BOOST_LIB_DIR_NAME=/usr/lib/x86_64-linux-gnu/
 export Eigen_DIR=/home/ienchev/cmake
