@@ -1,6 +1,8 @@
 ; load packages
 (add-to-list 'load-path "~/.emacs.d")
-(load "/usr/share/emacs/site-lisp/python-mode/python-mode.el")
+;;(load "/usr/share/emacs/site-lisp/python-mode/python-mode.el")
+(autoload 'python-mode "python-mode.el" "Python mode." t)
+(setq auto-mode-alist (append '(("/*.\.py$" . python-mode)) auto-mode-alist))
 
 ;; melpa
 (require 'package)
@@ -29,6 +31,8 @@
 ;;ecb
 (require 'ecb)
  
+(load-theme 'zenburn t)
+
 ;; vim navigation
 (require 'evil-numbers)
 (require 'evil-leader)
@@ -36,12 +40,22 @@
 (evil-mode 1)
 
 
+;; column marker
+(require 'fill-column-indicator)
+(setq fci-rule-width 1)
+(setq fci-rule-column 80)
+(setq fci-rule-color "red")
+
+(add-hook 'text-mode-hook 'fci-mode)
+(add-hook 'prog-mode-hook 'fci-mode)
+;; (define-globalized-minor-mode global-fci-mode fci-mode (lambda () (set-fill-column 80) (fci-mode 1)))
+;; (global-fci-mode 1)
 ;; auto-complete mode
 (require 'auto-complete)
 (auto-complete-mode 1)
 ;; set leader to ,
-;; (setq evil-leader/leader "," evil-leader/in-all-states t)
-;; (global-evil-leader-mode)
+(setq evil-leader/leader "," evil-leader/in-all-states t)
+(global-evil-leader-mode)
 
 ;; setup leader combinations
 ;; (evil-leader/set-key
@@ -56,9 +70,12 @@
 
 ;; comment combinations
 (require 'evil-nerd-commenter)
-(global-set-key (kbd "C-;") 'evilnc-comment-or-uncomment-lines)
-(global-set-key (kbd "C-:") 'evilnc-comment-or-uncomment-to-the-line)
-(global-set-key (kbd "C-c c") 'evilnc-copy-and-comment-lines)
+;; (global-set-key (kbd "C-;") 'evilnc-comment-or-uncomment-lines)
+;; (global-set-key (kbd "C-:") 'evilnc-comment-or-uncomment-to-the-line)
+;; (global-set-key (kbd "C-c c") 'evilnc-copy-and-comment-lines)
+
+(evil-leader/set-key
+  "cc" 'evilnc-comment-or-uncomment-lines)
 
 ;; helm
 ;; (require 'helm)
@@ -209,10 +226,10 @@
 (setq save-place-file "~/.emacs.d/saved-places")
 (require 'saveplace)
 (setq-default save-place t)
-
+(set-face-attribute 'default nil :family  "Consolas" :height 120) 
 ;; set font
-;; (set-default-font "Bitstream Vera Sans Mono-23")
-(set-face-attribute 'default nil :height 120)
+;; (set-default-font "-microsoft-Consolas-normal-normal-normal-*-*-*-*-*-m-0-iso10646-1")
+;; (set-face-attribute 'default nil :height 120)
 ;; remove scrollbar
 (scroll-bar-mode -1)
 ;; remove menu bar
@@ -222,7 +239,7 @@
 ;; show parenthesis
 (show-paren-mode t)
 ;; copy-paste should work with other X clients
-(setq x-select-enable-clipboard t) 
+(setq x-selesdct-enable-clipboard t) 
 (setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
 ;; Not display the initial message 
 (setq inhibit-startup-message t)
@@ -243,7 +260,6 @@
 ;; disable scratch
 (kill-buffer "*scratch*")
 
-(load-theme 'zenburn t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
