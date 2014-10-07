@@ -14,49 +14,15 @@
 " Set 'nocompatible' to ward off unexpected things that your distro might
 " have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
+filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
+" set rtp+=~/.vim/bundle/Vundle.vim
 " set plugins
 call vundle#rc()
 Bundle 'gmarik/vundle'
 "Bundle 'vim-scripts/SuperTab-continued.'
 Bundle 'vim-scripts/xoria256.vim'
-Bundle 'vim-scripts/Solarized'
-"Bundle 'Valloric/YouCompleteMe'
-"Bundle 'vim-scripts/Indent-Guides'
-"Bundle 'vim-scripts/clang-complete'
-Bundle 'vim-scripts/Command-T'
 Bundle 'vim-scripts/The-NERD-Commenter'
-
-set guitablabel=\[%N\]\ %t\ %M 
-"set guifont=Crisp:h12
-
-" remove toolbar and scroll
-if has('gui_running')
-
-    set guifont=Monospace\ 10
-    set guioptions-=m  "remove menu bar
-    set guioptions-=T  "remove toolbar
-    set guioptions-=r  "remove right-hand scroll bar
-    set guioptions-=t  "remove toolbar
-    set guioptions-=L  "remove left-hand scroll bar
-    set showtabline=2 " always show tabs in gvim, but not vim
-    " Complete options (disable preview scratch window)
-
-" set completeopt = menu,menuone,longest
-    " Limit popup menu height
-    set pumheight=15
-endif
-"plugin settins
-" Complete options (disable preview scratch window)
-" SuperTab option for context aware completion
-"let g:SuperTabDefaultCompletionType = "context"
- 
-" Disable auto popup, use <Tab> to autocomplete
-"let g:clang_complete_auto = 0
-
-" Show clang errors in the quickfix window
-"let g:clang_complete_copen = 1
 
 " encodings and shell and colors
 set t_Co=256
@@ -70,6 +36,7 @@ set backup
 set directory=$HOME/.vim/tmp/swap/
 set viewdir=$HOME/.vim/tmp/view/
 set undodir=$HOME/.vim/tmp/undo/
+" set colorcolumn=80
 
 " store undo files, undo edits after deleting a buffer
 set undofile
@@ -81,6 +48,10 @@ set shell=/bin/zsh
 filetype indent plugin on
 
 colorscheme xoria256 
+"set background=light
+"colorscheme zenburn
+"let g:solarized_termcolors=256
+"colorscheme visualstudio
 " Enable syntax highlighting
 syntax on
 

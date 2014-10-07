@@ -5,19 +5,25 @@ ZSH=/usr/share/oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="mod_ienchev"
+ZSH_THEME="gnzh"
 
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export ALTERNATE_EDITOR="vim" EDITOR="vim" VISUAL="gvim"
+export EDITOR="vim"
+#export TERM="xterm-256color"
+#export ALTERNATE_EDITOR="vim" 
 
+fpat=($HOME/.zsh/functions $fpath)
 # emacs
 # export EDITOR="emacsclient -t -n"
 alias ec='emacsclient -n'
 alias et='emacsclient -t'
+
+alias tmux='tmux -2'
+alias td='tmux detach'
 
 alias vi='vim'
 ecs() { emacsclient -n "/sudo::$*" }
@@ -27,13 +33,16 @@ alias -g '...'='../..'
 alias -g '....'='../../..'
 alias matlab_clamv='sh ~/matlab.sh'
 alias catkin_make2='catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python2 -DPYTHON_INCLUDE_DIR=/usr/include/python2.7 -DPYTHON_LIBRARY=/usr/lib/libpython2.7.so'
-alias spotify='wine ~/.wine/drive_c/users/ienchev/Application\ Data/Spotify/spotify.exe'
+alias mount_rack='sshfs ienchev.rack:/home/ienchev /home/ienchev/rack/'
 
 source '/opt/ros/hydro/setup.zsh'
+source '/home/ienchev/slam_ws/devel/setup.zsh'
 #source '/home/ienchev/workspace/devel/setup.zsh'
 
 export ROS_BOOST_LIB_DIR_NAME=/usr/lib/x86_64-linux-gnu/
 export Eigen_DIR=/home/ienchev/cmake
+export TEXMFHOME=/home/ienchev/publications/BIBnew/texmf
+export NDKROOT=/opt/android-ndk
 #alias startx='startx > ~/.Xoutput'
 #alias mount_storage='sudo mount -t ntfs /dev/sdb2 /media/storage'
 # Set to this to use case-sensitive completion
@@ -57,7 +66,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git tmux tmuxinator)
 
 source $ZSH/oh-my-zsh.sh
 

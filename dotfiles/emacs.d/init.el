@@ -3,7 +3,7 @@
 ;;(load "/usr/share/emacs/site-lisp/python-mode/python-mode.el")
 (autoload 'python-mode "python-mode.el" "Python mode." t)
 (setq auto-mode-alist (append '(("/*.\.py$" . python-mode)) auto-mode-alist))
-
+(setq auto-mode-alist (append '(("/*.\.launch$" . xml-mode)) auto-mode-alist))
 ;; melpa
 (require 'package)
 (add-to-list 'package-archives

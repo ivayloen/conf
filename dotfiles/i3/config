@@ -41,7 +41,8 @@ exec --no-startup-id /usr/bin/redshift -l 53.0751600:8.8077700
 exec --no-startup-id /usr/bin/pa-applet
 exec --no-startup-id /usr/bin/thunar --daemon
 exec --no-startup-id /usr/bin/emacs --daemon
-exec --no-startup-id /usr/bin/xbacklight -set 50
+exec --no-startup-id /usr/bin/xbacklight -set 55
+exec --no-startup-id /usr/bin/qxkb
 
 font pango: Ubuntu Mono 10
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -139,11 +140,20 @@ bindsym $mod+0 workspace 10
 assign [class="^Chromium$"] 1 web
 for_window [title=" - Chromium$"] border none focus
 
+assign [class="^Firefox"] 1 web
+for_window [title="Firefox"] border none focus
+
 assign [class="^Terminator$"] 2 term
 for_window [class="^Terminator$"] border none focus
 
 assign [class="^Emacs$"] 3 editor
 for_window [class="^Emacs$"] border none focus
+
+assign [class="^QtCreator$"] 3 editor
+for_window [class="^QtCreator$"] border none focus
+
+assign [class="^Eclipse$"] 3 editor
+for_window [class="^Eclipse$"] border none focus
 
 assign [class="^Okular$"] 4 doc
 for_window  [class="^Okular$"] border none focus
@@ -157,6 +167,8 @@ for_window  [class="^smplayer$"] border none focus
 assign [class="^Audacious$"] 6 player
 for_window  [class="^Audacious$"] border none focus
 
+assign [class="^Spotify$"] 6 player
+for_window  [class="^Spotify$"] border none focus
 
 assign [class="^Skype$"] 7 chat
 assign [class="Transmission-gtk"] 8 downloads
@@ -188,6 +200,7 @@ bindsym 1 move container to workspace 1 web, mode "default"
 
 }
 
+bindsym $mod+o move workspace to output left
 bindsym $mod+v mode "move"
 
 bindsym $mod+j workspace prev
