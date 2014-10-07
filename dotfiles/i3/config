@@ -85,9 +85,9 @@ bindsym Escape mode "default"
 bindsym Mod4+g mode "rearrange"
 
 bindsym Mod4+j focus left
-bindsym Mod4+k focus down
-bindsym Mod4+l focus up
-bindsym Mod4+semicolon focus right
+bindsym Mod4+k focus right
+bindsym Mod4+h focus up
+bindsym Mod4+l focus down
 
 # alternatively, you can use the cursor keys:
 bindsym Mod4+Left focus left
