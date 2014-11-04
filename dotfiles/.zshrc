@@ -5,18 +5,19 @@ ZSH=/usr/share/oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="gnzh"
+ZSH_THEME="mod_gnzh"
 
 
+. /usr/share/zsh/site-contrib/powerline.zsh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export EDITOR="vim"
-#export TERM="xterm-256color"
+export TERM="rxvt-unicode-256color"
 #export ALTERNATE_EDITOR="vim" 
 
-fpat=($HOME/.zsh/functions $fpath)
+fpath=(/usr/share/zsh/functions $fpath)
 # emacs
 # export EDITOR="emacsclient -t -n"
 alias ec='emacsclient -n'
@@ -34,6 +35,11 @@ alias -g '....'='../../..'
 alias matlab_clamv='sh ~/matlab.sh'
 alias catkin_make2='catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python2 -DPYTHON_INCLUDE_DIR=/usr/include/python2.7 -DPYTHON_LIBRARY=/usr/lib/libpython2.7.so'
 alias mount_rack='sshfs ienchev.rack:/home/ienchev /home/ienchev/rack/'
+alias sync_home_rack='rsync -a -r /home/ienchev/slam_ws/src ienchev.rack:~/slam_ws'
+alias sync_home_azure='rsync -a -r /home/ienchev/slam_ws/src azure_vm:~/slam_ws'
+alias sync_rack_home='rsync -a -r ienchev.rack:~/slam_ws/src /home/ienchev/slam_ws'
+alias sync_azure_home='rsync -a -r azure_vm:~/slam_ws/src /home/ienchev/slam_ws'
+
 
 source '/opt/ros/hydro/setup.zsh'
 source '/home/ienchev/slam_ws/devel/setup.zsh'
@@ -66,7 +72,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git tmux tmuxinator)
+plugins=(git tmux)
 
 source $ZSH/oh-my-zsh.sh
 
