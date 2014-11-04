@@ -23,6 +23,11 @@ Bundle 'gmarik/vundle'
 "Bundle 'vim-scripts/SuperTab-continued.'
 Bundle 'vim-scripts/xoria256.vim'
 Bundle 'vim-scripts/The-NERD-Commenter'
+Bundle 'vim-scripts/The-NERD-tree'
+Bundle 'vim-scripts/Syntastic'
+Bundle 'vim-scripts/ctrlp.vim'
+Bundle 'vim-scripts/closetag.vim'
+Bundle 'taketwo/vim-ros'
 
 " encodings and shell and colors
 set t_Co=256
@@ -36,6 +41,8 @@ set backup
 set directory=$HOME/.vim/tmp/swap/
 set viewdir=$HOME/.vim/tmp/view/
 set undodir=$HOME/.vim/tmp/undo/
+
+set autochdir
 " set colorcolumn=80
 
 " store undo files, undo edits after deleting a buffer
@@ -46,7 +53,7 @@ set shell=/bin/zsh
 " contents. Use this to allow intelligent auto-indenting for each filetype,
 " and for plugins that are filetype specific.
 filetype indent plugin on
-
+let g:Powerline_symbols = "fancy"
 colorscheme xoria256 
 "set background=light
 "colorscheme zenburn
@@ -192,6 +199,7 @@ map Y y$
 
 let mapleader= ","
 
+map <C-n> :NERDTreeToggle<CR>
 map <C-s> <esc>:w<CR> 
 imap <C-s> <esc>:w<CR>
 
