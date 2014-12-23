@@ -14,7 +14,7 @@ ZSH_THEME="mod_gnzh"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export EDITOR="vim"
-export TERM="rxvt-unicode-256color"
+export TERM="xterm-256color"
 #export ALTERNATE_EDITOR="vim" 
 
 fpath=(/usr/share/zsh/functions $fpath)
@@ -76,4 +76,6 @@ plugins=(git tmux)
 
 source $ZSH/oh-my-zsh.sh
 
+alias grep="/usr/bin/grep $GREP_OPTIONS"
+unset GREP_OPTIONS
 # Customize to your needs...
