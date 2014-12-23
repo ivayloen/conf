@@ -32,9 +32,9 @@ bar {
         }
 }
 
-exec --no-startup-id feh --bg-scale /home/ienchev/wallpapers/2014-06-25.jpg
+exec --no-startup-id feh --bg-scale /home/ienchev/wallpapers/robot.jpg
 exec --no-startup-id /usr/bin/nm-applet
-exec --no-startup-id /usr/lib/lxpolkit/lxpolkit
+exec --no-startup-id /usr/bin/lxpolkit
 exec --no-startup-id /usr/bin/dropboxd
 exec --no-startup-id /home/ienchev/.screenlayout/work.sh
 exec --no-startup-id /usr/bin/redshift -l 53.0751600:8.8077700
@@ -146,6 +146,10 @@ for_window [title="Firefox"] border none focus
 assign [class="^Terminator$"] 2 term
 for_window [class="^Terminator$"] border none focus
 
+assign [class="^URxvt$"] 2 term
+for_window [class="^URxvt$"] border none focus
+
+
 assign [class="^Emacs$"] 3 editor
 for_window [class="^Emacs$"] border none focus
 
@@ -214,7 +218,7 @@ bindsym $mod+r restart
 
 #apps
 bindsym $mod+w exec --no-startup-id chromium
-bindsym $mod+F1 exec --no-startup-id terminator
+bindsym $mod+F1 exec --no-startup-id urxvt
 bindsym $mod+t exec --no-startup-id thunar 
 bindsym $mod+e exec --no-startup-id emacsclient -c
 bindsym $mod+s exec --no-startup-id skype
